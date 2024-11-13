@@ -138,7 +138,658 @@ VALUES
 ('Community & Volunteer', 'Community service and volunteer events.'),
 ('Public Speaking & Communication', 'Workshops to improve public speaking skills.');
 
+-- Registrations for Event 1 (15 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(1, 1, '2024-01-10', 'Confirmed'),
+(1, 2, '2024-01-11', 'Pending'),
+(1, 3, '2024-01-12', 'Confirmed'),
+(1, 4, '2024-01-13', 'Confirmed'),
+(1, 5, '2024-01-14', 'Cancelled'),
+(1, 6, '2024-01-15', 'Confirmed'),
+(1, 7, '2024-01-16', 'Confirmed'),
+(1, 8, '2024-01-17', 'Pending'),
+(1, 9, '2024-01-18', 'Confirmed'),
+(1, 10, '2024-01-19', 'Confirmed'),
+(1, 11, '2024-01-20', 'Cancelled'),
+(1, 12, '2024-01-21', 'Pending'),
+(1, 13, '2024-01-22', 'Confirmed'),
+(1, 14, '2024-01-23', 'Confirmed'),
+(1, 15, '2024-01-24', 'Pending');
 
+-- Registrations for Event 2 (12 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(2, 16, '2024-02-01', 'Confirmed'),
+(2, 17, '2024-02-02', 'Pending'),
+(2, 18, '2024-02-03', 'Confirmed'),
+(2, 19, '2024-02-04', 'Cancelled'),
+(2, 20, '2024-02-05', 'Confirmed'),
+(2, 21, '2024-02-06', 'Confirmed'),
+(2, 22, '2024-02-07', 'Pending'),
+(2, 23, '2024-02-08', 'Confirmed'),
+(2, 24, '2024-02-09', 'Confirmed'),
+(2, 25, '2024-02-10', 'Pending'),
+(2, 26, '2024-02-11', 'Confirmed'),
+(2, 27, '2024-02-12', 'Confirmed');
+
+-- Registrations for Event 3 (10 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(3, 28, '2024-03-01', 'Confirmed'),
+(3, 29, '2024-03-02', 'Pending'),
+(3, 30, '2024-03-03', 'Confirmed'),
+(3, 1, '2024-03-04', 'Confirmed'),
+(3, 2, '2024-03-05', 'Cancelled'),
+(3, 3, '2024-03-06', 'Confirmed'),
+(3, 4, '2024-03-07', 'Confirmed'),
+(3, 5, '2024-03-08', 'Pending'),
+(3, 6, '2024-03-09', 'Confirmed'),
+(3, 7, '2024-03-10', 'Confirmed');
+
+-- Registrations for Event 4 (18 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(4, 8, '2024-04-01', 'Confirmed'),
+(4, 9, '2024-04-02', 'Pending'),
+(4, 10, '2024-04-03', 'Confirmed'),
+(4, 11, '2024-04-04', 'Confirmed'),
+(4, 12, '2024-04-05', 'Cancelled'),
+(4, 13, '2024-04-06', 'Confirmed'),
+(4, 14, '2024-04-07', 'Confirmed'),
+(4, 15, '2024-04-08', 'Pending'),
+(4, 16, '2024-04-09', 'Confirmed'),
+(4, 17, '2024-04-10', 'Confirmed'),
+(4, 18, '2024-04-11', 'Cancelled'),
+(4, 19, '2024-04-12', 'Pending'),
+(4, 20, '2024-04-13', 'Confirmed'),
+(4, 21, '2024-04-14', 'Confirmed'),
+(4, 22, '2024-04-15', 'Pending'),
+(4, 23, '2024-04-16', 'Confirmed'),
+(4, 24, '2024-04-17', 'Confirmed'),
+(4, 25, '2024-04-18', 'Pending');
+
+-- Registrations for Event 5 (14 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(5, 26, '2024-05-01', 'Confirmed'),
+(5, 27, '2024-05-02', 'Pending'),
+(5, 28, '2024-05-03', 'Confirmed'),
+(5, 29, '2024-05-04', 'Confirmed'),
+(5, 30, '2024-05-05', 'Cancelled'),
+(5, 1, '2024-05-06', 'Confirmed'),
+(5, 2, '2024-05-07', 'Confirmed'),
+(5, 3, '2024-05-08', 'Pending'),
+(5, 4, '2024-05-09', 'Confirmed'),
+(5, 5, '2024-05-10', 'Confirmed'),
+(5, 6, '2024-05-11', 'Cancelled'),
+(5, 7, '2024-05-12', 'Pending'),
+(5, 8, '2024-05-13', 'Confirmed'),
+(5, 9, '2024-05-14', 'Confirmed');
+
+-- Continue similar entries for each event, varying between 10 and 20 registrations per event
+-- Registrations for Event 6 (10 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(6, 10, '2024-06-01', 'Confirmed'),
+(6, 11, '2024-06-02', 'Pending'),
+(6, 12, '2024-06-03', 'Confirmed'),
+(6, 13, '2024-06-04', 'Confirmed'),
+(6, 14, '2024-06-05', 'Cancelled'),
+(6, 15, '2024-06-06', 'Confirmed'),
+(6, 16, '2024-06-07', 'Confirmed'),
+(6, 17, '2024-06-08', 'Pending'),
+(6, 18, '2024-06-09', 'Confirmed'),
+(6, 19, '2024-06-10', 'Confirmed');
+
+-- Registrations for Event 7 (13 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(7, 20, '2024-07-01', 'Confirmed'),
+(7, 21, '2024-07-02', 'Pending'),
+(7, 22, '2024-07-03', 'Confirmed'),
+(7, 23, '2024-07-04', 'Cancelled'),
+(7, 24, '2024-07-05', 'Confirmed'),
+(7, 25, '2024-07-06', 'Confirmed'),
+(7, 26, '2024-07-07', 'Pending'),
+(7, 27, '2024-07-08', 'Confirmed'),
+(7, 28, '2024-07-09', 'Confirmed'),
+(7, 29, '2024-07-10', 'Pending'),
+(7, 30, '2024-07-11', 'Confirmed'),
+(7, 1, '2024-07-12', 'Confirmed'),
+(7, 2, '2024-07-13', 'Pending');
+
+-- Registrations for Event 8 (12 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(8, 3, '2024-08-01', 'Confirmed'),
+(8, 4, '2024-08-02', 'Pending'),
+(8, 5, '2024-08-03', 'Confirmed'),
+(8, 6, '2024-08-04', 'Cancelled'),
+(8, 7, '2024-08-05', 'Confirmed'),
+(8, 8, '2024-08-06', 'Confirmed'),
+(8, 9, '2024-08-07', 'Pending'),
+(8, 10, '2024-08-08', 'Confirmed'),
+(8, 11, '2024-08-09', 'Confirmed'),
+(8, 12, '2024-08-10', 'Pending'),
+(8, 13, '2024-08-11', 'Confirmed'),
+(8, 14, '2024-08-12', 'Confirmed');
+
+-- Registrations for Event 9 (15 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(9, 15, '2024-09-01', 'Confirmed'),
+(9, 16, '2024-09-02', 'Pending'),
+(9, 17, '2024-09-03', 'Confirmed'),
+(9, 18, '2024-09-04', 'Cancelled'),
+(9, 19, '2024-09-05', 'Confirmed'),
+(9, 20, '2024-09-06', 'Confirmed'),
+(9, 21, '2024-09-07', 'Pending'),
+(9, 22, '2024-09-08', 'Confirmed'),
+(9, 23, '2024-09-09', 'Confirmed'),
+(9, 24, '2024-09-10', 'Pending'),
+(9, 25, '2024-09-11', 'Confirmed'),
+(9, 26, '2024-09-12', 'Confirmed'),
+(9, 27, '2024-09-13', 'Cancelled'),
+(9, 28, '2024-09-14', 'Pending'),
+(9, 29, '2024-09-15', 'Confirmed');
+
+-- Registrations for Event 10 (11 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(10, 30, '2024-10-01', 'Confirmed'),
+(10, 1, '2024-10-02', 'Pending'),
+(10, 2, '2024-10-03', 'Confirmed'),
+(10, 3, '2024-10-04', 'Cancelled'),
+(10, 4, '2024-10-05', 'Confirmed'),
+(10, 5, '2024-10-06', 'Confirmed'),
+(10, 6, '2024-10-07', 'Pending'),
+(10, 7, '2024-10-08', 'Confirmed'),
+(10, 8, '2024-10-09', 'Confirmed'),
+(10, 9, '2024-10-10', 'Pending'),
+(10, 10, '2024-10-11', 'Confirmed');
+
+-- Registrations for Event 13 (16 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(13, 5, '2025-01-01', 'Confirmed'),
+(13, 6, '2025-01-02', 'Pending'),
+(13, 7, '2025-01-03', 'Confirmed'),
+(13, 8, '2025-01-04', 'Confirmed'),
+(13, 9, '2025-01-05', 'Cancelled'),
+(13, 10, '2025-01-06', 'Confirmed'),
+(13, 11, '2025-01-07', 'Confirmed'),
+(13, 12, '2025-01-08', 'Pending'),
+(13, 13, '2025-01-09', 'Confirmed'),
+(13, 14, '2025-01-10', 'Confirmed'),
+(13, 15, '2025-01-11', 'Pending'),
+(13, 16, '2025-01-12', 'Confirmed'),
+(13, 17, '2025-01-13', 'Confirmed'),
+(13, 18, '2025-01-14', 'Cancelled'),
+(13, 19, '2025-01-15', 'Pending'),
+(13, 20, '2025-01-16', 'Confirmed');
+
+-- Registrations for Event 14 (11 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(14, 21, '2025-02-01', 'Confirmed'),
+(14, 22, '2025-02-02', 'Pending'),
+(14, 23, '2025-02-03', 'Confirmed'),
+(14, 24, '2025-02-04', 'Cancelled'),
+(14, 25, '2025-02-05', 'Confirmed'),
+(14, 26, '2025-02-06', 'Confirmed'),
+(14, 27, '2025-02-07', 'Pending'),
+(14, 28, '2025-02-08', 'Confirmed'),
+(14, 29, '2025-02-09', 'Confirmed'),
+(14, 30, '2025-02-10', 'Pending'),
+(14, 1, '2025-02-11', 'Confirmed');
+
+-- Registrations for Event 15 (18 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(15, 2, '2025-03-01', 'Confirmed'),
+(15, 3, '2025-03-02', 'Pending'),
+(15, 4, '2025-03-03', 'Confirmed'),
+(15, 5, '2025-03-04', 'Confirmed'),
+(15, 6, '2025-03-05', 'Cancelled'),
+(15, 7, '2025-03-06', 'Confirmed'),
+(15, 8, '2025-03-07', 'Confirmed'),
+(15, 9, '2025-03-08', 'Pending'),
+(15, 10, '2025-03-09', 'Confirmed'),
+(15, 11, '2025-03-10', 'Confirmed'),
+(15, 12, '2025-03-11', 'Cancelled'),
+(15, 13, '2025-03-12', 'Pending'),
+(15, 14, '2025-03-13', 'Confirmed'),
+(15, 15, '2025-03-14', 'Confirmed'),
+(15, 16, '2025-03-15', 'Pending'),
+(15, 17, '2025-03-16', 'Confirmed'),
+(15, 18, '2025-03-17', 'Confirmed'),
+(15, 19, '2025-03-18', 'Cancelled');
+
+-- Registrations for Event 16 (10 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(16, 20, '2025-04-01', 'Confirmed'),
+(16, 21, '2025-04-02', 'Pending'),
+(16, 22, '2025-04-03', 'Confirmed'),
+(16, 23, '2025-04-04', 'Cancelled'),
+(16, 24, '2025-04-05', 'Confirmed'),
+(16, 25, '2025-04-06', 'Confirmed'),
+(16, 26, '2025-04-07', 'Pending'),
+(16, 27, '2025-04-08', 'Confirmed'),
+(16, 28, '2025-04-09', 'Confirmed'),
+(16, 29, '2025-04-10', 'Pending');
+
+-- Registrations for Event 17 (14 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(17, 30, '2025-05-01', 'Confirmed'),
+(17, 1, '2025-05-02', 'Pending'),
+(17, 2, '2025-05-03', 'Confirmed'),
+(17, 3, '2025-05-04', 'Cancelled'),
+(17, 4, '2025-05-05', 'Confirmed'),
+(17, 5, '2025-05-06', 'Confirmed'),
+(17, 6, '2025-05-07', 'Pending'),
+(17, 7, '2025-05-08', 'Confirmed'),
+(17, 8, '2025-05-09', 'Confirmed'),
+(17, 9, '2025-05-10', 'Pending'),
+(17, 10, '2025-05-11', 'Confirmed'),
+(17, 11, '2025-05-12', 'Confirmed'),
+(17, 12, '2025-05-13', 'Pending'),
+(17, 13, '2025-05-14', 'Confirmed');
+
+-- Registrations for Event 18 (13 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(18, 14, '2025-06-01', 'Confirmed'),
+(18, 15, '2025-06-02', 'Pending'),
+(18, 16, '2025-06-03', 'Confirmed'),
+(18, 17, '2025-06-04', 'Confirmed'),
+(18, 18, '2025-06-05', 'Cancelled'),
+(18, 19, '2025-06-06', 'Confirmed'),
+(18, 20, '2025-06-07', 'Confirmed'),
+(18, 21, '2025-06-08', 'Pending'),
+(18, 22, '2025-06-09', 'Confirmed'),
+(18, 23, '2025-06-10', 'Confirmed'),
+(18, 24, '2025-06-11', 'Cancelled'),
+(18, 25, '2025-06-12', 'Pending'),
+(18, 26, '2025-06-13', 'Confirmed');
+
+-- Registrations for Event 19 (10 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(19, 27, '2025-07-01', 'Confirmed'),
+(19, 28, '2025-07-02', 'Pending'),
+(19, 29, '2025-07-03', 'Confirmed'),
+(19, 30, '2025-07-04', 'Confirmed'),
+(19, 1, '2025-07-05', 'Cancelled'),
+(19, 2, '2025-07-06', 'Confirmed'),
+(19, 3, '2025-07-07', 'Confirmed'),
+(19, 4, '2025-07-08', 'Pending'),
+(19, 5, '2025-07-09', 'Confirmed'),
+(19, 6, '2025-07-10', 'Confirmed');
+
+-- Registrations for Event 20 (15 registrations)
+INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
+VALUES
+(20, 7, '2025-08-01', 'Confirmed'),
+(20, 8, '2025-08-02', 'Pending'),
+(20, 9, '2025-08-03', 'Confirmed'),
+(20, 10, '2025-08-04', 'Cancelled'),
+(20, 11, '2025-08-05', 'Confirmed'),
+(20, 12, '2025-08-06', 'Confirmed'),
+(20, 13, '2025-08-07', 'Pending'),
+(20, 14, '2025-08-08', 'Confirmed'),
+(20, 15, '2025-08-09', 'Confirmed'),
+(20, 16, '2025-08-10', 'Pending'),
+(20, 17, '2025-08-11', 'Confirmed'),
+(20, 18, '2025-08-12', 'Confirmed'),
+(20, 19, '2025-08-13', 'Pending'),
+(20, 20, '2025-08-14', 'Confirmed'),
+(20, 21, '2025-08-15', 'Confirmed');
+
+-- Payments for Registrations from Event 1 (Example amounts)
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(1, 150.00, '2024-01-11', 'Completed'),
+(2, 120.00, '2024-01-12', 'Pending'),
+(3, 180.00, '2024-01-13', 'Completed'),
+(4, 200.00, '2024-01-14', 'Completed'),
+(5, 140.00, '2024-01-15', 'Refunded'),
+(6, 130.00, '2024-01-16', 'Completed'),
+(7, 110.00, '2024-01-17', 'Completed'),
+(8, 170.00, '2024-01-18', 'Pending'),
+(9, 90.00, '2024-01-19', 'Completed'),
+(10, 160.00, '2024-01-20', 'Completed'),
+(11, 145.00, '2024-01-21', 'Refunded'),
+(12, 130.00, '2024-01-22', 'Pending'),
+(13, 175.00, '2024-01-23', 'Completed'),
+(14, 135.00, '2024-01-24', 'Completed'),
+(15, 155.00, '2024-01-25', 'Pending');
+
+-- Payments for Registrations from Event 2
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(16, 150.00, '2024-02-01', 'Completed'),
+(17, 130.00, '2024-02-02', 'Pending'),
+(18, 120.00, '2024-02-03', 'Completed'),
+(19, 200.00, '2024-02-04', 'Refunded'),
+(20, 140.00, '2024-02-05', 'Completed'),
+(21, 130.00, '2024-02-06', 'Pending'),
+(22, 110.00, '2024-02-07', 'Completed'),
+(23, 170.00, '2024-02-08', 'Completed'),
+(24, 90.00, '2024-02-09', 'Pending'),
+(25, 160.00, '2024-02-10', 'Completed'),
+(26, 145.00, '2024-02-11', 'Refunded'),
+(27, 120.00, '2024-02-12', 'Completed');
+
+-- Payments for Registrations from Event 3
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(28, 100.00, '2024-03-01', 'Completed'),
+(29, 85.00, '2024-03-02', 'Pending'),
+(30, 110.00, '2024-03-03', 'Completed'),
+(31, 95.00, '2024-03-04', 'Completed'),
+(32, 130.00, '2024-03-05', 'Refunded'),
+(33, 140.00, '2024-03-06', 'Completed'),
+(34, 90.00, '2024-03-07', 'Completed'),
+(35, 105.00, '2024-03-08', 'Pending'),
+(36, 125.00, '2024-03-09', 'Completed'),
+(37, 115.00, '2024-03-10', 'Completed');
+
+-- Payments for Registrations from Event 4
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(38, 150.00, '2024-04-01', 'Completed'),
+(39, 120.00, '2024-04-02', 'Pending'),
+(40, 175.00, '2024-04-03', 'Completed'),
+(41, 140.00, '2024-04-04', 'Completed'),
+(42, 160.00, '2024-04-05', 'Refunded'),
+(43, 135.00, '2024-04-06', 'Completed'),
+(44, 110.00, '2024-04-07', 'Completed'),
+(45, 150.00, '2024-04-08', 'Pending'),
+(46, 130.00, '2024-04-09', 'Completed'),
+(47, 140.00, '2024-04-10', 'Completed'),
+(48, 115.00, '2024-04-11', 'Refunded'),
+(49, 100.00, '2024-04-12', 'Pending'),
+(50, 170.00, '2024-04-13', 'Completed'),
+(51, 145.00, '2024-04-14', 'Completed'),
+(52, 150.00, '2024-04-15', 'Pending'),
+(53, 130.00, '2024-04-16', 'Completed'),
+(54, 125.00, '2024-04-17', 'Completed'),
+(55, 135.00, '2024-04-18', 'Pending');
+
+-- Continue similarly for other events and registrations (Event 5 and onwards)
+
+-- Payments for Registrations from Event 5
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(56, 125.00, '2024-05-02', 'Completed'),
+(57, 110.00, '2024-05-03', 'Pending'),
+(58, 135.00, '2024-05-04', 'Completed'),
+(59, 145.00, '2024-05-05', 'Completed'),
+(60, 100.00, '2024-05-06', 'Refunded'),
+(61, 115.00, '2024-05-07', 'Completed'),
+(62, 120.00, '2024-05-08', 'Pending'),
+(63, 130.00, '2024-05-09', 'Completed'),
+(64, 140.00, '2024-05-10', 'Completed'),
+(65, 155.00, '2024-05-11', 'Refunded'),
+(66, 150.00, '2024-05-12', 'Pending'),
+(67, 160.00, '2024-05-13', 'Completed'),
+(68, 125.00, '2024-05-14', 'Completed'),
+(69, 135.00, '2024-05-15', 'Pending');
+
+-- Payments for Registrations from Event 6
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(70, 140.00, '2024-06-02', 'Completed'),
+(71, 120.00, '2024-06-03', 'Pending'),
+(72, 150.00, '2024-06-04', 'Pending'),
+(73, 130.00, '2024-06-05', 'Completed'),
+(74, 115.00, '2024-06-06', 'Refunded'),
+(75, 105.00, '2024-06-07', 'Completed'),
+(76, 110.00, '2024-06-08', 'Pending'),
+(77, 125.00, '2024-06-09', 'Completed'),
+(78, 135.00, '2024-06-10', 'Completed'),
+(79, 145.00, '2024-06-11', 'Completed');
+
+-- Payments for Registrations from Event 7
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(80, 100.00, '2024-07-02', 'Completed'),
+(81, 115.00, '2024-07-03', 'Pending'),
+(82, 130.00, '2024-07-04', 'Completed'),
+(83, 125.00, '2024-07-05', 'Refunded'),
+(84, 140.00, '2024-07-06', 'Completed'),
+(85, 110.00, '2024-07-07', 'Completed'),
+(86, 150.00, '2024-07-08', 'Pending'),
+(87, 135.00, '2024-07-09', 'Completed'),
+(88, 160.00, '2024-07-10', 'Completed'),
+(89, 155.00, '2024-07-11', 'Refunded'),
+(90, 120.00, '2024-07-12', 'Pending'),
+(91, 130.00, '2024-07-13', 'Completed'),
+(92, 140.00, '2024-07-14', 'Completed');
+
+-- Payments for Registrations from Event 8
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(93, 150.00, '2024-08-02', 'Completed'),
+(94, 130.00, '2024-08-03', 'Pending'),
+(95, 125.00, '2024-08-04', 'Completed'),
+(96, 110.00, '2024-08-05', 'Refunded'),
+(97, 145.00, '2024-08-06', 'Completed'),
+(98, 140.00, '2024-08-07', 'Completed'),
+(99, 160.00, '2024-08-08', 'Pending'),
+(100, 120.00, '2024-08-09', 'Completed'),
+(101, 115.00, '2024-08-10', 'Completed'),
+(102, 125.00, '2024-08-11', 'Refunded'),
+(103, 135.00, '2024-08-12', 'Pending'),
+(104, 145.00, '2024-08-13', 'Completed');
+
+-- Payments for Registrations from Event 9
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(105, 150.00, '2024-09-02', 'Completed'),
+(106, 125.00, '2024-09-03', 'Pending'),
+(107, 135.00, '2024-09-04', 'Completed'),
+(108, 140.00, '2024-09-05', 'Completed'),
+(109, 110.00, '2024-09-06', 'Refunded'),
+(110, 115.00, '2024-09-07', 'Completed'),
+(111, 120.00, '2024-09-08', 'Pending'),
+(112, 125.00, '2024-09-09', 'Completed'),
+(113, 130.00, '2024-09-10', 'Completed'),
+(114, 140.00, '2024-09-11', 'Refunded'),
+(115, 130.00, '2024-09-12', 'Pending'),
+(116, 125.00, '2024-09-13', 'Completed'),
+(117, 135.00, '2024-09-14', 'Completed'),
+(118, 145.00, '2024-09-15', 'Pending');
+
+-- Payments for Registrations from Event 10
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(119, 140.00, '2024-10-02', 'Completed'),
+(120, 115.00, '2024-10-03', 'Pending'),
+(121, 120.00, '2024-10-04', 'Completed'),
+(122, 125.00, '2024-10-05', 'Refunded'),
+(123, 150.00, '2024-10-06', 'Completed'),
+(124, 130.00, '2024-10-07', 'Completed'),
+(125, 135.00, '2024-10-08', 'Pending'),
+(126, 110.00, '2024-10-09', 'Completed'),
+(127, 115.00, '2024-10-10', 'Completed'),
+(128, 130.00, '2024-10-11', 'Completed'),
+(129, 145.00, '2024-10-12', 'Pending');
+
+-- Payments for Registrations from Event 11
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(130, 100.00, '2024-11-01', 'Completed'),
+(131, 110.00, '2024-11-02', 'Pending'),
+(132, 120.00, '2024-11-03', 'Completed'),
+(133, 130.00, '2024-11-04', 'Completed'),
+(134, 90.00, '2024-11-05', 'Refunded'),
+(135, 115.00, '2024-11-06', 'Completed'),
+(136, 105.00, '2024-11-07', 'Pending'),
+(137, 125.00, '2024-11-08', 'Completed'),
+(138, 140.00, '2024-11-09', 'Completed'),
+(139, 150.00, '2024-11-10', 'Refunded');
+
+-- Payments for Registrations from Event 12
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(140, 130.00, '2024-12-01', 'Completed'),
+(141, 120.00, '2024-12-02', 'Pending'),
+(142, 135.00, '2024-12-03', 'Completed'),
+(143, 145.00, '2024-12-04', 'Completed'),
+(144, 110.00, '2024-12-05', 'Refunded'),
+(145, 125.00, '2024-12-06', 'Completed'),
+(146, 115.00, '2024-12-07', 'Pending'),
+(147, 140.00, '2024-12-08', 'Completed'),
+(148, 130.00, '2024-12-09', 'Completed'),
+(149, 120.00, '2024-12-10', 'Refunded'),
+(150, 125.00, '2024-12-11', 'Completed'),
+(151, 135.00, '2024-12-12', 'Pending'),
+(152, 145.00, '2024-12-13', 'Completed'),
+(153, 100.00, '2024-12-14', 'Completed');
+
+-- Payments for Registrations from Event 13
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(154, 150.00, '2025-01-02', 'Completed'),
+(155, 110.00, '2025-01-03', 'Pending'),
+(156, 120.00, '2025-01-04', 'Completed'),
+(157, 125.00, '2025-01-05', 'Refunded'),
+(158, 140.00, '2025-01-06', 'Completed'),
+(159, 135.00, '2025-01-07', 'Completed'),
+(160, 115.00, '2025-01-08', 'Pending'),
+(161, 130.00, '2025-01-09', 'Completed'),
+(162, 125.00, '2025-01-10', 'Completed'),
+(163, 120.00, '2025-01-11', 'Refunded'),
+(164, 150.00, '2025-01-12', 'Pending'),
+(165, 135.00, '2025-01-13', 'Completed'),
+(166, 140.00, '2025-01-14', 'Completed'),
+(167, 145.00, '2025-01-15', 'Pending'),
+(168, 125.00, '2025-01-16', 'Completed'),
+(169, 130.00, '2025-01-17', 'Completed');
+
+-- Payments for Registrations from Event 14
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(170, 100.00, '2025-02-01', 'Completed'),
+(171, 110.00, '2025-02-02', 'Pending'),
+(172, 120.00, '2025-02-03', 'Completed'),
+(173, 135.00, '2025-02-04', 'Completed'),
+(174, 90.00, '2025-02-05', 'Completed'),
+(175, 125.00, '2025-02-06', 'Completed'),
+(176, 115.00, '2025-02-07', 'Pending'),
+(177, 130.00, '2025-02-08', 'Completed'),
+(178, 150.00, '2025-02-09', 'Completed'),
+(179, 120.00, '2025-02-10', 'Completed');
+
+-- Payments for Registrations from Event 15
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(180, 140.00, '2025-03-01', 'Completed'),
+(181, 120.00, '2025-03-02', 'Pending'),
+(182, 110.00, '2025-03-03', 'Completed'),
+(183, 130.00, '2025-03-04', 'Completed'),
+(184, 115.00, '2025-03-05', 'Refunded'),
+(185, 150.00, '2025-03-06', 'Completed'),
+(186, 135.00, '2025-03-07', 'Pending'),
+(187, 140.00, '2025-03-08', 'Completed'),
+(188, 120.00, '2025-03-09', 'Completed'),
+(189, 125.00, '2025-03-10', 'Refunded'),
+(190, 145.00, '2025-03-11', 'Pending'),
+(191, 150.00, '2025-03-12', 'Completed'),
+(192, 130.00, '2025-03-13', 'Completed'),
+(193, 125.00, '2025-03-14', 'Refunded'),
+(194, 115.00, '2025-03-15', 'Completed'),
+(195, 130.00, '2025-03-16', 'Pending'),
+(196, 140.00, '2025-03-17', 'Completed'),
+(197, 135.00, '2025-03-18', 'Refunded');
+
+-- Payments for Registrations from Event 16
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(198, 130.00, '2025-04-01', 'Completed'),
+(199, 115.00, '2025-04-02', 'Pending'),
+(200, 120.00, '2025-04-03', 'Completed'),
+(201, 140.00, '2025-04-04', 'Completed'),
+(202, 110.00, '2025-04-05', 'Refunded'),
+(203, 130.00, '2025-04-06', 'Completed'),
+(204, 120.00, '2025-04-07', 'Pending'),
+(205, 135.00, '2025-04-08', 'Completed'),
+(206, 125.00, '2025-04-09', 'Completed'),
+(207, 140.00, '2025-04-10', 'Refunded');
+
+-- Payments for Registrations from Event 17
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(208, 115.00, '2025-05-01', 'Completed'),
+(209, 110.00, '2025-05-02', 'Pending'),
+(210, 140.00, '2025-05-03', 'Completed'),
+(211, 120.00, '2025-05-04', 'Completed'),
+(212, 100.00, '2025-05-05', 'Refunded'),
+(213, 130.00, '2025-05-06', 'Completed'),
+(214, 120.00, '2025-05-07', 'Pending'),
+(215, 135.00, '2025-05-08', 'Completed'),
+(216, 150.00, '2025-05-09', 'Completed'),
+(217, 145.00, '2025-05-10', 'Refunded'),
+(218, 125.00, '2025-05-11', 'Pending'),
+(219, 130.00, '2025-05-12', 'Completed'),
+(220, 140.00, '2025-05-13', 'Completed'),
+(221, 110.00, '2025-05-14', 'Refunded');
+
+-- Payments for Registrations from Event 18
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(222, 150.00, '2025-06-01', 'Completed'),
+(223, 130.00, '2025-06-02', 'Pending'),
+(224, 120.00, '2025-06-03', 'Completed'),
+(225, 140.00, '2025-06-04', 'Refunded'),
+(226, 115.00, '2025-06-05', 'Completed'),
+(227, 110.00, '2025-06-06', 'Pending'),
+(228, 125.00, '2025-06-07', 'Completed'),
+(229, 130.00, '2025-06-08', 'Completed'),
+(230, 135.00, '2025-06-09', 'Refunded'),
+(231, 145.00, '2025-06-10', 'Pending'),
+(232, 120.00, '2025-06-11', 'Completed'),
+(233, 125.00, '2025-06-12', 'Completed'),
+(234, 140.00, '2025-06-13', 'Refunded');
+
+-- Payments for Registrations from Event 19
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(235, 130.00, '2025-07-01', 'Completed'),
+(236, 120.00, '2025-07-02', 'Pending'),
+(237, 125.00, '2025-07-03', 'Completed'),
+(238, 115.00, '2025-07-04', 'Refunded'),
+(239, 150.00, '2025-07-05', 'Completed'),
+(240, 140.00, '2025-07-06', 'Pending'),
+(241, 135.00, '2025-07-07', 'Completed'),
+(242, 130.00, '2025-07-08', 'Completed'),
+(243, 145.00, '2025-07-09', 'Refunded'),
+(244, 125.00, '2025-07-10', 'Pending'),
+(245, 140.00, '2025-07-11', 'Completed'),
+(246, 110.00, '2025-07-12', 'Completed');
+
+-- Payments for Registrations from Event 20
+INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
+VALUES
+(247, 135.00, '2025-08-01', 'Completed'),
+(248, 130.00, '2025-08-02', 'Pending'),
+(249, 120.00, '2025-08-03', 'Completed'),
+(250, 110.00, '2025-08-04', 'Refunded'),
+(251, 125.00, '2025-08-05', 'Completed'),
+(252, 115.00, '2025-08-06', 'Pending'),
+(253, 150.00, '2025-08-07', 'Completed'),
+(254, 140.00, '2025-08-08', 'Completed'),
+(255, 130.00, '2025-08-09', 'Refunded'),
+(256, 125.00, '2025-08-10', 'Pending'),
+(257, 135.00, '2025-08-11', 'Completed'),
+(258, 120.00, '2025-08-12', 'Completed'),
+(259, 115.00, '2025-08-13', 'Refunded'),
+(260, 140.00, '2025-08-14', 'Completed'),
+(261, 145.00, '2025-08-15', 'Pending');
 
 -- Tickets for Registrations from Event 1
 INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
