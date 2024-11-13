@@ -1,784 +1,896 @@
-INSERT INTO [User] (UserFName, UserLName, UserEmail, UserPhone, UserRole, Password) VALUES
-('John', 'Doe', 'johndoe@example.com', '1234567890', 'Attendee', 'password123'),
-('Jane', 'Smith', 'janesmith@example.com', '0987654321', 'Organizer', 'password456'),
-('Emily', 'Jones', 'emilyjones@example.com', '1122334455', 'Admin', 'password789'),
-('Michael', 'Brown', 'michaelbrown@example.com', '2233445566', 'Attendee', 'password321'),
-('Sarah', 'Miller', 'sarahmiller@example.com', '3344556677', 'Organizer', 'password654'),
-('David', 'Wilson', 'davidwilson@example.com', '4455667788', 'Admin', 'password987'),
-('Laura', 'Moore', 'lauramoore@example.com', '5566778899', 'Attendee', 'password213'),
-('James', 'Taylor', 'jamestaylor@example.com', '6677889900', 'Organizer', 'password432'),
-('Linda', 'Anderson', 'lindaanderson@example.com', '7788990011', 'Admin', 'password876'),
-('Robert', 'Thomas', 'robertthomas@example.com', '8899001122', 'Attendee', 'password543'),
-('Kevin', 'Anderson', 'kevinanderson@example.com', '1234567888', 'Attendee', 'password111'),
-('Jessica', 'Roberts', 'jessicaroberts@example.com', '0987654333', 'Organizer', 'password222'),
-('Daniel', 'Lee', 'daniellee@example.com', '1122334477', 'Admin', 'password333'),
-('Sophia', 'Adams', 'sophiaadams@example.com', '2233445599', 'Attendee', 'password444'),
-('William', 'Scott', 'williamscott@example.com', '3344556611', 'Organizer', 'password555'),
-('Olivia', 'Green', 'oliviagreen@example.com', '4455667733', 'Admin', 'password666'),
-('Lucas', 'Wright', 'lucaswright@example.com', '5566778855', 'Attendee', 'password777'),
-('Grace', 'Evans', 'graceevans@example.com', '6677889977', 'Organizer', 'password888'),
-('Ethan', 'Turner', 'ethanturner@example.com', '7788990022', 'Admin', 'password999'),
-('Chloe', 'Hill', 'chloehill@example.com', '8899001133', 'Attendee', 'password000'),
-('Noah', 'Patterson', 'noah.patterson@example.com', '1000001111', 'Attendee', 'pass987'),
-('Emma', 'Sanders', 'emma.sanders@example.com', '1000002222', 'Organizer', 'pass654'),
-('Liam', 'Brooks', 'liam.brooks@example.com', '1000003333', 'Admin', 'pass321'),
-('Ava', 'Bennett', 'ava.bennett@example.com', '1000004444', 'Attendee', 'pass123'),
-('James', 'Murphy', 'james.murphy@example.com', '1000005555', 'Organizer', 'pass456'),
-('Ella', 'Flores', 'ella.flores@example.com', '1000006666', 'Admin', 'pass789'),
-('Henry', 'Powell', 'henry.powell@example.com', '1000007777', 'Attendee', 'pass345'),
-('Grace', 'Howard', 'grace.howard@example.com', '1000008888', 'Organizer', 'pass567'),
-('Lucas', 'Ward', 'lucas.ward@example.com', '1000009999', 'Admin', 'pass890'),
-('Chloe', 'Price', 'chloe.price@example.com', '1000010000', 'Attendee', 'pass111'),
-('Max', 'Johnson', 'max.johnson@example.com', '2000001001', 'Attendee', 'password123'),
-('Olivia', 'Williams', 'olivia.williams@example.com', '2000001002', 'Organizer', 'password456'),
-('Liam', 'Davis', 'liam.davis@example.com', '2000001003', 'Admin', 'password789'),
-('Sophia', 'Clark', 'sophia.clark@example.com', '2000001004', 'Attendee', 'password234'),
-('Mason', 'Lewis', 'mason.lewis@example.com', '2000001005', 'Organizer', 'password567'),
-('Ella', 'Lee', 'ella.lee@example.com', '2000001006', 'Admin', 'password890'),
-('James', 'Walker', 'james.walker@example.com', '2000001007', 'Attendee', 'password123'),
-('Grace', 'Hall', 'grace.hall@example.com', '2000001008', 'Organizer', 'password456'),
-('Daniel', 'Allen', 'daniel.allen@example.com', '2000001009', 'Admin', 'password789'),
-('Chloe', 'King', 'chloe.king@example.com', '2000001010', 'Attendee', 'password234'),
-('Benjamin', 'Wright', 'benjamin.wright@example.com', '2000001011', 'Organizer', 'password567'),
-('Ava', 'Lopez', 'ava.lopez@example.com', '2000001012', 'Admin', 'password890'),
-('Elijah', 'Hill', 'elijah.hill@example.com', '2000001013', 'Attendee', 'password123'),
-('Emily', 'Scott', 'emily.scott@example.com', '2000001014', 'Organizer', 'password456'),
-('Michael', 'Green', 'michael.green@example.com', '2000001015', 'Admin', 'password789'),
-('Isabella', 'Adams', 'isabella.adams@example.com', '2000001016', 'Attendee', 'password234'),
-('David', 'Nelson', 'david.nelson@example.com', '2000001017', 'Organizer', 'password567'),
-('Lily', 'Baker', 'lily.baker@example.com', '2000001018', 'Admin', 'password890'),
-('Matthew', 'Carter', 'matthew.carter@example.com', '2000001019', 'Attendee', 'password123'),
-('Avery', 'Mitchell', 'avery.mitchell@example.com', '2000001020', 'Organizer', 'password456');
+INSERT INTO [User] (UserFName, UserLName, UserEmail, UserPhone, UserRole, Password)
+VALUES
+('John', 'Doe', 'john.doe@example.com', '1234567890', 'Attendee', 'password123'),
+('Jane', 'Smith', 'jane.smith@example.com', '0987654321', 'Attendee', 'password123'),
+('Michael', 'Brown', 'michael.brown@example.com', '1122334455', 'Attendee', 'password123'),
+('Emily', 'Davis', 'emily.davis@example.com', '2233445566', 'Organizer', 'password123'),
+('David', 'Wilson', 'david.wilson@example.com', '3344556677', 'Organizer', 'password123'),
+('Sarah', 'Lee', 'sarah.lee@example.com', '4455667788', 'Attendee', 'password123'),
+('James', 'Taylor', 'james.taylor@example.com', '5566778899', 'Attendee', 'password123'),
+('Linda', 'Moore', 'linda.moore@example.com', '6677889900', 'Admin', 'password123'),
+('Robert', 'Anderson', 'robert.anderson@example.com', '7788990011', 'Attendee', 'password123'),
+('Patricia', 'Thomas', 'patricia.thomas@example.com', '8899001122', 'Organizer', 'password123'),
+('Charles', 'Jackson', 'charles.jackson@example.com', '9900112233', 'Attendee', 'password123'),
+('Mary', 'White', 'mary.white@example.com', '1011121314', 'Admin', 'password123'),
+('William', 'Harris', 'william.harris@example.com', '1112131415', 'Attendee', 'password123'),
+('Barbara', 'Clark', 'barbara.clark@example.com', '1213141516', 'Organizer', 'password123'),
+('Joseph', 'Lewis', 'joseph.lewis@example.com', '1314151617', 'Attendee', 'password123'),
+('Jessica', 'Walker', 'jessica.walker@example.com', '1415161718', 'Admin', 'password123'),
+('Daniel', 'Hall', 'daniel.hall@example.com', '1516171819', 'Attendee', 'password123'),
+('Jennifer', 'Allen', 'jennifer.allen@example.com', '1617181920', 'Organizer', 'password123'),
+('Paul', 'Young', 'paul.young@example.com', '1718192021', 'Attendee', 'password123'),
+('Laura', 'King', 'laura.king@example.com', '1819202122', 'Admin', 'password123'),
+('Steven', 'Wright', 'steven.wright@example.com', '1920212223', 'Attendee', 'password123'),
+('Michelle', 'Lopez', 'michelle.lopez@example.com', '2021222324', 'Organizer', 'password123'),
+('George', 'Hill', 'george.hill@example.com', '2122232425', 'Attendee', 'password123'),
+('Helen', 'Scott', 'helen.scott@example.com', '2223242526', 'Admin', 'password123'),
+('Thomas', 'Green', 'thomas.green@example.com', '2324252627', 'Attendee', 'password123'),
+('Elizabeth', 'Adams', 'elizabeth.adams@example.com', '2425262728', 'Organizer', 'password123'),
+('Edward', 'Nelson', 'edward.nelson@example.com', '2526272829', 'Attendee', 'password123'),
+('Anna', 'Baker', 'anna.baker@example.com', '2627282930', 'Admin', 'password123'),
+('Christopher', 'Carter', 'christopher.carter@example.com', '2728293031', 'Attendee', 'password123'),
+('Susan', 'Mitchell', 'susan.mitchell@example.com', '2829303132', 'Organizer', 'password123');
 
-INSERT INTO Organizer (OrganizerFName, OrganizerLName, OrganizerRole, OrganizerPhone, OrganizerEmail) VALUES
-('Mark', 'White', 'Event Manager', '9998887777', 'markwhite@example.com'),
-('Anna', 'Harris', 'Coordinator', '8887776666', 'annaharris@example.com'),
-('Chris', 'Martin', 'Event Manager', '7776665555', 'chrismartin@example.com'),
-('Nina', 'Clark', 'Coordinator', '6665554444', 'ninaclark@example.com'),
-('Paul', 'Lewis', 'Event Manager', '5554443333', 'paullewis@example.com'),
-('Emma', 'Walker', 'Coordinator', '4443332222', 'emmawalker@example.com'),
-('Tom', 'Hall', 'Event Manager', '3332221111', 'tomhall@example.com'),
-('Sophia', 'Allen', 'Coordinator', '2221110000', 'sophiaallen@example.com'),
-('Jake', 'Young', 'Event Manager', '1110009999', 'jakeyoung@example.com'),
-('Olivia', 'King', 'Coordinator', '0009998888', 'oliviaking@example.com'),
-('Sara', 'Ramirez', 'Coordinator', '9998886666', 'sara@example.com'),
-('Kyle', 'Carter', 'Event Manager', '8887775555', 'kyle@example.com'),
-('Emily', 'Baker', 'Coordinator', '7776664444', 'emily@example.com'),
-('Isaac', 'Parker', 'Event Manager', '6665553333', 'isaac@example.com'),
-('Mia', 'Collins', 'Coordinator', '5554442222', 'mia@example.com'),
-('Jake', 'Mitchell', 'Event Manager', '4443331111', 'jake@example.com'),
-('Alice', 'Bell', 'Coordinator', '3332220000', 'alice@example.com'),
-('Luke', 'Hughes', 'Event Manager', '2221119999', 'luke@example.com'),
-('Ava', 'Simmons', 'Coordinator', '1110008888', 'ava@example.com'),
-('Liam', 'Reed', 'Event Manager', '0009997777', 'liam@example.com'),
-('Mason', 'Bell', 'Coordinator', '2000011111', 'mason.bell@example.com'),
-('Lily', 'Cooper', 'Event Manager', '2000012222', 'lily.cooper@example.com'),
-('Jack', 'Edwards', 'Coordinator', '2000013333', 'jack.edwards@example.com'),
-('Mia', 'Henderson', 'Event Manager', '2000014444', 'mia.henderson@example.com'),
-('Harper', 'Rivera', 'Coordinator', '2000015555', 'harper.rivera@example.com'),
-('Ethan', 'Gonzalez', 'Event Manager', '2000016666', 'ethan.gonzalez@example.com'),
-('Isabella', 'Alexander', 'Coordinator', '2000017777', 'isabella.alexander@example.com'),
-('Ryan', 'Reed', 'Event Manager', '2000018888', 'ryan.reed@example.com'),
-('Oliver', 'Cox', 'Coordinator', '2000019999', 'oliver.cox@example.com'),
-('Sophia', 'Diaz', 'Event Manager', '2000020000', 'sophia.diaz@example.com'),
-('Joshua', 'Patterson', 'Coordinator', '3000001001', 'joshua.patterson@example.com'),
-('Isabella', 'Anderson', 'Event Manager', '3000001002', 'isabella.anderson@example.com'),
-('Ethan', 'Perez', 'Coordinator', '3000001003', 'ethan.perez@example.com'),
-('Charlotte', 'Roberts', 'Event Manager', '3000001004', 'charlotte.roberts@example.com'),
-('Sebastian', 'Young', 'Coordinator', '3000001005', 'sebastian.young@example.com'),
-('Scarlett', 'Hernandez', 'Event Manager', '3000001006', 'scarlett.hernandez@example.com'),
-('Owen', 'Lopez', 'Coordinator', '3000001007', 'owen.lopez@example.com'),
-('Amelia', 'Gonzalez', 'Event Manager', '3000001008', 'amelia.gonzalez@example.com'),
-('Mila', 'Cruz', 'Coordinator', '3000001009', 'mila.cruz@example.com'),
-('Elias', 'Reyes', 'Event Manager', '3000001010', 'elias.reyes@example.com'),
-('Luna', 'Sanders', 'Coordinator', '3000001011', 'luna.sanders@example.com'),
-('Landon', 'Ross', 'Event Manager', '3000001012', 'landon.ross@example.com'),
-('Addison', 'Morales', 'Coordinator', '3000001013', 'addison.morales@example.com'),
-('Oliver', 'Powell', 'Event Manager', '3000001014', 'oliver.powell@example.com'),
-('Brooklyn', 'Butler', 'Coordinator', '3000001015', 'brooklyn.butler@example.com'),
-('Angel', 'Flores', 'Event Manager', '3000001016', 'angel.flores@example.com'),
-('Zoe', 'Barnes', 'Coordinator', '3000001017', 'zoe.barnes@example.com'),
-('Wyatt', 'Bailey', 'Event Manager', '3000001018', 'wyatt.bailey@example.com'),
-('Camila', 'Rivera', 'Coordinator', '3000001019', 'camila.rivera@example.com'),
-('Gabriel', 'Kelly', 'Event Manager', '3000001020', 'gabriel.kelly@example.com');
+INSERT INTO Organizer (OrganizerFName, OrganizerLName, OrganizerRole, OrganizerPhone, OrganizerEmail)
+VALUES
+('Alice', 'Johnson', 'Event Manager', '4455667788', 'alice.johnson@example.com'),
+('Tom', 'Miller', 'Coordinator', '5566778899', 'tom.miller@example.com'),
+('Nancy', 'Taylor', 'Event Manager', '6677889900', 'nancy.taylor@example.com'),
+('Henry', 'Moore', 'Coordinator', '7788990011', 'henry.moore@example.com'),
+('Clara', 'Davis', 'Event Manager', '8899001122', 'clara.davis@example.com'),
+('Andrew', 'Clark', 'Coordinator', '9900112233', 'andrew.clark@example.com'),
+('Diane', 'Lewis', 'Event Manager', '1011121314', 'diane.lewis@example.com'),
+('Samuel', 'Walker', 'Coordinator', '1112131415', 'samuel.walker@example.com'),
+('Rachel', 'Allen', 'Event Manager', '1213141516', 'rachel.allen@example.com'),
+('Greg', 'Young', 'Coordinator', '1314151617', 'greg.young@example.com'),
+('Laura', 'King', 'Event Manager', '1415161718', 'laura.king@example.com'),
+('Kevin', 'Wright', 'Coordinator', '1516171819', 'kevin.wright@example.com'),
+('Tina', 'Lopez', 'Event Manager', '1617181920', 'tina.lopez@example.com'),
+('Peter', 'Hill', 'Coordinator', '1718192021', 'peter.hill@example.com'),
+('Lisa', 'Scott', 'Event Manager', '1819202122', 'lisa.scott@example.com'),
+('Mark', 'Green', 'Coordinator', '1920212223', 'mark.green@example.com'),
+('Karen', 'Adams', 'Event Manager', '2021222324', 'karen.adams@example.com'),
+('Ryan', 'Nelson', 'Coordinator', '2122232425', 'ryan.nelson@example.com'),
+('Sophia', 'Baker', 'Event Manager', '2223242526', 'sophia.baker@example.com'),
+('Oliver', 'Carter', 'Coordinator', '2324252627', 'oliver.carter@example.com');
 
-INSERT INTO Event (VenueID, EventCategoryID, OrganizerID, EventTitle, EventDescription, StartDate, EndDate, EventBudget) VALUES
-(1, 1, 1, 'Annual Science Fair', 'A fair showcasing science projects.', '2024-01-10', '2024-01-12', 5000.00),
-(2, 2, 2, 'Literature Fest', 'An event celebrating literature.', '2024-02-15', '2024-02-17', 3000.00),
-(3, 3, 3, 'Music Concert', 'Live concert featuring various artists.', '2024-03-20', '2024-03-21', 7000.00),
-(4, 4, 4, 'Food Festival', 'Festival showcasing local and international cuisines.', '2024-04-05', '2024-04-06', 4000.00),
-(5, 1, 5, 'Tech Conference', 'A conference on latest technology trends.', '2024-05-10', '2024-05-12', 10000.00),
-(1, 2, 6, 'Art Exhibition', 'An exhibition of local artwork.', '2024-06-15', '2024-06-16', 3500.00),
-(2, 3, 7, 'Drama Play', 'A play performed by students.', '2024-07-20', '2024-07-21', 2500.00),
-(3, 4, 8, 'Film Screening', 'Screening of short films by students.', '2024-08-10', '2024-08-10', 1500.00),
-(4, 1, 9, 'Workshop on AI', 'A workshop on Artificial Intelligence.', '2024-09-15', '2024-09-15', 2000.00),
-(5, 2, 10, 'Dance Performance', 'A dance performance by professional dancers.', '2024-10-10', '2024-10-10', 5000.00),
-(1, 5, 1, 'Annual Robotics Expo', 'An expo on robotics.', '2024-11-20', '2024-11-22', 8000.00),
-(2, 6, 2, 'Photography Workshop', 'Workshop for amateur photographers.', '2024-12-05', '2024-12-06', 1500.00),
-(3, 7, 3, 'Charity Run', '5k charity run for a cause.', '2024-12-15', '2024-12-15', 500.00),
-(4, 8, 4, 'Film Appreciation Day', 'Discussing classic films.', '2025-01-10', '2025-01-10', 2000.00),
-(5, 9, 5, 'AI in Business', 'A seminar on AI applications.', '2025-02-15', '2025-02-16', 5000.00),
-(6, 1, 6, 'Science Quiz Competition', 'Inter-school science quiz.', '2025-03-05', '2025-03-05', 1000.00),
-(7, 2, 7, 'Cultural Fest', 'An event celebrating various cultures.', '2025-04-12', '2025-04-13', 12000.00),
-(8, 3, 8, 'Chess Championship', 'Annual chess competition.', '2025-05-10', '2025-05-12', 3000.00),
-(9, 4, 9, 'Cooking Contest', 'Competition for cooking enthusiasts.', '2025-06-15', '2025-06-15', 1000.00),
-(10, 5, 10, 'Meditation Workshop', 'Workshop on mindfulness and meditation.', '2025-07-10', '2025-07-10', 2500.00),
-(2, 1, 2, 'Math Symposium', 'A symposium on advanced mathematics.', '2025-08-20', '2025-08-21', 4000.00),
-(3, 2, 3, 'Tech Meetup', 'Annual technology meetup for enthusiasts.', '2025-09-15', '2025-09-16', 5000.00),
-(4, 3, 4, 'Wellness Retreat', 'A retreat focusing on wellness and health.', '2025-10-10', '2025-10-11', 2000.00),
-(5, 4, 5, 'Local Art Fest', 'Art festival showcasing local artists.', '2025-11-05', '2025-11-06', 1500.00),
-(6, 5, 6, 'Sports Gala', 'A gala for different sporting events.', '2025-12-01', '2025-12-01', 8000.00),
-(7, 6, 7, 'Coding Bootcamp', 'A bootcamp for beginners in coding.', '2026-01-15', '2026-01-17', 1000.00),
-(8, 7, 8, 'Dance Night', 'An evening of live dance performances.', '2026-02-14', '2026-02-14', 2500.00),
-(9, 8, 9, 'Literary Debate', 'A debate on contemporary literature.', '2026-03-10', '2026-03-10', 1200.00),
-(10, 9, 10, 'Eco Summit', 'Summit on environmental issues.', '2026-04-22', '2026-04-23', 4500.00),
-(1, 10, 1, 'Music Festival', 'Annual music festival with multiple bands.', '2026-05-15', '2026-05-17', 10000.00),
-(1, 3, 1, 'Digital Art Showcase', 'Showcase of digital art.', '2025-06-10', '2025-06-12', 5000.00),
-(2, 4, 2, 'Local Business Expo', 'A platform for local businesses.', '2025-07-20', '2025-07-22', 3000.00),
-(3, 5, 3, 'Health & Wellness Fair', 'Fair promoting health and wellness.', '2025-08-15', '2025-08-17', 4000.00),
-(4, 6, 4, 'Photography Contest', 'Competition for amateur photographers.', '2025-09-05', '2025-09-07', 2500.00),
-(5, 7, 5, 'Student Project Exhibition', 'Showcase of student projects.', '2025-10-10', '2025-10-12', 3500.00),
-(6, 8, 6, 'Sports Day', 'An inter-department sports event.', '2025-11-01', '2025-11-01', 6000.00),
-(7, 9, 7, 'Poetry Slam', 'A night of poetry recitations.', '2025-12-15', '2025-12-15', 1200.00),
-(8, 10, 8, 'Tech Innovation Summit', 'Discussion on tech trends.', '2026-01-15', '2026-01-17', 8000.00),
-(9, 1, 9, 'Environmental Awareness Camp', 'Awareness for environmental issues.', '2026-02-25', '2026-02-26', 1500.00),
-(10, 2, 10, 'Charity Concert', 'Fundraising concert for a cause.', '2026-03-10', '2026-03-11', 7000.00),
-(2, 3, 11, 'Innovation Fair', 'Platform for new inventions.', '2026-04-18', '2026-04-20', 5000.00),
-(3, 4, 12, 'International Film Fest', 'Screening of international films.', '2026-05-25', '2026-05-26', 4000.00),
-(4, 5, 13, 'Women Empowerment Conference', 'Conference on women empowerment.', '2026-06-10', '2026-06-12', 3000.00),
-(5, 6, 14, 'Book Fair', 'Book fair featuring various genres.', '2026-07-05', '2026-07-07', 2000.00),
-(6, 7, 15, 'Dance Workshop', 'Workshop on dance techniques.', '2026-08-12', '2026-08-14', 2500.00),
-(7, 8, 16, 'Food Fest', 'Celebration of diverse cuisines.', '2026-09-22', '2026-09-24', 5000.00),
-(8, 9, 17, 'Startup Networking Meet', 'Networking event for startups.', '2026-10-15', '2026-10-16', 4000.00),
-(9, 10, 18, 'Art Exhibition', 'Exhibition of local art.', '2026-11-08', '2026-11-10', 3000.00),
-(10, 1, 19, 'Mental Health Awareness Talk', 'Talk on mental health topics.', '2026-12-15', '2026-12-15', 1000.00),
-(1, 2, 20, 'Drama Play', 'Performance of a classic drama.', '2027-01-10', '2027-01-12', 6000.00);
+INSERT INTO Event (VenueID, EventCategoryID, OrganizerID, EventTitle, EventDescription, StartDate, EndDate, EventBudget)
+VALUES
+(1, 1, 1, 'Tech Conference 2024', 'A conference focused on emerging technologies.', '2024-01-15', '2024-01-17', 5000.00),
+(1, 2, 2, 'Health & Wellness Fair', 'An event to promote health and wellness activities.', '2024-02-10', '2024-02-11', 2000.00),
+(1, 3, 3, 'Job Fair 2024', 'Connecting employers with job seekers.', '2024-03-05', '2024-03-06', 3000.00),
+(2, 4, 4, 'Music Fest', 'A celebration of music and arts.', '2024-04-20', '2024-04-21', 7000.00),
+(2, 5, 5, 'Art Exhibition', 'Display of modern and contemporary art.', '2024-05-15', '2024-05-17', 4500.00),
+(2, 6, 6, 'Startup Pitch Night', 'Showcasing new startups to investors.', '2024-06-01', '2024-06-01', 1500.00),
+(3, 7, 7, 'Food Festival', 'Celebration of diverse culinary experiences.', '2024-07-20', '2024-07-22', 2500.00),
+(3, 8, 8, 'Science Fair', 'Promoting science and innovation.', '2024-08-05', '2024-08-06', 3200.00),
+(3, 9, 9, 'Literature Workshop', 'A workshop for budding writers.', '2024-09-10', '2024-09-11', 1800.00),
+(4, 10, 10, 'Business Expo', 'Networking and showcasing business solutions.', '2024-10-20', '2024-10-21', 3500.00),
+(4, 11, 11, 'Charity Marathon', 'A marathon event for charity fundraising.', '2024-11-05', '2024-11-05', 1200.00),
+(5, 12, 12, 'Dance Competition', 'A regional dance competition.', '2024-12-15', '2024-12-15', 2000.00),
+(5, 13, 13, 'Hackathon', 'A 24-hour coding event for developers.', '2025-01-10', '2025-01-11', 3000.00),
+(5, 14, 14, 'Photography Workshop', 'Workshop on nature and portrait photography.', '2025-02-12', '2025-02-13', 1500.00),
+(6, 15, 15, 'Film Screening', 'Screening of independent films.', '2025-03-18', '2025-03-18', 1000.00),
+(6, 16, 16, 'Eco Conference', 'Discussing sustainable practices.', '2025-04-22', '2025-04-23', 2500.00),
+(6, 17, 17, 'Yoga Retreat', 'A retreat for wellness and yoga.', '2025-05-25', '2025-05-26', 2200.00),
+(7, 18, 18, 'Volunteer Day', 'Community service event.', '2025-06-07', '2025-06-07', 800.00),
+(7, 19, 19, 'Coding Bootcamp', 'A week-long programming bootcamp.', '2025-07-14', '2025-07-18', 4000.00),
+(7, 20, 20, 'Public Speaking Workshop', 'Enhancing public speaking skills.', '2025-08-12', '2025-08-13', 1300.00);
 
-INSERT INTO VenueType (VenueTypeName) VALUES
-('Auditorium'),
-('Open Ground'),
+
+INSERT INTO VenueType (VenueTypeName)
+VALUES
 ('Conference Hall'),
-('Classroom'),
-('Gymnasium'),
-('Exhibition Hall'),
-('Outdoor Stage'),
-('Indoor Stage'),
-('Lecture Theatre'),
-('Banquet Hall'),
-('Multipurpose Hall'),
-('Outdoor Area'),
-('Meeting Room'),
+('Outdoor Park'),
 ('Exhibition Center'),
-('Conference Room'),
-('Lecture Hall'),
-('Sports Ground'),
-('Theater Hall'),
-('Gallery'),
-('Studio'),
-('Event Space'),
-('Amphitheater'),
-('Banquet Room'),
-('Plaza'),
-('Workshop Room'),
-('Dance Studio'),
-('Lawn'),
-('Main Hall'),
-('Activity Center'),
-('Seminar Room'),
-('Gallery Room'),
-('Performance Hall'),
-('Conference Center'),
-('Open-Air Pavilion'),
-('Event Lawn'),
-('Lecture Theatre'),
-('Outdoor Stage'),
-('Multipurpose Space'),
-('Banquet Area'),
-('VIP Lounge'),
-('Courtyard'),
-('Main Hall'),
-('Seminar Space'),
-('Studio'),
-('Showroom'),
-('Amphitheater'),
-('Training Room'),
-('Event Atrium'),
-('Sports Ground'),
-('Auditorium');
+('Auditorium'),
+('Community Center'),
+('Banquet Hall'),
+('Sports Arena'),
+('Theater'),
+('Library Hall'),
+('Museum Gallery');
 
-INSERT INTO Venue (VenueTypeID, VenueName, VenueCapacity, VenueLocation) VALUES
-(1, 'Central Auditorium', 500, 'Building A'),
-(2, 'South Ground', 2000, 'South Campus'),
-(3, 'Tech Conference Hall', 300, 'Building B'),
-(4, 'Classroom 101', 50, 'Building C'),
-(5, 'Main Gym', 1000, 'Gym Building'),
-(6, 'Art Gallery', 150, 'Building D'),
-(7, 'Outdoor Stage Area', 3000, 'Park Area'),
-(8, 'Indoor Theatre', 600, 'Building E'),
-(9, 'Lecture Room', 100, 'Building F'),
-(10, 'Banquet Hall', 400, 'Main Building'),
-(1, 'Main Multipurpose Hall', 600, 'North Campus'),
-(2, 'Central Park', 2500, 'Main Campus'),
-(3, 'VIP Meeting Room', 20, 'Building G'),
-(4, 'Exhibition Center A', 800, 'Building H'),
-(5, 'Large Conference Room', 250, 'Building I'),
-(6, 'Lecture Hall B', 200, 'Building J'),
-(7, 'Sports Arena', 5000, 'South Campus'),
-(8, 'Main Theater', 700, 'Building K'),
-(9, 'Modern Art Gallery', 100, 'Building L'),
-(10, 'Media Studio', 50, 'Building M'),
-(1, 'Event Center A', 500, 'East Wing'),
-(2, 'Outdoor Amphitheater', 2000, 'North Campus'),
-(3, 'Banquet Hall B', 300, 'West Wing'),
-(4, 'University Plaza', 5000, 'Main Square'),
-(5, 'Workshop Studio', 100, 'Tech Building'),
-(6, 'Dance Studio 1', 50, 'Arts Block'),
-(7, 'South Lawn', 4000, 'South Campus'),
-(8, 'Main Event Hall', 1500, 'Admin Building'),
-(9, 'Activity Center', 800, 'Sports Complex'),
-(10, 'Seminar Room 2', 120, 'Library Block'),
-(2, 'Central Performance Hall', 700, 'Building P'),
-(3, 'City Conference Center', 1000, 'Downtown Area'),
-(4, 'Green Pavilion', 400, 'East Park'),
-(5, 'Meadow Lawn', 3000, 'North Campus'),
-(6, 'Science Lecture Hall', 150, 'Science Block'),
-(7, 'Festival Stage', 2000, 'Park Square'),
-(8, 'Student Activity Room', 250, 'Student Union'),
-(9, 'Executive Banquet Hall', 500, 'Main Building'),
-(10, 'VIP Lounge', 60, 'Main Building'),
-(1, 'Courtyard', 450, 'Central Garden'),
-(3, 'Library Hall', 150, 'Library Complex'),
-(5, 'Conference Center A', 120, 'Building K'),
-(6, 'Drama Theatre', 500, 'Arts Block'),
-(8, 'Workshop Room', 80, 'Workshop Center'),
-(10, 'Exhibit Space', 300, 'Innovation Lab'),
-(1, 'South Grounds', 5000, 'South Campus'),
-(3, 'Small Seminar Hall', 100, 'Science Block'),
-(9, 'Dining Hall', 200, 'Residential Complex'),
-(7, 'Amphitheater', 1200, 'Outdoor Area'),
-(2, 'Media Studio', 50, 'Media Center');
-
-INSERT INTO EventCategory (CategoryName, CategoryDescription) VALUES
-('Science', 'Events related to science and technology'),
-('Arts', 'Events related to arts and literature'),
-('Music', 'Music-related events and performances'),
-('Food', 'Food-related events and festivals'),
-('Technology', 'Technology-related conferences and exhibitions'),
-('Sports', 'Sports-related events and competitions'),
-('Drama', 'Drama plays and theatrical performances'),
-('Film', 'Film screenings and related events'),
-('Workshop', 'Workshops on various topics'),
-('Dance', 'Dance performances and competitions'),
-('Educational', 'Education and learning events'),
-('Cultural', 'Events celebrating different cultures'),
-('Sports', 'Competitions and sporting events'),
-('Wellness', 'Health and wellness activities'),
-('Business', 'Business conferences and seminars'),
-('Technology', 'Latest tech-related events'),
-('Arts', 'Arts exhibitions and workshops'),
-('Film', 'Film screenings and discussions'),
-('Environment', 'Events promoting environmental awareness'),
-('Social', 'Social gatherings and parties'),
-('Career Fair', 'Events related to career opportunities and recruitment'),
-('Science Expo', 'Science and technology exhibitions'),
-('Business Seminar', 'Seminars focused on business topics'),
-('Open Mic', 'An event for open performances'),
-('Health Conference', 'Conferences on health and wellness topics'),
-('Startup Pitch', 'Startup and entrepreneur pitch events'),
-('Photography', 'Photography events and exhibitions'),
-('Creative Writing', 'Events focused on writing and literature'),
-('Public Speaking', 'Workshops and events on public speaking'),
-('Fundraiser', 'Events to raise funds for causes'),
-('Agriculture Fair', 'Exhibition on agriculture and related fields'),
-('Tech Showcase', 'Showcase of tech advancements'),
-('Business Expo', 'Expo for business startups and organizations'),
-('Fashion Show', 'Display of latest fashion trends'),
-('Art Camp', 'Art activities and workshops for students'),
-('Music Fest', 'Music events and concerts'),
-('Drama Competition', 'Competitive performances by drama groups'),
-('Science Fair', 'Science project showcase'),
-('Health Expo', 'Health and wellness exhibition'),
-('Environment Workshop', 'Workshops on environmental conservation'),
-('Sports Meet', 'Competitive sports events'),
-('Career Day', 'Job fairs and career guidance'),
-('Open Mic', 'Talent show and open performance'),
-('Film Festival', 'Screenings of popular and indie films'),
-('Leadership Summit', 'Summit on leadership and development'),
-('Writing Workshop', 'Creative writing activities'),
-('Community Gathering', 'Community-based events'),
-('Food Festival', 'Celebration of food diversity'),
-('Annual Gala', 'Annual university gala'),
-('Charity Event', 'Fundraiser for a social cause');
-
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus) VALUES
-(1, 1, '2024-01-01', 'Confirmed'),
-(2, 2, '2024-02-01', 'Pending'),
-(3, 3, '2024-03-01', 'Confirmed'),
-(4, 4, '2024-04-01', 'Cancelled'),
-(5, 5, '2024-05-01', 'Confirmed'),
-(6, 6, '2024-06-01', 'Pending'),
-(7, 7, '2024-07-01', 'Cancelled'),
-(8, 8, '2024-08-01', 'Confirmed'),
-(9, 9, '2024-09-01', 'Confirmed'),
-(10, 10, '2024-10-01', 'Pending'),
-(1, 2, '2024-11-10', 'Confirmed'),
-(2, 3, '2024-11-15', 'Pending'),
-(3, 4, '2024-11-20', 'Cancelled'),
-(4, 5, '2024-11-25', 'Confirmed'),
-(5, 6, '2024-12-01', 'Confirmed'),
-(6, 7, '2024-12-05', 'Pending'),
-(7, 8, '2024-12-10', 'Cancelled'),
-(8, 9, '2024-12-15', 'Confirmed'),
-(9, 10, '2024-12-20', 'Confirmed'),
-(10, 1, '2025-01-01', 'Pending'),
-(11, 11, '2025-08-10', 'Confirmed'),
-(12, 12, '2025-09-10', 'Pending'),
-(13, 13, '2025-10-01', 'Cancelled'),
-(14, 14, '2025-10-25', 'Confirmed'),
-(15, 15, '2025-11-15', 'Confirmed'),
-(16, 16, '2025-12-01', 'Pending'),
-(17, 17, '2026-01-05', 'Cancelled'),
-(18, 18, '2026-02-01', 'Confirmed'),
-(19, 19, '2026-03-01', 'Pending'),
-(20, 20, '2026-04-10', 'Confirmed'),
-(21, 22, '2025-06-01', 'Confirmed'),
-(22, 23, '2025-06-15', 'Pending'),
-(23, 24, '2025-07-01', 'Cancelled'),
-(24, 25, '2025-07-10', 'Confirmed'),
-(25, 26, '2025-07-25', 'Confirmed'),
-(26, 27, '2025-08-01', 'Pending'),
-(27, 28, '2025-08-15', 'Cancelled'),
-(28, 29, '2025-09-01', 'Confirmed'),
-(29, 30, '2025-09-10', 'Pending'),
-(30, 31, '2025-09-20', 'Cancelled'),
-(31, 32, '2025-10-01', 'Confirmed'),
-(32, 33, '2025-10-15', 'Pending'),
-(33, 34, '2025-11-01', 'Cancelled'),
-(34, 35, '2025-11-20', 'Confirmed'),
-(35, 36, '2025-11-25', 'Confirmed'),
-(36, 37, '2025-12-01', 'Pending'),
-(37, 38, '2025-12-10', 'Cancelled'),
-(38, 39, '2025-12-20', 'Confirmed'),
-(39, 40, '2026-01-01', 'Pending'),
-(40, 41, '2026-01-10', 'Cancelled');
-
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus) VALUES
-(1, 100.00, '2024-01-05', 'Completed'),
-(2, 50.00, '2024-02-05', 'Pending'),
-(3, 75.00, '2024-03-05', 'Completed'),
-(4, 40.00, '2024-04-05', 'Refunded'),
-(5, 150.00, '2024-05-05', 'Completed'),
-(6, 80.00, '2024-06-05', 'Pending'),
-(7, 60.00, '2024-07-05', 'Refunded'),
-(8, 90.00, '2024-08-05', 'Completed'),
-(9, 120.00, '2024-09-05', 'Completed'),
-(10, 110.00, '2024-10-05', 'Pending'),
-(11, 90.00, '2024-11-10', 'Completed'),
-(12, 60.00, '2024-11-15', 'Pending'),
-(13, 70.00, '2024-11-20', 'Refunded'),
-(14, 120.00, '2024-11-25', 'Completed'),
-(15, 30.00, '2024-12-01', 'Completed'),
-(16, 150.00, '2024-12-05', 'Pending'),
-(17, 50.00, '2024-12-10', 'Refunded'),
-(18, 80.00, '2024-12-15', 'Completed'),
-(19, 130.00, '2024-12-20', 'Completed'),
-(20, 100.00, '2025-01-01', 'Pending'),
-(21, 85.00, '2025-08-15', 'Completed'),
-(22, 65.00, '2025-09-12', 'Pending'),
-(23, 95.00, '2025-10-02', 'Refunded'),
-(24, 70.00, '2025-10-26', 'Completed'),
-(25, 55.00, '2025-11-20', 'Completed'),
-(26, 40.00, '2025-12-02', 'Pending'),
-(27, 125.00, '2026-01-06', 'Refunded'),
-(28, 110.00, '2026-02-02', 'Completed'),
-(29, 45.00, '2026-03-03', 'Pending'),
-(30, 75.00, '2026-04-12', 'Completed'),
-(31, 90.00, '2025-06-05', 'Completed'),
-(32, 75.00, '2025-06-17', 'Pending'),
-(33, 60.00, '2025-07-03', 'Refunded'),
-(34, 85.00, '2025-07-12', 'Completed'),
-(35, 95.00, '2025-07-28', 'Completed'),
-(36, 40.00, '2025-08-05', 'Pending'),
-(37, 110.00, '2025-08-17', 'Refunded'),
-(38, 100.00, '2025-09-03', 'Completed'),
-(39, 50.00, '2025-09-12', 'Pending'),
-(40, 70.00, '2025-09-23', 'Completed'),
-(41, 105.00, '2025-10-03', 'Completed'),
-(42, 80.00, '2025-10-18', 'Pending'),
-(43, 115.00, '2025-11-03', 'Refunded'),
-(44, 90.00, '2025-11-22', 'Completed'),
-(45, 130.00, '2025-11-28', 'Completed'),
-(46, 65.00, '2025-12-05', 'Pending'),
-(47, 120.00, '2025-12-15', 'Refunded'),
-(48, 85.00, '2025-12-23', 'Completed'),
-(49, 95.00, '2026-01-05', 'Pending'),
-(50, 115.00, '2026-01-12', 'Completed');
-
-
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus) VALUES
-(1, 1, 'VIP', 100.00, '2024-01-01', 'Issued'),
-(2, 2, 'Standard', 50.00, '2024-02-01', 'Cancelled'),
-(3, 3, 'Standard', 75.00, '2024-03-01', 'Issued'),
-(4, 4, 'VIP', 40.00, '2024-04-01', 'Cancelled'),
-(5, 5, 'VIP', 150.00, '2024-05-01', 'Issued'),
-(6, 6, 'Standard', 80.00, '2024-06-01', 'Cancelled'),
-(7, 7, 'Standard', 60.00, '2024-07-01', 'Cancelled'),
-(8, 8, 'VIP', 90.00, '2024-08-01', 'Issued'),
-(9, 9, 'Standard', 120.00, '2024-09-01', 'Issued'),
-(10, 10, 'VIP', 110.00, '2024-10-01', 'Cancelled'),
-(11, 2, 'VIP', 150.00, '2024-11-10', 'Issued'),
-(12, 3, 'Standard', 60.00, '2024-11-15', 'Cancelled'),
-(13, 4, 'Standard', 70.00, '2024-11-20', 'Issued'),
-(14, 5, 'VIP', 120.00, '2024-11-25', 'Cancelled'),
-(15, 6, 'VIP', 30.00, '2024-12-01', 'Issued'),
-(16, 7, 'Standard', 150.00, '2024-12-05', 'Cancelled'),
-(17, 8, 'Standard', 50.00, '2024-12-10', 'Cancelled'),
-(18, 9, 'VIP', 80.00, '2024-12-15', 'Issued'),
-(19, 10, 'Standard', 130.00, '2024-12-20', 'Issued'),
-(20, 1, 'VIP', 100.00, '2025-01-01', 'Cancelled'),
-(21, 11, 'Standard', 50.00, '2025-08-12', 'Issued'),
-(22, 12, 'VIP', 100.00, '2025-09-12', 'Cancelled'),
-(23, 13, 'Standard', 60.00, '2025-10-02', 'Issued'),
-(24, 14, 'VIP', 110.00, '2025-10-26', 'Cancelled'),
-(25, 15, 'Standard', 45.00, '2025-11-21', 'Issued'),
-(26, 16, 'VIP', 120.00, '2025-12-02', 'Cancelled'),
-(27, 17, 'Standard', 75.00, '2026-01-07', 'Cancelled'),
-(28, 18, 'VIP', 85.00, '2026-02-03', 'Issued'),
-(29, 19, 'Standard', 95.00, '2026-03-03', 'Issued'),
-(30, 20, 'VIP', 130.00, '2026-04-12', 'Cancelled'),
-(31, 22, 'Standard', 50.00, '2025-06-10', 'Issued'),
-(32, 23, 'VIP', 100.00, '2025-06-18', 'Cancelled'),
-(33, 24, 'Standard', 70.00, '2025-07-05', 'Issued'),
-(34, 25, 'VIP', 110.00, '2025-07-14', 'Cancelled'),
-(35, 26, 'Standard', 65.00, '2025-07-30', 'Issued'),
-(36, 27, 'VIP', 120.00, '2025-08-07', 'Cancelled'),
-(37, 28, 'Standard', 75.00, '2025-08-20', 'Cancelled'),
-(38, 29, 'VIP', 85.00, '2025-09-05', 'Issued'),
-(39, 30, 'Standard', 95.00, '2025-09-13', 'Issued'),
-(40, 31, 'VIP', 130.00, '2025-09-25', 'Cancelled'),
-(41, 32, 'Standard', 55.00, '2025-10-05', 'Issued'),
-(42, 33, 'VIP', 120.00, '2025-10-20', 'Cancelled'),
-(43, 34, 'Standard', 85.00, '2025-11-05', 'Issued'),
-(44, 35, 'VIP', 140.00, '2025-11-25', 'Cancelled'),
-(45, 36, 'Standard', 65.00, '2025-12-05', 'Issued'),
-(46, 37, 'VIP', 100.00, '2025-12-15', 'Cancelled'),
-(47, 38, 'Standard', 95.00, '2025-12-25', 'Issued'),
-(48, 39, 'VIP', 105.00, '2026-01-08', 'Cancelled'),
-(49, 40, 'Standard', 70.00, '2026-01-18', 'Issued'),
-(50, 41, 'VIP', 90.00, '2026-01-25', 'Cancelled');
+INSERT INTO Venue (VenueTypeID, VenueName, VenueCapacity, VenueLocation)
+VALUES
+(1, 'Grand Conference Hall', 500, '123 Main St, Downtown'),
+(1, 'Innovation Hub', 350, '456 Tech Dr, Silicon Valley'),
+(2, 'Central Park Pavilion', 1000, '789 Park Ave, City Center'),
+(2, 'Riverside Gardens', 800, '321 River St, Green District'),
+(3, 'Tech Expo Center', 700, '101 Convention Blvd, East End'),
+(3, 'Exhibition Plaza', 600, '202 Expo Rd, West Side'),
+(4, 'Civic Auditorium', 300, '303 Auditorium Lane, City Center'),
+(4, 'Harmony Theater', 450, '404 Harmony Ave, Music District'),
+(5, 'Community Center Hall', 250, '505 Community Dr, Suburbia'),
+(5, 'Local Arts Venue', 200, '606 Art St, Cultural Quarter'),
+(6, 'Royal Banquet Hall', 500, '707 Grand St, Uptown'),
+(6, 'Celebration Banquet', 400, '808 Festive Rd, Midtown'),
+(7, 'Sports Arena', 10000, '909 Victory Blvd, Stadium Park'),
+(7, 'Coliseum Field', 15000, '1010 Coliseum Dr, Sports Complex'),
+(8, 'Classic Theater', 500, '1111 Theater Row, Broadway'),
+(8, 'Metro Cinema', 300, '1212 Movie Ln, Downtown'),
+(9, 'Library Hall', 150, '1313 Knowledge Dr, University District'),
+(9, 'Academic Meeting Room', 100, '1414 Learning Blvd, Academic Block'),
+(10, 'City Museum Gallery', 200, '1515 Museum Rd, History Quarter'),
+(10, 'Art Heritage Center', 250, '1616 Heritage Blvd, Art District');
 
 
 
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime) VALUES
-(1, 1, '2024-01-10 10:00', '2024-01-10 14:00'),
-(2, 2, '2024-02-15 09:30', '2024-02-15 12:30'),
-(3, 3, '2024-03-20 18:00', '2024-03-20 21:00'),
-(4, 4, '2024-04-05 11:00', '2024-04-05 13:00'),
-(5, 5, '2024-05-10 08:00', '2024-05-10 15:00'),
-(6, 6, '2024-06-15 10:00', '2024-06-15 12:00'),
-(7, 7, '2024-07-20 15:00', '2024-07-20 17:00'),
-(8, 8, '2024-08-10 10:30', '2024-08-10 13:30'),
-(9, 9, '2024-09-15 14:00', '2024-09-15 16:00'),
-(10, 10, '2024-10-10 19:00', '2024-10-10 22:00'),
-(2, 11, '2024-11-20 10:00', '2024-11-20 12:00'),
-(3, 12, '2024-12-05 09:00', '2024-12-05 11:00'),
-(4, 13, '2024-12-15 10:30', '2024-12-15 13:00'),
-(5, 14, '2025-01-10 11:30', '2025-01-10 13:30'),
-(6, 15, '2025-02-15 08:30', '2025-02-15 12:30'),
-(7, 16, '2025-03-05 14:00', '2025-03-05 17:00'),
-(8, 17, '2025-04-12 15:30', '2025-04-12 18:30'),
-(9, 18, '2025-05-10 12:00', '2025-05-10 15:00'),
-(10, 19, '2025-06-15 09:00', '2025-06-15 11:30'),
-(1, 20, '2025-07-10 13:30', '2025-07-10 16:30'),
-(11, 21, '2025-08-20 09:00', '2025-08-20 12:00'),
-(12, 22, '2025-09-15 10:00', '2025-09-15 13:00'),
-(13, 23, '2025-10-10 14:00', '2025-10-10 17:00'),
-(14, 24, '2025-11-05 09:30', '2025-11-05 12:30'),
-(15, 25, '2025-12-01 11:00', '2025-12-01 13:30'),
-(16, 26, '2026-01-15 08:45', '2026-01-15 11:15'),
-(17, 27, '2026-02-14 16:00', '2026-02-14 19:00'),
-(18, 28, '2026-03-10 10:30', '2026-03-10 13:30'),
-(19, 29, '2026-04-22 09:00', '2026-04-22 11:30'),
-(20, 30, '2026-05-15 15:00', '2026-05-15 18:00'),
-(22, 21, '2025-06-15 10:00', '2025-06-15 13:00'),
-(23, 22, '2025-06-20 11:00', '2025-06-20 14:30'),
-(24, 23, '2025-07-02 09:30', '2025-07-02 12:00'),
-(25, 24, '2025-07-11 15:00', '2025-07-11 18:00'),
-(26, 25, '2025-07-28 08:45', '2025-07-28 11:15'),
-(27, 26, '2025-08-06 13:00', '2025-08-06 16:00'),
-(28, 27, '2025-08-16 14:30', '2025-08-16 17:30'),
-(29, 28, '2025-09-03 10:30', '2025-09-03 13:30'),
-(30, 29, '2025-09-11 08:00', '2025-09-11 11:00'),
-(31, 30, '2025-09-23 16:00', '2025-09-23 19:00'),
-(32, 31, '2025-10-05 12:30', '2025-10-05 15:00'),
-(33, 32, '2025-10-18 13:45', '2025-10-18 16:45'),
-(34, 33, '2025-11-04 08:30', '2025-11-04 11:30'),
-(35, 34, '2025-11-23 14:15', '2025-11-23 17:15'),
-(36, 35, '2025-12-06 09:00', '2025-12-06 11:00'),
-(37, 36, '2025-12-14 11:30', '2025-12-14 14:30'),
-(38, 37, '2025-12-22 15:30', '2025-12-22 18:30'),
-(39, 38, '2026-01-07 10:45', '2026-01-07 13:45'),
-(40, 39, '2026-01-20 09:15', '2026-01-20 11:45'),
-(41, 40, '2026-01-27 14:00', '2026-01-27 17:00');
-
-INSERT INTO Resource (ResourceName, ResourceDescription, Quantity) VALUES
-('Projector', 'High-definition projector for presentations', 5),
-('Microphone', 'Wireless microphone for speakers', 10),
-('Speaker System', 'Audio system for events', 3),
-('Lighting Kit', 'Portable lighting for stage events', 4),
-('Banner', 'Custom banners for decoration', 20),
-('Table', 'Folding tables for event use', 50),
-('Chair', 'Seating for attendees', 200),
-('Podium', 'Wooden podium for speakers', 2),
-('Laptop', 'Laptops for event operations', 10),
-('Stage Setup', 'Stage materials and setup support', 1),
-('Projector Screen', 'Portable projector screen for presentations', 3),
-('Stage Lighting', 'Lighting setup for stage events', 6),
-('Backdrop', 'Custom backdrops for event decoration', 5),
-('Tent', 'Outdoor tents for events', 8),
-('Whiteboard', 'Portable whiteboards for workshops', 7),
-('Sound Mixer', 'Audio mixer for live events', 2),
-('Microphone Stand', 'Stand for microphones', 15),
-('Extension Cord', 'Power extension cords for setup', 20),
-('Camera', 'Digital cameras for event photography', 4),
-('Decorative Plant', 'Plants for decoration', 30),
-('Wifi Hotspot', 'Portable WiFi device for connectivity', 5),
-('Soundproofing Panels', 'Panels for noise reduction', 10),
-('Printer', 'All-in-one printer for event use', 3),
-('Scanner', 'Document scanner', 4),
-('LED Screen', 'Large LED screen for displays', 2),
-('Water Dispenser', 'Water dispensers for hydration', 8),
-('Hand Sanitizer Station', 'Sanitizer stations for events', 20),
-('Charging Station', 'Device charging station', 6),
-('Tables', 'Standard tables', 30),
-('Chairs', 'Folding chairs', 150),
-('Projector Stand', 'Stand for mounting projectors', 7),
-('Whiteboard Markers', 'Markers for whiteboards', 50),
-('Chairs', 'Folding chairs for seating', 200),
-('Table Covers', 'Covers for tables', 30),
-('Coffee Machine', 'Machine for serving coffee', 4),
-('Snacks Counter', 'Counter for serving snacks', 2),
-('Cooling Fans', 'Portable cooling fans', 10),
-('Extension Cable', 'Power extension cable', 15),
-('Notice Board', 'Portable board for announcements', 5),
-('Microphone Cable', 'Cable for microphones', 12),
-('Stage Props', 'Props for stage performances', 20),
-('Soundproof Curtains', 'Curtains to reduce sound', 6),
-('Laptop Stands', 'Stands for laptops', 10),
-('USB Hub', 'Multi-port USB hub', 5),
-('Spotlights', 'Lights to focus on stage', 8),
-('Wireless Keyboard', 'Wireless keyboards for laptops', 10),
-('Pop-up Banners', 'Promotional banners', 15),
-('Stage Carpet', 'Carpet for stage setup', 1),
-('Decorative Lights', 'Lights for decoration', 30),
-('Microphone Batteries', 'Extra batteries for microphones', 25);
+INSERT INTO EventCategory (CategoryName, CategoryDescription)
+VALUES
+('Technology', 'Events related to tech and innovation.'),
+('Health & Wellness', 'Events promoting health, wellness, and fitness.'),
+('Career & Job', 'Events connecting employers with potential job seekers.'),
+('Music & Arts', 'Celebrations of music, art, and culture.'),
+('Art Exhibition', 'Showcases of modern and contemporary art.'),
+('Startup & Entrepreneurship', 'Events for startups and entrepreneurs to pitch and network.'),
+('Food & Beverage', 'Festivals and events for culinary enthusiasts.'),
+('Science & Education', 'Science fairs, educational talks, and seminars.'),
+('Literature', 'Workshops, talks, and fairs focusing on literature.'),
+('Business & Networking', 'Expos, business conferences, and networking events.'),
+('Charity', 'Fundraising events and charity marathons.'),
+('Dance & Performance', 'Dance competitions and performances.'),
+('Coding & Hackathon', 'Programming events, hackathons, and bootcamps.'),
+('Photography', 'Workshops and events focused on photography skills.'),
+('Film & Cinema', 'Screenings of independent and featured films.'),
+('Sustainability & Eco', 'Conferences and events on sustainable practices.'),
+('Wellness & Retreat', 'Yoga retreats and wellness-focused events.'),
+('Community & Volunteer', 'Community service and volunteer events.'),
+('Public Speaking & Communication', 'Workshops to improve public speaking skills.');
 
 
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime) VALUES
-(1, 1, 2, '2024-01-09', '09:00:00'),
-(2, 2, 4, '2024-02-14', '10:30:00'),
-(3, 3, 1, '2024-03-19', '17:00:00'),
-(4, 4, 2, '2024-04-04', '08:45:00'),
-(5, 5, 1, '2024-05-09', '13:00:00'),
-(6, 6, 3, '2024-06-14', '09:15:00'),
-(7, 7, 10, '2024-07-19', '07:45:00'),
-(8, 8, 2, '2024-08-09', '12:00:00'),
-(9, 9, 5, '2024-09-14', '14:30:00'),
-(10, 10, 6, '2024-10-09', '11:00:00'),
-(11, 11, 1, '2024-11-19', '10:00:00'),
-(12, 12, 4, '2024-12-04', '14:00:00'),
-(13, 13, 2, '2024-12-14', '16:00:00'),
-(14, 14, 3, '2025-01-09', '11:00:00'),
-(15, 15, 5, '2025-02-14', '09:00:00'),
-(16, 16, 6, '2025-03-04', '13:00:00'),
-(17, 17, 8, '2025-04-11', '12:30:00'),
-(18, 18, 7, '2025-05-09', '11:30:00'),
-(19, 19, 10, '2025-06-14', '10:15:00'),
-(20, 20, 9, '2025-07-09', '15:45:00'),
-(21, 11, 3, '2025-08-18', '08:00:00'),
-(22, 12, 5, '2025-09-14', '09:30:00'),
-(23, 13, 2, '2025-10-08', '10:30:00'),
-(24, 14, 4, '2025-11-04', '11:30:00'),
-(25, 15, 1, '2025-12-01', '13:00:00'),
-(26, 16, 7, '2026-01-12', '14:15:00'),
-(27, 17, 6, '2026-02-12', '15:00:00'),
-(28, 18, 8, '2026-03-09', '16:00:00'),
-(29, 19, 10, '2026-04-20', '09:15:00'),
-(30, 20, 4, '2026-05-13', '12:45:00'),
-(31, 31, 3, '2025-06-09', '09:00:00'),
-(32, 32, 4, '2025-06-18', '08:30:00'),
-(33, 33, 5, '2025-07-03', '10:00:00'),
-(34, 34, 2, '2025-07-13', '11:00:00'),
-(35, 35, 1, '2025-07-29', '12:15:00'),
-(36, 36, 6, '2025-08-08', '13:30:00'),
-(37, 37, 7, '2025-08-18', '14:30:00'),
-(38, 38, 8, '2025-09-04', '15:00:00'),
-(39, 39, 3, '2025-09-14', '16:00:00'),
-(40, 40, 4, '2025-09-24', '17:00:00'),
-(41, 41, 2, '2025-10-07', '08:00:00'),
-(42, 42, 5, '2025-10-20', '09:30:00'),
-(43, 43, 6, '2025-11-04', '11:00:00'),
-(44, 44, 7, '2025-11-24', '12:45:00'),
-(45, 45, 8, '2025-12-08', '14:15:00'),
-(46, 46, 3, '2025-12-18', '15:30:00'),
-(47, 47, 2, '2025-12-26', '16:45:00'),
-(48, 48, 5, '2026-01-05', '10:30:00'),
-(49, 49, 4, '2026-01-19', '13:00:00'),
-(50, 50, 1, '2026-01-28', '14:30:00');
 
-INSERT INTO Sponsor (SponsorFName, SponsorLName, SponsorPhone, SponsorEmail) VALUES
-('Michael', 'Johnson', '1010101010', 'michael.johnson@sponsors.com'),
-('Rachel', 'Green', '2020202020', 'rachel.green@sponsors.com'),
-('John', 'Doe', '3030303030', 'john.doe@sponsors.com'),
-('Emma', 'Brown', '4040404040', 'emma.brown@sponsors.com'),
-('Lucas', 'White', '5050505050', 'lucas.white@sponsors.com'),
-('Sophia', 'Wilson', '6060606060', 'sophia.wilson@sponsors.com'),
-('Ethan', 'Martinez', '7070707070', 'ethan.martinez@sponsors.com'),
-('Olivia', 'Anderson', '8080808080', 'olivia.anderson@sponsors.com'),
-('Mason', 'Thomas', '9090909090', 'mason.thomas@sponsors.com'),
-('Ava', 'Taylor', '1111111111', 'ava.taylor@sponsors.com'),
-('George', 'Miller', '1212121212', 'george.miller@sponsors.com'),
-('Lily', 'Clark', '2323232323', 'lily.clark@sponsors.com'),
-('Henry', 'Robinson', '3434343434', 'henry.robinson@sponsors.com'),
-('Amelia', 'Lewis', '4545454545', 'amelia.lewis@sponsors.com'),
-('Jack', 'Walker', '5656565656', 'jack.walker@sponsors.com'),
-('Emma', 'Hall', '6767676767', 'emma.hall@sponsors.com'),
-('Oliver', 'Allen', '7878787878', 'oliver.allen@sponsors.com'),
-('Mia', 'Young', '8989898989', 'mia.young@sponsors.com'),
-('Benjamin', 'King', '9090909090', 'benjamin.king@sponsors.com'),
-('Charlotte', 'Wright', '1010101010', 'charlotte.wright@sponsors.com'),
-('David', 'Perry', '9191919191', 'david.perry@sponsors.com'),
-('Alice', 'Russell', '8282828282', 'alice.russell@sponsors.com'),
-('Sam', 'Jenkins', '7373737373', 'sam.jenkins@sponsors.com'),
-('Zoe', 'Morgan', '6262626262', 'zoe.morgan@sponsors.com'),
-('Tom', 'Bennett', '5151515151', 'tom.bennett@sponsors.com'),
-('Emma', 'Barnes', '4242424242', 'emma.barnes@sponsors.com'),
-('Eli', 'Simpson', '3131313131', 'eli.simpson@sponsors.com'),
-('Ava', 'Griffin', '2020202020', 'ava.griffin@sponsors.com'),
-('Ella', 'Harper', '1111111111', 'ella.harper@sponsors.com'),
-('John', 'Foster', '9999999999', 'john.foster@sponsors.com'),
-('Dylan', 'Gray', '3131313131', 'dylan.gray@sponsors.com'),
-('Ariana', 'Long', '4242424242', 'ariana.long@sponsors.com'),
-('Leo', 'Patterson', '5151515151', 'leo.patterson@sponsors.com'),
-('Lily', 'Harris', '6262626262', 'lily.harris@sponsors.com'),
-('Nathan', 'Fisher', '7373737373', 'nathan.fisher@sponsors.com'),
-('Sophia', 'Kim', '8484848484', 'sophia.kim@sponsors.com'),
-('Ryan', 'Stevens', '9595959595', 'ryan.stevens@sponsors.com'),
-('Chloe', 'Brown', '1231231234', 'chloe.brown@sponsors.com'),
-('Benjamin', 'Green', '2342342345', 'benjamin.green@sponsors.com'),
-('Emily', 'Nelson', '3453453456', 'emily.nelson@sponsors.com'),
-('Oscar', 'Perry', '4564564567', 'oscar.perry@sponsors.com'),
-('Grace', 'Wood', '5675675678', 'grace.wood@sponsors.com'),
-('Lucas', 'Bennett', '6786786789', 'lucas.bennett@sponsors.com'),
-('Liam', 'Evans', '7897897890', 'liam.evans@sponsors.com'),
-('Sophia', 'Edwards', '8908908901', 'sophia.edwards@sponsors.com'),
-('Evelyn', 'Martin', '1010101010', 'evelyn.martin@sponsors.com'),
-('Ella', 'Thomas', '1111111111', 'ella.thomas@sponsors.com'),
-('Zoe', 'Hughes', '2222222222', 'zoe.hughes@sponsors.com'),
-('Charlotte', 'Reed', '3333333333', 'charlotte.reed@sponsors.com'),
-('Henry', 'Barnes', '4444444444', 'henry.barnes@sponsors.com');
+-- Tickets for Registrations from Event 1
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(1, 1, 'Standard', 150.00, '2024-01-11', 'Issued'),
+(1, 2, 'VIP', 200.00, '2024-01-12', 'Cancelled'),
+(1, 3, 'Standard', 150.00, '2024-01-13', 'Issued'),
+(1, 4, 'Standard', 150.00, '2024-01-14', 'Issued'),
+(1, 5, 'Standard', 150.00, '2024-01-15', 'Cancelled'),
+(1, 6, 'Standard', 150.00, '2024-01-16', 'Issued'),
+(1, 7, 'VIP', 200.00, '2024-01-17', 'Issued'),
+(1, 8, 'Standard', 150.00, '2024-01-18', 'Issued'),
+(1, 9, 'Standard', 150.00, '2024-01-19', 'Issued'),
+(1, 10, 'VIP', 200.00, '2024-01-20', 'Issued'),
+(1, 11, 'Standard', 150.00, '2024-01-21', 'Cancelled'),
+(1, 12, 'Standard', 150.00, '2024-01-22', 'Issued'),
+(1, 13, 'VIP', 200.00, '2024-01-23', 'Issued'),
+(1, 14, 'Standard', 150.00, '2024-01-24', 'Issued'),
+(1, 15, 'Standard', 150.00, '2024-01-25', 'Issued');
 
-INSERT INTO EventSponsor (EventID, SponsorID, SponsorshipAmount, SponsoredDate, SponsorshipType) VALUES
-(1, 1, 2000.00, '2024-01-05', 'Financial'),
-(2, 2, 1500.00, '2024-02-10', 'Product'),
-(3, 3, 1000.00, '2024-03-15', 'Media'),
-(4, 4, 2500.00, '2024-04-02', 'Financial'),
-(5, 5, 3000.00, '2024-05-08', 'Equipment'),
-(6, 6, 1200.00, '2024-06-13', 'Financial'),
-(7, 7, 1800.00, '2024-07-18', 'Service'),
-(8, 8, 2000.00, '2024-08-07', 'Media'),
-(9, 9, 1300.00, '2024-09-12', 'Financial'),
-(10, 10, 1400.00, '2024-10-08', 'Product'),
-(11, 11, 2200.00, '2024-11-06', 'Equipment'),
-(12, 12, 1800.00, '2024-11-15', 'Product'),
-(13, 13, 900.00, '2024-11-25', 'Media'),
-(14, 14, 2500.00, '2025-01-05', 'Financial'),
-(15, 15, 3000.00, '2025-02-10', 'Service'),
-(16, 16, 1300.00, '2025-03-03', 'Product'),
-(17, 17, 2000.00, '2025-04-01', 'Equipment'),
-(18, 18, 2400.00, '2025-05-04', 'Financial'),
-(19, 19, 1700.00, '2025-06-01', 'Service'),
-(20, 20, 1900.00, '2025-07-05', 'Product'),
-(21, 21, 1500.00, '2025-08-05', 'Product'),
-(22, 22, 1800.00, '2025-09-05', 'Financial'),
-(23, 23, 1200.00, '2025-10-05', 'Equipment'),
-(24, 24, 2000.00, '2025-11-01', 'Media'),
-(25, 25, 900.00, '2025-12-01', 'Financial'),
-(26, 26, 1300.00, '2026-01-05', 'Service'),
-(27, 27, 1700.00, '2026-02-10', 'Product'),
-(28, 28, 2500.00, '2026-03-01', 'Equipment'),
-(29, 29, 2200.00, '2026-04-05', 'Media'),
-(30, 30, 1900.00, '2026-05-01', 'Financial'),
-(31, 21, 1300.00, '2025-06-01', 'Media'),
-(32, 22, 900.00, '2025-06-10', 'Product'),
-(33, 23, 1100.00, '2025-07-02', 'Financial'),
-(34, 24, 750.00, '2025-07-12', 'Service'),
-(35, 25, 1400.00, '2025-07-28', 'Media'),
-(36, 26, 950.00, '2025-08-06', 'Equipment'),
-(37, 27, 1150.00, '2025-08-17', 'Product'),
-(38, 28, 1300.00, '2025-09-04', 'Financial'),
-(39, 29, 1000.00, '2025-09-11', 'Service'),
-(40, 30, 1200.00, '2025-09-25', 'Media'),
-(41, 31, 1350.00, '2025-10-01', 'Equipment'),
-(42, 32, 1050.00, '2025-10-15', 'Product'),
-(43, 33, 800.00, '2025-11-05', 'Financial'),
-(44, 34, 1500.00, '2025-11-18', 'Service'),
-(45, 35, 1200.00, '2025-12-02', 'Media'),
-(46, 36, 1100.00, '2025-12-14', 'Product'),
-(47, 37, 900.00, '2025-12-23', 'Equipment'),
-(48, 38, 1250.00, '2026-01-06', 'Service'),
-(49, 39, 1300.00, '2026-01-20', 'Media'),
-(50, 40, 1050.00, '2026-01-29', 'Financial');
+-- Tickets for Registrations from Event 2
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(2, 16, 'Standard', 120.00, '2024-02-01', 'Issued'),
+(2, 17, 'VIP', 180.00, '2024-02-02', 'Cancelled'),
+(2, 18, 'Standard', 120.00, '2024-02-03', 'Issued'),
+(2, 19, 'Standard', 120.00, '2024-02-04', 'Cancelled'),
+(2, 20, 'VIP', 180.00, '2024-02-05', 'Issued'),
+(2, 21, 'Standard', 120.00, '2024-02-06', 'Issued'),
+(2, 22, 'Standard', 120.00, '2024-02-07', 'Issued'),
+(2, 23, 'VIP', 180.00, '2024-02-08', 'Issued'),
+(2, 24, 'Standard', 120.00, '2024-02-09', 'Issued'),
+(2, 25, 'Standard', 120.00, '2024-02-10', 'Issued'),
+(2, 26, 'VIP', 180.00, '2024-02-11', 'Cancelled'),
+(2, 27, 'Standard', 120.00, '2024-02-12', 'Issued');
+
+-- Tickets for Registrations from Event 3
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(3, 28, 'Standard', 100.00, '2024-03-01', 'Issued'),
+(3, 29, 'Standard', 100.00, '2024-03-02', 'Cancelled'),
+(3, 30, 'VIP', 150.00, '2024-03-03', 'Issued'),
+(3, 1, 'Standard', 100.00, '2024-03-04', 'Issued'),
+(3, 2, 'VIP', 150.00, '2024-03-05', 'Cancelled'),
+(3, 3, 'Standard', 100.00, '2024-03-06', 'Issued'),
+(3, 4, 'Standard', 100.00, '2024-03-07', 'Issued'),
+(3, 5, 'Standard', 100.00, '2024-03-08', 'Issued'),
+(3, 6, 'VIP', 150.00, '2024-03-09', 'Issued'),
+(3, 7, 'Standard', 100.00, '2024-03-10', 'Issued');
+
+-- Tickets for Registrations from Event 4
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(4, 8, 'Standard', 130.00, '2024-04-01', 'Issued'),
+(4, 9, 'VIP', 180.00, '2024-04-02', 'Cancelled'),
+(4, 10, 'Standard', 130.00, '2024-04-03', 'Issued'),
+(4, 11, 'Standard', 130.00, '2024-04-04', 'Issued'),
+(4, 12, 'Standard', 130.00, '2024-04-05', 'Cancelled'),
+(4, 13, 'VIP', 180.00, '2024-04-06', 'Issued'),
+(4, 14, 'Standard', 130.00, '2024-04-07', 'Issued'),
+(4, 15, 'Standard', 130.00, '2024-04-08', 'Issued'),
+(4, 16, 'VIP', 180.00, '2024-04-09', 'Issued'),
+(4, 17, 'Standard', 130.00, '2024-04-10', 'Issued'),
+(4, 18, 'Standard', 130.00, '2024-04-11', 'Cancelled'),
+(4, 19, 'Standard', 130.00, '2024-04-12', 'Issued'),
+(4, 20, 'VIP', 180.00, '2024-04-13', 'Issued');
+
+-- Tickets for Registrations from Event 5
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(5, 21, 'Standard', 110.00, '2024-05-01', 'Issued'),
+(5, 22, 'Standard', 110.00, '2024-05-02', 'Cancelled'),
+(5, 23, 'VIP', 160.00, '2024-05-03', 'Issued'),
+(5, 24, 'Standard', 110.00, '2024-05-04', 'Issued'),
+(5, 25, 'VIP', 160.00, '2024-05-05', 'Cancelled'),
+(5, 26, 'Standard', 110.00, '2024-05-06', 'Issued'),
+(5, 27, 'Standard', 110.00, '2024-05-07', 'Issued'),
+(5, 28, 'VIP', 160.00, '2024-05-08', 'Issued'),
+(5, 29, 'Standard', 110.00, '2024-05-09', 'Issued'),
+(5, 30, 'Standard', 110.00, '2024-05-10', 'Cancelled'),
+(5, 1, 'Standard', 110.00, '2024-05-11', 'Issued'),
+(5, 2, 'VIP', 160.00, '2024-05-12', 'Issued'),
+(5, 3, 'Standard', 110.00, '2024-05-13', 'Issued');
+
+-- Continue similarly for other events (Event 6 and onwards)
+
+-- Tickets for Registrations from Event 6
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(6, 10, 'Standard', 125.00, '2024-06-01', 'Issued'),
+(6, 11, 'VIP', 180.00, '2024-06-02', 'Cancelled'),
+(6, 12, 'Standard', 125.00, '2024-06-03', 'Issued'),
+(6, 13, 'Standard', 125.00, '2024-06-04', 'Issued'),
+(6, 14, 'VIP', 180.00, '2024-06-05', 'Cancelled'),
+(6, 15, 'Standard', 125.00, '2024-06-06', 'Issued'),
+(6, 16, 'VIP', 180.00, '2024-06-07', 'Issued'),
+(6, 17, 'Standard', 125.00, '2024-06-08', 'Cancelled'),
+(6, 18, 'Standard', 125.00, '2024-06-09', 'Issued'),
+(6, 19, 'VIP', 180.00, '2024-06-10', 'Issued');
+
+-- Tickets for Registrations from Event 7
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(7, 20, 'Standard', 130.00, '2024-07-01', 'Issued'),
+(7, 21, 'VIP', 185.00, '2024-07-02', 'Cancelled'),
+(7, 22, 'Standard', 130.00, '2024-07-03', 'Issued'),
+(7, 23, 'VIP', 185.00, '2024-07-04', 'Cancelled'),
+(7, 24, 'Standard', 130.00, '2024-07-05', 'Issued'),
+(7, 25, 'VIP', 185.00, '2024-07-06', 'Issued'),
+(7, 26, 'Standard', 130.00, '2024-07-07', 'Cancelled'),
+(7, 27, 'Standard', 130.00, '2024-07-08', 'Issued'),
+(7, 28, 'VIP', 185.00, '2024-07-09', 'Issued'),
+(7, 29, 'Standard', 130.00, '2024-07-10', 'Cancelled'),
+(7, 30, 'Standard', 130.00, '2024-07-11', 'Issued'),
+(7, 1, 'VIP', 185.00, '2024-07-12', 'Issued');
+
+-- Tickets for Registrations from Event 8
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(8, 3, 'Standard', 140.00, '2024-08-01', 'Issued'),
+(8, 4, 'VIP', 190.00, '2024-08-02', 'Cancelled'),
+(8, 5, 'Standard', 140.00, '2024-08-03', 'Issued'),
+(8, 6, 'Standard', 140.00, '2024-08-04', 'Cancelled'),
+(8, 7, 'VIP', 190.00, '2024-08-05', 'Issued'),
+(8, 8, 'Standard', 140.00, '2024-08-06', 'Issued'),
+(8, 9, 'Standard', 140.00, '2024-08-07', 'Issued'),
+(8, 10, 'VIP', 190.00, '2024-08-08', 'Issued'),
+(8, 11, 'Standard', 140.00, '2024-08-09', 'Issued'),
+(8, 12, 'Standard', 140.00, '2024-08-10', 'Cancelled'),
+(8, 13, 'VIP', 190.00, '2024-08-11', 'Issued'),
+(8, 14, 'Standard', 140.00, '2024-08-12', 'Issued');
+
+-- Tickets for Registrations from Event 9
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(9, 15, 'Standard', 145.00, '2024-09-01', 'Issued'),
+(9, 16, 'VIP', 200.00, '2024-09-02', 'Cancelled'),
+(9, 17, 'Standard', 145.00, '2024-09-03', 'Issued'),
+(9, 18, 'Standard', 145.00, '2024-09-04', 'Cancelled'),
+(9, 19, 'VIP', 200.00, '2024-09-05', 'Issued'),
+(9, 20, 'Standard', 145.00, '2024-09-06', 'Issued'),
+(9, 21, 'Standard', 145.00, '2024-09-07', 'Cancelled'),
+(9, 22, 'VIP', 200.00, '2024-09-08', 'Issued'),
+(9, 23, 'Standard', 145.00, '2024-09-09', 'Issued'),
+(9, 24, 'Standard', 145.00, '2024-09-10', 'Cancelled'),
+(9, 25, 'VIP', 200.00, '2024-09-11', 'Issued'),
+(9, 26, 'Standard', 145.00, '2024-09-12', 'Issued'),
+(9, 27, 'Standard', 145.00, '2024-09-13', 'Cancelled'),
+(9, 28, 'VIP', 200.00, '2024-09-14', 'Issued'),
+(9, 29, 'Standard', 145.00, '2024-09-15', 'Issued');
+
+-- Tickets for Registrations from Event 10
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(10, 30, 'VIP', 210.00, '2024-10-01', 'Issued'),
+(10, 1, 'Standard', 150.00, '2024-10-02', 'Issued'),
+(10, 2, 'VIP', 210.00, '2024-10-03', 'Issued'),
+(10, 3, 'Standard', 150.00, '2024-10-04', 'Cancelled'),
+(10, 4, 'Standard', 150.00, '2024-10-05', 'Issued'),
+(10, 5, 'VIP', 210.00, '2024-10-06', 'Issued'),
+(10, 6, 'Standard', 150.00, '2024-10-07', 'Cancelled'),
+(10, 7, 'Standard', 150.00, '2024-10-08', 'Issued'),
+(10, 8, 'VIP', 210.00, '2024-10-09', 'Issued'),
+(10, 9, 'Standard', 150.00, '2024-10-10', 'Cancelled'),
+(10, 10, 'Standard', 150.00, '2024-10-11', 'Issued');
+
+-- Tickets for Registrations from Event 11
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(11, 11, 'Standard', 90.00, '2024-11-01', 'Issued'),
+(11, 12, 'VIP', 130.00, '2024-11-02', 'Cancelled'),
+(11, 13, 'Standard', 90.00, '2024-11-03', 'Issued'),
+(11, 14, 'VIP', 130.00, '2024-11-04', 'Issued'),
+(11, 15, 'Standard', 90.00, '2024-11-05', 'Issued'),
+(11, 16, 'Standard', 90.00, '2024-11-06', 'Issued'),
+(11, 17, 'VIP', 130.00, '2024-11-07', 'Cancelled'),
+(11, 18, 'Standard', 90.00, '2024-11-08', 'Issued'),
+(11, 19, 'VIP', 130.00, '2024-11-09', 'Issued'),
+(11, 20, 'Standard', 90.00, '2024-11-10', 'Cancelled');
+
+-- Tickets for Registrations from Event 12
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(12, 21, 'Standard', 100.00, '2024-12-01', 'Issued'),
+(12, 22, 'VIP', 140.00, '2024-12-02', 'Cancelled'),
+(12, 23, 'Standard', 100.00, '2024-12-03', 'Issued'),
+(12, 24, 'VIP', 140.00, '2024-12-04', 'Cancelled'),
+(12, 25, 'Standard', 100.00, '2024-12-05', 'Issued'),
+(12, 26, 'Standard', 100.00, '2024-12-06', 'Issued'),
+(12, 27, 'VIP', 140.00, '2024-12-07', 'Issued'),
+(12, 28, 'Standard', 100.00, '2024-12-08', 'Issued'),
+(12, 29, 'VIP', 140.00, '2024-12-09', 'Cancelled'),
+(12, 30, 'Standard', 100.00, '2024-12-10', 'Issued'),
+(12, 1, 'VIP', 140.00, '2024-12-11', 'Cancelled');
+
+-- Tickets for Registrations from Event 13
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(13, 2, 'Standard', 115.00, '2025-01-02', 'Issued'),
+(13, 3, 'VIP', 160.00, '2025-01-03', 'Cancelled'),
+(13, 4, 'Standard', 115.00, '2025-01-04', 'Issued'),
+(13, 5, 'VIP', 160.00, '2025-01-05', 'Cancelled'),
+(13, 6, 'Standard', 115.00, '2025-01-06', 'Issued'),
+(13, 7, 'Standard', 115.00, '2025-01-07', 'Issued'),
+(13, 8, 'VIP', 160.00, '2025-01-08', 'Issued'),
+(13, 9, 'Standard', 115.00, '2025-01-09', 'Cancelled'),
+(13, 10, 'VIP', 160.00, '2025-01-10', 'Issued'),
+(13, 11, 'Standard', 115.00, '2025-01-11', 'Issued');
+
+-- Tickets for Registrations from Event 14
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(14, 12, 'VIP', 125.00, '2025-02-01', 'Issued'),
+(14, 13, 'Standard', 85.00, '2025-02-02', 'Issued'),
+(14, 14, 'VIP', 125.00, '2025-02-03', 'Cancelled'),
+(14, 15, 'Standard', 85.00, '2025-02-04', 'Issued'),
+(14, 16, 'VIP', 125.00, '2025-02-05', 'Issued'),
+(14, 17, 'Standard', 85.00, '2025-02-06', 'Issued'),
+(14, 18, 'VIP', 125.00, '2025-02-07', 'Issued'),
+(14, 19, 'Standard', 85.00, '2025-02-08', 'Issued'),
+(14, 20, 'VIP', 125.00, '2025-02-09', 'Issued'),
+(14, 21, 'Standard', 85.00, '2025-02-10', 'Cancelled');
+
+-- Tickets for Registrations from Event 15
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(15, 22, 'Standard', 90.00, '2025-03-01', 'Issued'),
+(15, 23, 'VIP', 140.00, '2025-03-02', 'Cancelled'),
+(15, 24, 'Standard', 90.00, '2025-03-03', 'Issued'),
+(15, 25, 'VIP', 140.00, '2025-03-04', 'Cancelled'),
+(15, 26, 'Standard', 90.00, '2025-03-05', 'Issued'),
+(15, 27, 'Standard', 90.00, '2025-03-06', 'Issued'),
+(15, 28, 'VIP', 140.00, '2025-03-07', 'Issued'),
+(15, 29, 'Standard', 90.00, '2025-03-08', 'Issued'),
+(15, 30, 'VIP', 140.00, '2025-03-09', 'Issued'),
+(15, 1, 'Standard', 90.00, '2025-03-10', 'Issued');
+
+-- Tickets for Registrations from Event 16
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(16, 2, 'VIP', 110.00, '2025-04-01', 'Issued'),
+(16, 3, 'Standard', 70.00, '2025-04-02', 'Issued'),
+(16, 4, 'VIP', 110.00, '2025-04-03', 'Cancelled'),
+(16, 5, 'Standard', 70.00, '2025-04-04', 'Issued'),
+(16, 6, 'VIP', 110.00, '2025-04-05', 'Issued'),
+(16, 7, 'Standard', 70.00, '2025-04-06', 'Issued'),
+(16, 8, 'VIP', 110.00, '2025-04-07', 'Cancelled'),
+(16, 9, 'Standard', 70.00, '2025-04-08', 'Issued'),
+(16, 10, 'VIP', 110.00, '2025-04-09', 'Issued'),
+(16, 11, 'Standard', 70.00, '2025-04-10', 'Cancelled');
+
+-- Tickets for Registrations from Event 17
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(17, 12, 'Standard', 95.00, '2025-05-01', 'Issued'),
+(17, 13, 'VIP', 145.00, '2025-05-02', 'Cancelled'),
+(17, 14, 'Standard', 95.00, '2025-05-03', 'Issued'),
+(17, 15, 'VIP', 145.00, '2025-05-04', 'Cancelled'),
+(17, 16, 'Standard', 95.00, '2025-05-05', 'Issued'),
+(17, 17, 'Standard', 95.00, '2025-05-06', 'Issued'),
+(17, 18, 'VIP', 145.00, '2025-05-07', 'Issued'),
+(17, 19, 'Standard', 95.00, '2025-05-08', 'Issued'),
+(17, 20, 'VIP', 145.00, '2025-05-09', 'Issued'),
+(17, 21, 'Standard', 95.00, '2025-05-10', 'Issued');
+
+-- Tickets for Registrations from Event 18
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(18, 22, 'VIP', 120.00, '2025-06-01', 'Issued'),
+(18, 23, 'Standard', 80.00, '2025-06-02', 'Issued'),
+(18, 24, 'VIP', 120.00, '2025-06-03', 'Cancelled'),
+(18, 25, 'Standard', 80.00, '2025-06-04', 'Issued'),
+(18, 26, 'VIP', 120.00, '2025-06-05', 'Issued'),
+(18, 27, 'Standard', 80.00, '2025-06-06', 'Issued'),
+(18, 28, 'VIP', 120.00, '2025-06-07', 'Issued'),
+(18, 29, 'Standard', 80.00, '2025-06-08', 'Issued'),
+(18, 30, 'VIP', 120.00, '2025-06-09', 'Issued'),
+(18, 1, 'Standard', 80.00, '2025-06-10', 'Cancelled');
+
+-- Tickets for Registrations from Event 19
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(19, 2, 'Standard', 105.00, '2025-07-01', 'Issued'),
+(19, 3, 'VIP', 155.00, '2025-07-02', 'Cancelled'),
+(19, 4, 'Standard', 105.00, '2025-07-03', 'Issued'),
+(19, 5, 'VIP', 155.00, '2025-07-04', 'Cancelled'),
+(19, 6, 'Standard', 105.00, '2025-07-05', 'Issued'),
+(19, 7, 'Standard', 105.00, '2025-07-06', 'Issued'),
+(19, 8, 'VIP', 155.00, '2025-07-07', 'Issued'),
+(19, 9, 'Standard', 105.00, '2025-07-08', 'Cancelled'),
+(19, 10, 'VIP', 155.00, '2025-07-09', 'Issued'),
+(19, 11, 'Standard', 105.00, '2025-07-10', 'Issued');
+
+-- Tickets for Registrations from Event 20
+INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
+VALUES
+(20, 12, 'VIP', 135.00, '2025-08-01', 'Issued'),
+(20, 13, 'Standard', 95.00, '2025-08-02', 'Issued'),
+(20, 14, 'VIP', 135.00, '2025-08-03', 'Cancelled'),
+(20, 15, 'Standard', 95.00, '2025-08-04', 'Issued'),
+(20, 16, 'VIP', 135.00, '2025-08-05', 'Issued'),
+(20, 17, 'Standard', 95.00, '2025-08-06', 'Issued'),
+(20, 18, 'VIP', 135.00, '2025-08-07', 'Issued'),
+(20, 19, 'Standard', 95.00, '2025-08-08', 'Issued'),
+(20, 20, 'VIP', 135.00, '2025-08-09', 'Issued'),
+(20, 21, 'Standard', 95.00, '2025-08-10', 'Cancelled');
+
+-- Attendance records for Event 1
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(1, 1, '2024-01-15 09:00:00', '2024-01-15 12:00:00'),
+(2, 1, '2024-01-15 09:30:00', '2024-01-15 11:30:00'),
+(3, 1, '2024-01-15 10:00:00', '2024-01-15 13:00:00'),
+(4, 1, '2024-01-15 10:30:00', '2024-01-15 14:00:00'),
+(5, 1, '2024-01-15 11:00:00', '2024-01-15 15:00:00');
+
+-- Attendance records for Event 2
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(6, 2, '2024-02-10 09:15:00', '2024-02-10 12:15:00'),
+(7, 2, '2024-02-10 09:45:00', '2024-02-10 13:30:00'),
+(8, 2, '2024-02-10 10:00:00', '2024-02-10 14:00:00'),
+(9, 2, '2024-02-10 10:15:00', NULL),  -- Did not check out
+(10, 2, '2024-02-10 10:45:00', '2024-02-10 13:45:00');
+
+-- Attendance records for Event 3
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(11, 3, '2024-03-05 09:30:00', '2024-03-05 12:30:00'),
+(12, 3, '2024-03-05 10:00:00', '2024-03-05 13:00:00'),
+(13, 3, '2024-03-05 10:30:00', '2024-03-05 13:30:00'),
+(14, 3, '2024-03-05 11:00:00', '2024-03-05 14:00:00'),
+(15, 3, '2024-03-05 11:30:00', NULL);  -- Did not check out
+
+-- Attendance records for Event 4
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(16, 4, '2024-04-20 08:45:00', '2024-04-20 12:15:00'),
+(17, 4, '2024-04-20 09:15:00', '2024-04-20 12:45:00'),
+(18, 4, '2024-04-20 09:45:00', '2024-04-20 13:00:00'),
+(19, 4, '2024-04-20 10:15:00', '2024-04-20 13:30:00'),
+(20, 4, '2024-04-20 10:45:00', NULL);  -- Did not check out
+
+-- Attendance records for Event 5
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(21, 5, '2024-05-15 08:30:00', '2024-05-15 11:30:00'),
+(22, 5, '2024-05-15 09:00:00', '2024-05-15 12:00:00'),
+(23, 5, '2024-05-15 09:30:00', '2024-05-15 12:30:00'),
+(24, 5, '2024-05-15 10:00:00', NULL),  -- Did not check out
+(25, 5, '2024-05-15 10:30:00', '2024-05-15 13:30:00');
+
+-- Attendance records for Event 6
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(26, 6, '2024-06-01 08:45:00', '2024-06-01 11:45:00'),
+(27, 6, '2024-06-01 09:15:00', '2024-06-01 12:15:00'),
+(28, 6, '2024-06-01 09:45:00', '2024-06-01 13:00:00'),
+(29, 6, '2024-06-01 10:15:00', '2024-06-01 14:00:00'),
+(30, 6, '2024-06-01 10:45:00', NULL);  -- Did not check out
+
+-- Attendance records for Event 7
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(1, 7, '2024-07-20 08:00:00', '2024-07-20 11:00:00'),
+(2, 7, '2024-07-20 08:30:00', '2024-07-20 12:00:00'),
+(3, 7, '2024-07-20 09:00:00', '2024-07-20 12:30:00'),
+(4, 7, '2024-07-20 09:30:00', NULL),  -- Did not check out
+(5, 7, '2024-07-20 10:00:00', '2024-07-20 13:00:00');
+
+-- Attendance records for Event 8
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(6, 8, '2024-08-05 08:15:00', '2024-08-05 11:45:00'),
+(7, 8, '2024-08-05 08:45:00', '2024-08-05 12:15:00'),
+(8, 8, '2024-08-05 09:15:00', '2024-08-05 12:45:00'),
+(9, 8, '2024-08-05 09:45:00', NULL),  -- Did not check out
+(10, 8, '2024-08-05 10:15:00', '2024-08-05 13:15:00');
+
+-- Attendance records for Event 9
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(11, 9, '2024-09-10 08:00:00', '2024-09-10 11:30:00'),
+(12, 9, '2024-09-10 08:30:00', '2024-09-10 12:00:00'),
+(13, 9, '2024-09-10 09:00:00', '2024-09-10 12:30:00'),
+(14, 9, '2024-09-10 09:30:00', NULL),  -- Did not check out
+(15, 9, '2024-09-10 10:00:00', '2024-09-10 13:30:00');
+
+-- Attendance records for Event 10
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(16, 10, '2024-10-20 08:15:00', '2024-10-20 12:00:00'),
+(17, 10, '2024-10-20 08:45:00', '2024-10-20 12:30:00'),
+(18, 10, '2024-10-20 09:15:00', '2024-10-20 13:00:00'),
+(19, 10, '2024-10-20 09:45:00', NULL),  -- Did not check out
+(20, 10, '2024-10-20 10:15:00', '2024-10-20 13:45:00');
+
+-- Continue similarly for Events 11-20, maintaining varied check-in and check-out times for each user, with some missing check-out times.
+-- Attendance records for Event 11
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(11, 11, '2024-11-05 08:30:00', '2024-11-05 11:30:00'),
+(12, 11, '2024-11-05 09:00:00', '2024-11-05 12:00:00'),
+(13, 11, '2024-11-05 09:30:00', '2024-11-05 12:30:00'),
+(14, 11, '2024-11-05 10:00:00', NULL),  -- Did not check out
+(15, 11, '2024-11-05 10:30:00', '2024-11-05 13:30:00');
+
+-- Attendance records for Event 12
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(16, 12, '2024-12-15 08:00:00', '2024-12-15 11:00:00'),
+(17, 12, '2024-12-15 08:30:00', '2024-12-15 12:00:00'),
+(18, 12, '2024-12-15 09:00:00', '2024-12-15 12:30:00'),
+(19, 12, '2024-12-15 09:30:00', NULL),  -- Did not check out
+(20, 12, '2024-12-15 10:00:00', '2024-12-15 13:00:00');
+
+-- Attendance records for Event 13
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(21, 13, '2025-01-10 08:15:00', '2025-01-10 11:45:00'),
+(22, 13, '2025-01-10 08:45:00', '2025-01-10 12:15:00'),
+(23, 13, '2025-01-10 09:15:00', '2025-01-10 12:45:00'),
+(24, 13, '2025-01-10 09:45:00', NULL),  -- Did not check out
+(25, 13, '2025-01-10 10:15:00', '2025-01-10 13:15:00');
+
+-- Attendance records for Event 14
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(26, 14, '2025-02-12 08:00:00', '2025-02-12 11:30:00'),
+(27, 14, '2025-02-12 08:30:00', '2025-02-12 12:00:00'),
+(28, 14, '2025-02-12 09:00:00', '2025-02-12 12:30:00'),
+(29, 14, '2025-02-12 09:30:00', NULL),  -- Did not check out
+(30, 14, '2025-02-12 10:00:00', '2025-02-12 13:30:00');
+
+-- Attendance records for Event 15
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(1, 15, '2025-03-18 08:15:00', '2025-03-18 12:00:00'),
+(2, 15, '2025-03-18 08:45:00', '2025-03-18 12:30:00'),
+(3, 15, '2025-03-18 09:15:00', '2025-03-18 13:00:00'),
+(4, 15, '2025-03-18 09:45:00', NULL),  -- Did not check out
+(5, 15, '2025-03-18 10:15:00', '2025-03-18 13:45:00');
+
+-- Attendance records for Event 16
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(6, 16, '2025-04-22 08:30:00', '2025-04-22 11:30:00'),
+(7, 16, '2025-04-22 09:00:00', '2025-04-22 12:00:00'),
+(8, 16, '2025-04-22 09:30:00', '2025-04-22 12:30:00'),
+(9, 16, '2025-04-22 10:00:00', NULL),  -- Did not check out
+(10, 16, '2025-04-22 10:30:00', '2025-04-22 13:30:00');
+
+-- Attendance records for Event 17
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(11, 17, '2025-05-25 08:15:00', '2025-05-25 11:45:00'),
+(12, 17, '2025-05-25 08:45:00', '2025-05-25 12:15:00'),
+(13, 17, '2025-05-25 09:15:00', '2025-05-25 12:45:00'),
+(14, 17, '2025-05-25 09:45:00', NULL),  -- Did not check out
+(15, 17, '2025-05-25 10:15:00', '2025-05-25 13:15:00');
+
+-- Attendance records for Event 18
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(16, 18, '2025-06-07 08:00:00', '2025-06-07 11:30:00'),
+(17, 18, '2025-06-07 08:30:00', '2025-06-07 12:00:00'),
+(18, 18, '2025-06-07 09:00:00', '2025-06-07 12:30:00'),
+(19, 18, '2025-06-07 09:30:00', NULL),  -- Did not check out
+(20, 18, '2025-06-07 10:00:00', '2025-06-07 13:00:00');
+
+-- Attendance records for Event 19
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(21, 19, '2025-07-14 08:15:00', '2025-07-14 11:45:00'),
+(22, 19, '2025-07-14 08:45:00', '2025-07-14 12:15:00'),
+(23, 19, '2025-07-14 09:15:00', '2025-07-14 12:45:00'),
+(24, 19, '2025-07-14 09:45:00', NULL),  -- Did not check out
+(25, 19, '2025-07-14 10:15:00', '2025-07-14 13:15:00');
+
+-- Attendance records for Event 20
+INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
+VALUES
+(26, 20, '2025-08-12 08:30:00', '2025-08-12 11:30:00'),
+(27, 20, '2025-08-12 09:00:00', '2025-08-12 12:00:00'),
+(28, 20, '2025-08-12 09:30:00', '2025-08-12 12:30:00'),
+(29, 20, '2025-08-12 10:00:00', NULL),  -- Did not check out
+(30, 20, '2025-08-12 10:30:00', '2025-08-12 13:30:00');
+
+-- Resources available for event management
+INSERT INTO Resource (ResourceName, ResourceDescription, Quantity)
+VALUES
+('Projector', 'High-definition projector for presentations', 10),
+('Sound System', 'Audio system with microphones and speakers', 15),
+('Tables', 'Folding tables for event setup', 50),
+('Chairs', 'Seating for attendees', 200),
+('Laptops', 'Laptops for registration and event management', 25),
+('Lighting', 'Stage and area lighting equipment', 12),
+('Stage', 'Portable stage setup', 3),
+('Whiteboard', 'Large whiteboards with markers', 10),
+('Wi-Fi Router', 'Wireless internet setup', 5),
+('Refreshments', 'Refreshments including water, snacks, and beverages', 100);
+
+-- Resource allocations for Event 1
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(1, 1, 2, '2024-01-14', '08:00:00'),  -- 2 Projectors
+(1, 2, 1, '2024-01-14', '08:15:00'),  -- 1 Sound System
+(1, 3, 10, '2024-01-14', '08:30:00'), -- 10 Tables
+(1, 4, 100, '2024-01-14', '08:45:00');-- 100 Chairs
+
+-- Resource allocations for Event 2
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(2, 2, 2, '2024-02-09', '09:00:00'),  -- 2 Sound Systems
+(2, 4, 50, '2024-02-09', '09:15:00'), -- 50 Chairs
+(2, 6, 3, '2024-02-09', '09:30:00'),  -- 3 Lighting units
+(2, 7, 1, '2024-02-09', '09:45:00');  -- 1 Stage
+
+-- Resource allocations for Event 3
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(3, 5, 5, '2024-03-04', '08:00:00'),  -- 5 Laptops
+(3, 1, 1, '2024-03-04', '08:30:00'),  -- 1 Projector
+(3, 4, 80, '2024-03-04', '09:00:00'); -- 80 Chairs
+
+-- Resource allocations for Event 4
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(4, 1, 1, '2024-04-19', '10:00:00'),  -- 1 Projector
+(4, 2, 2, '2024-04-19', '10:15:00'),  -- 2 Sound Systems
+(4, 3, 12, '2024-04-19', '10:30:00'), -- 12 Tables
+(4, 4, 120, '2024-04-19', '10:45:00');-- 120 Chairs
+
+-- Resource allocations for Event 5
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(5, 8, 2, '2024-05-14', '07:45:00'),  -- 2 Whiteboards
+(5, 10, 75, '2024-05-14', '08:00:00'), -- 75 Refreshments
+(5, 6, 2, '2024-05-14', '08:15:00');   -- 2 Lighting units
+
+-- Resource allocations for Event 6
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(6, 5, 4, '2024-05-31', '09:00:00'),  -- 4 Laptops
+(6, 4, 60, '2024-05-31', '09:15:00'), -- 60 Chairs
+(6, 3, 10, '2024-05-31', '09:30:00'); -- 10 Tables
+
+-- Resource allocations for Event 7
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(7, 1, 1, '2024-07-19', '10:00:00'),  -- 1 Projector
+(7, 2, 1, '2024-07-19', '10:15:00'),  -- 1 Sound System
+(7, 10, 80, '2024-07-19', '10:30:00'); -- 80 Refreshments
+
+-- Resource allocations for Event 8
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(8, 1, 2, '2024-08-04', '09:00:00'),  -- 2 Projectors
+(8, 5, 3, '2024-08-04', '09:30:00'),  -- 3 Laptops
+(8, 3, 15, '2024-08-04', '10:00:00'); -- 15 Tables
+
+-- Resource allocations for Event 9
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(9, 2, 1, '2024-09-09', '08:30:00'),  -- 1 Sound System
+(9, 4, 100, '2024-09-09', '09:00:00'), -- 100 Chairs
+(9, 10, 50, '2024-09-09', '09:15:00'); -- 50 Refreshments
+
+-- Resource allocations for Event 10
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(10, 6, 4, '2024-10-19', '08:00:00'), -- 4 Lighting units
+(10, 7, 1, '2024-10-19', '08:15:00'), -- 1 Stage
+(10, 3, 15, '2024-10-19', '08:30:00'), -- 15 Tables
+(10, 4, 150, '2024-10-19', '08:45:00'); -- 150 Chairs
+
+-- Continue similarly for Events 11-20 as needed, allocating appropriate resources based on the type and scale of the event.
+-- Resource allocations for Event 11
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(11, 1, 1, '2024-11-04', '08:00:00'),  -- 1 Projector
+(11, 2, 1, '2024-11-04', '08:15:00'),  -- 1 Sound System
+(11, 3, 10, '2024-11-04', '08:30:00'), -- 10 Tables
+(11, 4, 100, '2024-11-04', '08:45:00');-- 100 Chairs
+
+-- Resource allocations for Event 12
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(12, 5, 4, '2024-12-14', '09:00:00'),  -- 4 Laptops
+(12, 2, 2, '2024-12-14', '09:15:00'),  -- 2 Sound Systems
+(12, 6, 3, '2024-12-14', '09:30:00'),  -- 3 Lighting units
+(12, 4, 80, '2024-12-14', '09:45:00'); -- 80 Chairs
+
+-- Resource allocations for Event 13
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(13, 1, 1, '2025-01-09', '08:00:00'),  -- 1 Projector
+(13, 3, 12, '2025-01-09', '08:30:00'), -- 12 Tables
+(13, 10, 70, '2025-01-09', '08:45:00');-- 70 Refreshments
+
+-- Resource allocations for Event 14
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(14, 8, 2, '2025-02-11', '07:45:00'),  -- 2 Whiteboards
+(14, 6, 2, '2025-02-11', '08:00:00'),  -- 2 Lighting units
+(14, 5, 3, '2025-02-11', '08:15:00');  -- 3 Laptops
+
+-- Resource allocations for Event 15
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(15, 9, 1, '2025-03-17', '08:00:00'),  -- 1 Wi-Fi Router
+(15, 4, 50, '2025-03-17', '08:15:00'), -- 50 Chairs
+(15, 2, 1, '2025-03-17', '08:30:00');  -- 1 Sound System
+
+-- Resource allocations for Event 16
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(16, 10, 80, '2025-04-21', '09:00:00'), -- 80 Refreshments
+(16, 3, 12, '2025-04-21', '09:15:00'),  -- 12 Tables
+(16, 6, 4, '2025-04-21', '09:30:00');   -- 4 Lighting units
+
+-- Resource allocations for Event 17
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(17, 1, 1, '2025-05-24', '08:00:00'),  -- 1 Projector
+(17, 2, 1, '2025-05-24', '08:15:00'),  -- 1 Sound System
+(17, 7, 1, '2025-05-24', '08:30:00'),  -- 1 Stage
+(17, 5, 5, '2025-05-24', '08:45:00');  -- 5 Laptops
+
+-- Resource allocations for Event 18
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(18, 6, 2, '2025-06-06', '09:00:00'),  -- 2 Lighting units
+(18, 4, 75, '2025-06-06', '09:15:00'), -- 75 Chairs
+(18, 10, 60, '2025-06-06', '09:30:00');-- 60 Refreshments
+
+-- Resource allocations for Event 19
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(19, 8, 1, '2025-07-13', '08:00:00'),  -- 1 Whiteboard
+(19, 2, 1, '2025-07-13', '08:15:00'),  -- 1 Sound System
+(19, 9, 1, '2025-07-13', '08:30:00'),  -- 1 Wi-Fi Router
+(19, 4, 60, '2025-07-13', '08:45:00'); -- 60 Chairs
+
+-- Resource allocations for Event 20
+INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
+VALUES
+(20, 1, 2, '2025-08-11', '08:00:00'),  -- 2 Projectors
+(20, 5, 4, '2025-08-11', '08:15:00'),  -- 4 Laptops
+(20, 3, 15, '2025-08-11', '08:30:00'), -- 15 Tables
+(20, 4, 120, '2025-08-11', '08:45:00');-- 120 Chairs
+
+-- Sponsors for various events
+INSERT INTO Sponsor (SponsorFName, SponsorLName, SponsorPhone, SponsorEmail)
+VALUES
+('Global', 'Tech', '1234567890', 'contact@globaltech.com'),
+('Health', 'Wellness', '0987654321', 'sponsor@healthwellness.org'),
+('NextGen', 'Career', '1122334455', 'info@nextgencareer.com'),
+('Music', 'World', '2233445566', 'music@musicworld.com'),
+('Art', 'Express', '3344556677', 'hello@artexpress.com'),
+('Startup', 'Hub', '4455667788', 'partners@startuphub.com'),
+('Culinary', 'Delights', '5566778899', 'support@culinarydelights.com'),
+('Science', 'Innovators', '6677889900', 'inquiries@scienceinnovators.com'),
+('Writers', 'Network', '7788990011', 'team@writersnetwork.com'),
+('Business', 'Associates', '8899001122', 'sponsors@businessassociates.com'),
+('Charity', 'Run', '9900112233', 'contact@charityrun.com'),
+('Dance', 'League', '1011121314', 'info@danceleague.com'),
+('Code', 'Warriors', '1112131415', 'sponsors@codewarriors.com'),
+('Photo', 'Vision', '1213141516', 'hello@photovision.com'),
+('Film', 'Society', '1314151617', 'team@filmsociety.com'),
+('Eco', 'Alliance', '1415161718', 'partners@ecoalliance.org'),
+('Yoga', 'Minds', '1516171819', 'hello@yogaminds.com'),
+('Community', 'Hearts', '1617181920', 'contact@communityhearts.com'),
+('Public', 'Speaking', '1718192021', 'info@publicspeaking.org'),
+('Tech', 'Innovators', '1819202122', 'sponsor@techinnovators.com');
+
+-- Multiple sponsorships for various events
+INSERT INTO EventSponsor (EventID, SponsorID, SponsorshipAmount, SponsoredDate, SponsorshipType)
+VALUES
+(1, 1, 2000.00, '2024-01-10', 'Financial'),
+(1, 2, 1500.00, '2024-01-11', 'In-kind'),
+(2, 2, 1800.00, '2024-02-01', 'Financial'),
+(2, 3, 2500.00, '2024-02-02', 'Product'),
+(3, 1, 2100.00, '2024-03-01', 'Financial'),
+(3, 4, 3000.00, '2024-03-05', 'Media'),
+(4, 4, 4000.00, '2024-04-10', 'Media'),
+(4, 5, 1500.00, '2024-04-12', 'Product'),
+(5, 6, 2200.00, '2024-05-05', 'Financial'),
+(5, 7, 1300.00, '2024-05-10', 'Product'),
+(6, 6, 1500.00, '2024-06-01', 'Financial'),
+(6, 8, 1100.00, '2024-06-03', 'Media'),
+(7, 7, 2300.00, '2024-07-01', 'Product'),
+(7, 9, 900.00, '2024-07-02', 'Financial'),
+(8, 8, 2800.00, '2024-08-01', 'Financial'),
+(8, 10, 1700.00, '2024-08-05', 'Community Support'),
+(9, 9, 2500.00, '2024-09-05', 'Media'),
+(9, 11, 1000.00, '2024-09-06', 'Charity'),
+(10, 10, 2100.00, '2024-10-10', 'Financial'),
+(10, 12, 1600.00, '2024-10-12', 'Product'),
+(11, 11, 1400.00, '2024-11-01', 'Charity'),
+(11, 13, 1700.00, '2024-11-02', 'Financial'),
+(12, 12, 1800.00, '2024-12-01', 'Product'),
+(12, 14, 1200.00, '2024-12-03', 'Media'),
+(13, 13, 2400.00, '2025-01-01', 'Financial'),
+(13, 15, 1300.00, '2025-01-04', 'Product'),
+(14, 14, 1500.00, '2025-02-10', 'Media'),
+(14, 16, 1100.00, '2025-02-12', 'Community Support'),
+(15, 15, 1000.00, '2025-03-15', 'Media'),
+(15, 17, 1300.00, '2025-03-18', 'Product'),
+(16, 16, 2200.00, '2025-04-01', 'Financial'),
+(16, 18, 1700.00, '2025-04-02', 'In-kind'),
+(17, 17, 1400.00, '2025-05-10', 'Product'),
+(17, 19, 1600.00, '2025-05-12', 'Media'),
+(18, 18, 900.00, '2025-06-05', 'Community Support'),
+(18, 20, 2000.00, '2025-06-07', 'Financial'),
+(19, 19, 2400.00, '2025-07-01', 'Financial'),
+(19, 1, 1000.00, '2025-07-02', 'Product'),
+(20, 20, 1800.00, '2025-08-01', 'In-kind'),
+(20, 2, 1300.00, '2025-08-02', 'Financial');
+
+-- Expanded bookings for venues by organizers with varied dates and statuses
+INSERT INTO Booking (VenueID, OrganizerID, BookingDate, BookingStatus)
+VALUES
+(1, 1, '2024-01-10', 'Confirmed'),
+(1, 2, '2024-01-12', 'Pending'),
+(2, 3, '2024-02-05', 'Confirmed'),
+(2, 4, '2024-02-10', 'Cancelled'),
+(3, 5, '2024-03-01', 'Confirmed'),
+(3, 6, '2024-03-02', 'Pending'),
+(4, 7, '2024-04-01', 'Confirmed'),
+(4, 8, '2024-04-04', 'Confirmed'),
+(5, 9, '2024-05-10', 'Confirmed'),
+(5, 10, '2024-05-12', 'Pending'),
+(6, 11, '2024-06-01', 'Cancelled'),
+(6, 12, '2024-06-05', 'Confirmed'),
+(7, 13, '2024-07-10', 'Confirmed'),
+(7, 14, '2024-07-12', 'Pending'),
+(8, 15, '2024-08-01', 'Confirmed'),
+(8, 16, '2024-08-02', 'Confirmed'),
+(9, 17, '2024-09-10', 'Confirmed'),
+(9, 18, '2024-09-12', 'Pending'),
+(10, 19, '2024-10-05', 'Confirmed'),
+(10, 20, '2024-10-08', 'Cancelled'),
+(1, 5, '2024-11-10', 'Confirmed'),
+(2, 6, '2024-12-10', 'Pending'),
+(3, 7, '2025-01-05', 'Confirmed'),
+(4, 8, '2025-02-05', 'Confirmed'),
+(5, 9, '2025-03-05', 'Confirmed'),
+(6, 10, '2025-04-05', 'Cancelled'),
+(7, 11, '2025-05-05', 'Pending'),
+(8, 12, '2025-06-05', 'Confirmed'),
+(9, 13, '2025-07-05', 'Confirmed'),
+(10, 14, '2025-08-05', 'Confirmed');
 
 
-INSERT INTO Booking (VenueID, OrganizerID, BookingDate, BookingStatus) VALUES
-(1, 1, '2024-01-08', 'Confirmed'),
-(2, 2, '2024-02-13', 'Pending'),
-(3, 3, '2024-03-18', 'Confirmed'),
-(4, 4, '2024-04-03', 'Cancelled'),
-(5, 5, '2024-05-07', 'Confirmed'),
-(6, 6, '2024-06-12', 'Pending'),
-(7, 7, '2024-07-17', 'Cancelled'),
-(8, 8, '2024-08-06', 'Confirmed'),
-(9, 9, '2024-09-11', 'Confirmed'),
-(10, 10, '2024-10-07', 'Pending'),
-(1, 2, '2024-11-05', 'Confirmed'),
-(2, 3, '2024-11-10', 'Pending'),
-(3, 4, '2024-11-15', 'Confirmed'),
-(4, 5, '2024-11-20', 'Cancelled'),
-(5, 6, '2024-11-25', 'Confirmed'),
-(6, 7, '2024-12-01', 'Pending'),
-(7, 8, '2024-12-10', 'Confirmed'),
-(8, 9, '2024-12-15', 'Cancelled'),
-(9, 10, '2025-01-05', 'Confirmed'),
-(10, 1, '2025-01-10', 'Pending'),
-(1, 3, '2025-08-01', 'Confirmed'),
-(2, 4, '2025-09-01', 'Pending'),
-(3, 5, '2025-10-01', 'Confirmed'),
-(4, 6, '2025-11-01', 'Cancelled'),
-(5, 7, '2025-12-01', 'Confirmed'),
-(6, 8, '2026-01-01', 'Pending'),
-(7, 9, '2026-02-01', 'Confirmed'),
-(8, 10, '2026-03-01', 'Cancelled'),
-(9, 1, '2026-04-01', 'Confirmed'),
-(10, 2, '2026-05-01', 'Pending'),
-(1, 1, '2025-06-02', 'Confirmed'),
-(2, 2, '2025-06-20', 'Pending'),
-(3, 3, '2025-07-01', 'Confirmed'),
-(4, 4, '2025-07-10', 'Cancelled'),
-(5, 5, '2025-07-28', 'Confirmed'),
-(6, 6, '2025-08-05', 'Pending'),
-(7, 7, '2025-08-17', 'Confirmed'),
-(8, 8, '2025-09-01', 'Cancelled'),
-(9, 9, '2025-09-12', 'Confirmed'),
-(10, 10, '2025-09-24', 'Pending'),
-(11, 11, '2025-10-04', 'Confirmed'),
-(12, 12, '2025-10-20', 'Pending'),
-(13, 13, '2025-11-05', 'Cancelled'),
-(14, 14, '2025-11-25', 'Confirmed'),
-(15, 15, '2025-12-03', 'Pending'),
-(16, 16, '2025-12-15', 'Cancelled'),
-(17, 17, '2025-12-24', 'Confirmed'),
-(18, 18, '2026-01-08', 'Pending'),
-(19, 19, '2026-01-18', 'Cancelled'),
-(20, 20, '2026-01-28', 'Confirmed');
