@@ -759,37 +759,35 @@ VALUES
 -- Payments for Registrations from Event 19
 INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
 VALUES
-(235, 130.00, '2025-07-01', 'Completed'),
-(236, 120.00, '2025-07-02', 'Pending'),
-(237, 125.00, '2025-07-03', 'Completed'),
-(238, 115.00, '2025-07-04', 'Refunded'),
-(239, 150.00, '2025-07-05', 'Completed'),
-(240, 140.00, '2025-07-06', 'Pending'),
-(241, 135.00, '2025-07-07', 'Completed'),
-(242, 130.00, '2025-07-08', 'Completed'),
-(243, 145.00, '2025-07-09', 'Refunded'),
-(244, 125.00, '2025-07-10', 'Pending'),
-(245, 140.00, '2025-07-11', 'Completed'),
-(246, 110.00, '2025-07-12', 'Completed');
+(213, 100.00, '2025-07-06', 'Completed'),
+(214, 120.00, '2025-07-07', 'Pending'),
+(215, 150.00, '2025-07-08', 'Completed'),
+(216, 75.00, '2025-07-09', 'Refunded'),
+(217, 130.00, '2025-07-10', 'Completed'),
+(218, 145.00, '2025-07-11', 'Pending'),
+(219, 110.00, '2025-07-12', 'Completed'),
+(220, 125.00, '2025-07-13', 'Completed'),
+(221, 90.00, '2025-07-14', 'Pending'),
+(222, 105.00, '2025-07-15', 'Completed');
 
 -- Payments for Registrations from Event 20
 INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
 VALUES
-(247, 135.00, '2025-08-01', 'Completed'),
-(248, 130.00, '2025-08-02', 'Pending'),
-(249, 120.00, '2025-08-03', 'Completed'),
-(250, 110.00, '2025-08-04', 'Refunded'),
-(251, 125.00, '2025-08-05', 'Completed'),
-(252, 115.00, '2025-08-06', 'Pending'),
-(253, 150.00, '2025-08-07', 'Completed'),
-(254, 140.00, '2025-08-08', 'Completed'),
-(255, 130.00, '2025-08-09', 'Refunded'),
-(256, 125.00, '2025-08-10', 'Pending'),
-(257, 135.00, '2025-08-11', 'Completed'),
-(258, 120.00, '2025-08-12', 'Completed'),
-(259, 115.00, '2025-08-13', 'Refunded'),
-(260, 140.00, '2025-08-14', 'Completed'),
-(261, 145.00, '2025-08-15', 'Pending');
+(223, 95.00, '2025-08-01', 'Completed'),
+(224, 85.00, '2025-08-02', 'Pending'),
+(225, 105.00, '2025-08-03', 'Completed'),
+(226, 110.00, '2025-08-04', 'Refunded'),
+(227, 120.00, '2025-08-05', 'Completed'),
+(228, 130.00, '2025-08-06', 'Pending'),
+(229, 115.00, '2025-08-07', 'Completed'),
+(230, 125.00, '2025-08-08', 'Completed'),
+(231, 90.00, '2025-08-09', 'Completed'),
+(232, 135.00, '2025-08-10', 'Pending'),
+(233, 150.00, '2025-08-11', 'Completed'),
+(234, 140.00, '2025-08-12', 'Completed'),
+(235, 130.00, '2025-08-13', 'Refunded'),
+(236, 100.00, '2025-08-14', 'Pending'),
+(237, 110.00, '2025-08-15', 'Completed');
 
 -- Tickets for Registrations from Event 1
 INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
@@ -1545,3 +1543,6 @@ VALUES
 (10, 14, '2025-08-05', 'Confirmed');
 
 
+
+SELECT RegistrationID FROM Registration
+WHERE EventID IN (19, 20);
