@@ -1544,5 +1544,3 @@ VALUES
 
 
 
-SELECT RegistrationID FROM Registration
-WHERE EventID IN (19, 20);
