@@ -31,6 +31,7 @@ VALUES
 ('Christopher', 'Carter', 'christopher.carter@example.com', '2728293031', 'Attendee', 'password123'),
 ('Susan', 'Mitchell', 'susan.mitchell@example.com', '2829303132', 'Organizer', 'password123');
 
+
 INSERT INTO Organizer (OrganizerFName, OrganizerLName, OrganizerRole, OrganizerPhone, OrganizerEmail)
 VALUES
 ('Alice', 'Johnson', 'Event Manager', '4455667788', 'alice.johnson@example.com'),
@@ -53,6 +54,7 @@ VALUES
 ('Ryan', 'Nelson', 'Coordinator', '2122232425', 'ryan.nelson@example.com'),
 ('Sophia', 'Baker', 'Event Manager', '2223242526', 'sophia.baker@example.com'),
 ('Oliver', 'Carter', 'Coordinator', '2324252627', 'oliver.carter@example.com');
+
 
 INSERT INTO Event (VenueID, EventCategoryID, OrganizerID, EventTitle, EventDescription, StartDate, EndDate, EventBudget)
 VALUES
@@ -90,6 +92,7 @@ VALUES
 ('Theater'),
 ('Library Hall'),
 ('Museum Gallery');
+
 
 INSERT INTO Venue (VenueTypeID, VenueName, VenueCapacity, VenueLocation)
 VALUES
@@ -138,6 +141,7 @@ VALUES
 ('Community & Volunteer', 'Community service and volunteer events.'),
 ('Public Speaking & Communication', 'Workshops to improve public speaking skills.');
 
+
 -- Registrations for Event 1 (15 registrations)
 INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
 VALUES
@@ -155,11 +159,9 @@ VALUES
 (1, 12, '2024-01-21', 'Pending'),
 (1, 13, '2024-01-22', 'Confirmed'),
 (1, 14, '2024-01-23', 'Confirmed'),
-(1, 15, '2024-01-24', 'Pending');
+(1, 15, '2024-01-24', 'Pending'),
 
 -- Registrations for Event 2 (12 registrations)
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
-VALUES
 (2, 16, '2024-02-01', 'Confirmed'),
 (2, 17, '2024-02-02', 'Pending'),
 (2, 18, '2024-02-03', 'Confirmed'),
@@ -171,11 +173,9 @@ VALUES
 (2, 24, '2024-02-09', 'Confirmed'),
 (2, 25, '2024-02-10', 'Pending'),
 (2, 26, '2024-02-11', 'Confirmed'),
-(2, 27, '2024-02-12', 'Confirmed');
+(2, 27, '2024-02-12', 'Confirmed'),
 
 -- Registrations for Event 3 (10 registrations)
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
-VALUES
 (3, 28, '2024-03-01', 'Confirmed'),
 (3, 29, '2024-03-02', 'Pending'),
 (3, 30, '2024-03-03', 'Confirmed'),
@@ -185,11 +185,9 @@ VALUES
 (3, 4, '2024-03-07', 'Confirmed'),
 (3, 5, '2024-03-08', 'Pending'),
 (3, 6, '2024-03-09', 'Confirmed'),
-(3, 7, '2024-03-10', 'Confirmed');
+(3, 7, '2024-03-10', 'Confirmed'),
 
 -- Registrations for Event 4 (18 registrations)
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
-VALUES
 (4, 8, '2024-04-01', 'Confirmed'),
 (4, 9, '2024-04-02', 'Pending'),
 (4, 10, '2024-04-03', 'Confirmed'),
@@ -207,11 +205,9 @@ VALUES
 (4, 22, '2024-04-15', 'Pending'),
 (4, 23, '2024-04-16', 'Confirmed'),
 (4, 24, '2024-04-17', 'Confirmed'),
-(4, 25, '2024-04-18', 'Pending');
+(4, 25, '2024-04-18', 'Pending'),
 
 -- Registrations for Event 5 (14 registrations)
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
-VALUES
 (5, 26, '2024-05-01', 'Confirmed'),
 (5, 27, '2024-05-02', 'Pending'),
 (5, 28, '2024-05-03', 'Confirmed'),
@@ -225,12 +221,9 @@ VALUES
 (5, 6, '2024-05-11', 'Cancelled'),
 (5, 7, '2024-05-12', 'Pending'),
 (5, 8, '2024-05-13', 'Confirmed'),
-(5, 9, '2024-05-14', 'Confirmed');
+(5, 9, '2024-05-14', 'Confirmed'),
 
--- Continue similar entries for each event, varying between 10 and 20 registrations per event
 -- Registrations for Event 6 (10 registrations)
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
-VALUES
 (6, 10, '2024-06-01', 'Confirmed'),
 (6, 11, '2024-06-02', 'Pending'),
 (6, 12, '2024-06-03', 'Confirmed'),
@@ -240,11 +233,9 @@ VALUES
 (6, 16, '2024-06-07', 'Confirmed'),
 (6, 17, '2024-06-08', 'Pending'),
 (6, 18, '2024-06-09', 'Confirmed'),
-(6, 19, '2024-06-10', 'Confirmed');
+(6, 19, '2024-06-10', 'Confirmed'),
 
 -- Registrations for Event 7 (13 registrations)
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
-VALUES
 (7, 20, '2024-07-01', 'Confirmed'),
 (7, 21, '2024-07-02', 'Pending'),
 (7, 22, '2024-07-03', 'Confirmed'),
@@ -257,11 +248,9 @@ VALUES
 (7, 29, '2024-07-10', 'Pending'),
 (7, 30, '2024-07-11', 'Confirmed'),
 (7, 1, '2024-07-12', 'Confirmed'),
-(7, 2, '2024-07-13', 'Pending');
+(7, 2, '2024-07-13', 'Pending'),
 
 -- Registrations for Event 8 (12 registrations)
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
-VALUES
 (8, 3, '2024-08-01', 'Confirmed'),
 (8, 4, '2024-08-02', 'Pending'),
 (8, 5, '2024-08-03', 'Confirmed'),
@@ -273,11 +262,9 @@ VALUES
 (8, 11, '2024-08-09', 'Confirmed'),
 (8, 12, '2024-08-10', 'Pending'),
 (8, 13, '2024-08-11', 'Confirmed'),
-(8, 14, '2024-08-12', 'Confirmed');
+(8, 14, '2024-08-12', 'Confirmed'),
 
 -- Registrations for Event 9 (15 registrations)
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
-VALUES
 (9, 15, '2024-09-01', 'Confirmed'),
 (9, 16, '2024-09-02', 'Pending'),
 (9, 17, '2024-09-03', 'Confirmed'),
@@ -292,11 +279,9 @@ VALUES
 (9, 26, '2024-09-12', 'Confirmed'),
 (9, 27, '2024-09-13', 'Cancelled'),
 (9, 28, '2024-09-14', 'Pending'),
-(9, 29, '2024-09-15', 'Confirmed');
+(9, 29, '2024-09-15', 'Confirmed'),
 
 -- Registrations for Event 10 (11 registrations)
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
-VALUES
 (10, 30, '2024-10-01', 'Confirmed'),
 (10, 1, '2024-10-02', 'Pending'),
 (10, 2, '2024-10-03', 'Confirmed'),
@@ -307,11 +292,9 @@ VALUES
 (10, 7, '2024-10-08', 'Confirmed'),
 (10, 8, '2024-10-09', 'Confirmed'),
 (10, 9, '2024-10-10', 'Pending'),
-(10, 10, '2024-10-11', 'Confirmed');
+(10, 10, '2024-10-11', 'Confirmed'),
 
 -- Registrations for Event 13 (16 registrations)
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
-VALUES
 (13, 5, '2025-01-01', 'Confirmed'),
 (13, 6, '2025-01-02', 'Pending'),
 (13, 7, '2025-01-03', 'Confirmed'),
@@ -327,11 +310,9 @@ VALUES
 (13, 17, '2025-01-13', 'Confirmed'),
 (13, 18, '2025-01-14', 'Cancelled'),
 (13, 19, '2025-01-15', 'Pending'),
-(13, 20, '2025-01-16', 'Confirmed');
+(13, 20, '2025-01-16', 'Confirmed'),
 
 -- Registrations for Event 14 (11 registrations)
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
-VALUES
 (14, 21, '2025-02-01', 'Confirmed'),
 (14, 22, '2025-02-02', 'Pending'),
 (14, 23, '2025-02-03', 'Confirmed'),
@@ -342,11 +323,9 @@ VALUES
 (14, 28, '2025-02-08', 'Confirmed'),
 (14, 29, '2025-02-09', 'Confirmed'),
 (14, 30, '2025-02-10', 'Pending'),
-(14, 1, '2025-02-11', 'Confirmed');
+(14, 1, '2025-02-11', 'Confirmed'),
 
 -- Registrations for Event 15 (18 registrations)
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
-VALUES
 (15, 2, '2025-03-01', 'Confirmed'),
 (15, 3, '2025-03-02', 'Pending'),
 (15, 4, '2025-03-03', 'Confirmed'),
@@ -364,11 +343,9 @@ VALUES
 (15, 16, '2025-03-15', 'Pending'),
 (15, 17, '2025-03-16', 'Confirmed'),
 (15, 18, '2025-03-17', 'Confirmed'),
-(15, 19, '2025-03-18', 'Cancelled');
+(15, 19, '2025-03-18', 'Cancelled'),
 
 -- Registrations for Event 16 (10 registrations)
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
-VALUES
 (16, 20, '2025-04-01', 'Confirmed'),
 (16, 21, '2025-04-02', 'Pending'),
 (16, 22, '2025-04-03', 'Confirmed'),
@@ -378,11 +355,9 @@ VALUES
 (16, 26, '2025-04-07', 'Pending'),
 (16, 27, '2025-04-08', 'Confirmed'),
 (16, 28, '2025-04-09', 'Confirmed'),
-(16, 29, '2025-04-10', 'Pending');
+(16, 29, '2025-04-10', 'Pending'),
 
 -- Registrations for Event 17 (14 registrations)
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
-VALUES
 (17, 30, '2025-05-01', 'Confirmed'),
 (17, 1, '2025-05-02', 'Pending'),
 (17, 2, '2025-05-03', 'Confirmed'),
@@ -396,11 +371,9 @@ VALUES
 (17, 10, '2025-05-11', 'Confirmed'),
 (17, 11, '2025-05-12', 'Confirmed'),
 (17, 12, '2025-05-13', 'Pending'),
-(17, 13, '2025-05-14', 'Confirmed');
+(17, 13, '2025-05-14', 'Confirmed'),
 
 -- Registrations for Event 18 (13 registrations)
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
-VALUES
 (18, 14, '2025-06-01', 'Confirmed'),
 (18, 15, '2025-06-02', 'Pending'),
 (18, 16, '2025-06-03', 'Confirmed'),
@@ -413,11 +386,9 @@ VALUES
 (18, 23, '2025-06-10', 'Confirmed'),
 (18, 24, '2025-06-11', 'Cancelled'),
 (18, 25, '2025-06-12', 'Pending'),
-(18, 26, '2025-06-13', 'Confirmed');
+(18, 26, '2025-06-13', 'Confirmed'),
 
 -- Registrations for Event 19 (10 registrations)
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
-VALUES
 (19, 27, '2025-07-01', 'Confirmed'),
 (19, 28, '2025-07-02', 'Pending'),
 (19, 29, '2025-07-03', 'Confirmed'),
@@ -427,11 +398,9 @@ VALUES
 (19, 3, '2025-07-07', 'Confirmed'),
 (19, 4, '2025-07-08', 'Pending'),
 (19, 5, '2025-07-09', 'Confirmed'),
-(19, 6, '2025-07-10', 'Confirmed');
+(19, 6, '2025-07-10', 'Confirmed'),
 
 -- Registrations for Event 20 (15 registrations)
-INSERT INTO Registration (EventID, UserID, RegistrationDate, RegistrationStatus)
-VALUES
 (20, 7, '2025-08-01', 'Confirmed'),
 (20, 8, '2025-08-02', 'Pending'),
 (20, 9, '2025-08-03', 'Confirmed'),
@@ -448,7 +417,8 @@ VALUES
 (20, 20, '2025-08-14', 'Confirmed'),
 (20, 21, '2025-08-15', 'Confirmed');
 
--- Payments for Registrations from Event 1 (Example amounts)
+
+-- Payments for Registrations from Event 1 
 INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
 VALUES
 (1, 150.00, '2024-01-11', 'Completed'),
@@ -465,11 +435,9 @@ VALUES
 (12, 130.00, '2024-01-22', 'Pending'),
 (13, 175.00, '2024-01-23', 'Completed'),
 (14, 135.00, '2024-01-24', 'Completed'),
-(15, 155.00, '2024-01-25', 'Pending');
+(15, 155.00, '2024-01-25', 'Pending'),
 
 -- Payments for Registrations from Event 2
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (16, 150.00, '2024-02-01', 'Completed'),
 (17, 130.00, '2024-02-02', 'Pending'),
 (18, 120.00, '2024-02-03', 'Completed'),
@@ -481,11 +449,9 @@ VALUES
 (24, 90.00, '2024-02-09', 'Pending'),
 (25, 160.00, '2024-02-10', 'Completed'),
 (26, 145.00, '2024-02-11', 'Refunded'),
-(27, 120.00, '2024-02-12', 'Completed');
+(27, 120.00, '2024-02-12', 'Completed'),
 
 -- Payments for Registrations from Event 3
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (28, 100.00, '2024-03-01', 'Completed'),
 (29, 85.00, '2024-03-02', 'Pending'),
 (30, 110.00, '2024-03-03', 'Completed'),
@@ -495,11 +461,9 @@ VALUES
 (34, 90.00, '2024-03-07', 'Completed'),
 (35, 105.00, '2024-03-08', 'Pending'),
 (36, 125.00, '2024-03-09', 'Completed'),
-(37, 115.00, '2024-03-10', 'Completed');
+(37, 115.00, '2024-03-10', 'Completed'),
 
 -- Payments for Registrations from Event 4
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (38, 150.00, '2024-04-01', 'Completed'),
 (39, 120.00, '2024-04-02', 'Pending'),
 (40, 175.00, '2024-04-03', 'Completed'),
@@ -517,13 +481,9 @@ VALUES
 (52, 150.00, '2024-04-15', 'Pending'),
 (53, 130.00, '2024-04-16', 'Completed'),
 (54, 125.00, '2024-04-17', 'Completed'),
-(55, 135.00, '2024-04-18', 'Pending');
-
--- Continue similarly for other events and registrations (Event 5 and onwards)
+(55, 135.00, '2024-04-18', 'Pending'),
 
 -- Payments for Registrations from Event 5
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (56, 125.00, '2024-05-02', 'Completed'),
 (57, 110.00, '2024-05-03', 'Pending'),
 (58, 135.00, '2024-05-04', 'Completed'),
@@ -537,11 +497,9 @@ VALUES
 (66, 150.00, '2024-05-12', 'Pending'),
 (67, 160.00, '2024-05-13', 'Completed'),
 (68, 125.00, '2024-05-14', 'Completed'),
-(69, 135.00, '2024-05-15', 'Pending');
+(69, 135.00, '2024-05-15', 'Pending'),
 
 -- Payments for Registrations from Event 6
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (70, 140.00, '2024-06-02', 'Completed'),
 (71, 120.00, '2024-06-03', 'Pending'),
 (72, 150.00, '2024-06-04', 'Pending'),
@@ -551,11 +509,9 @@ VALUES
 (76, 110.00, '2024-06-08', 'Pending'),
 (77, 125.00, '2024-06-09', 'Completed'),
 (78, 135.00, '2024-06-10', 'Completed'),
-(79, 145.00, '2024-06-11', 'Completed');
+(79, 145.00, '2024-06-11', 'Completed'),
 
 -- Payments for Registrations from Event 7
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (80, 100.00, '2024-07-02', 'Completed'),
 (81, 115.00, '2024-07-03', 'Pending'),
 (82, 130.00, '2024-07-04', 'Completed'),
@@ -568,11 +524,9 @@ VALUES
 (89, 155.00, '2024-07-11', 'Refunded'),
 (90, 120.00, '2024-07-12', 'Pending'),
 (91, 130.00, '2024-07-13', 'Completed'),
-(92, 140.00, '2024-07-14', 'Completed');
+(92, 140.00, '2024-07-14', 'Completed'),
 
 -- Payments for Registrations from Event 8
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (93, 150.00, '2024-08-02', 'Completed'),
 (94, 130.00, '2024-08-03', 'Pending'),
 (95, 125.00, '2024-08-04', 'Completed'),
@@ -584,11 +538,9 @@ VALUES
 (101, 115.00, '2024-08-10', 'Completed'),
 (102, 125.00, '2024-08-11', 'Refunded'),
 (103, 135.00, '2024-08-12', 'Pending'),
-(104, 145.00, '2024-08-13', 'Completed');
+(104, 145.00, '2024-08-13', 'Completed'),
 
 -- Payments for Registrations from Event 9
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (105, 150.00, '2024-09-02', 'Completed'),
 (106, 125.00, '2024-09-03', 'Pending'),
 (107, 135.00, '2024-09-04', 'Completed'),
@@ -602,11 +554,9 @@ VALUES
 (115, 130.00, '2024-09-12', 'Pending'),
 (116, 125.00, '2024-09-13', 'Completed'),
 (117, 135.00, '2024-09-14', 'Completed'),
-(118, 145.00, '2024-09-15', 'Pending');
+(118, 145.00, '2024-09-15', 'Pending'),
 
 -- Payments for Registrations from Event 10
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (119, 140.00, '2024-10-02', 'Completed'),
 (120, 115.00, '2024-10-03', 'Pending'),
 (121, 120.00, '2024-10-04', 'Completed'),
@@ -617,11 +567,9 @@ VALUES
 (126, 110.00, '2024-10-09', 'Completed'),
 (127, 115.00, '2024-10-10', 'Completed'),
 (128, 130.00, '2024-10-11', 'Completed'),
-(129, 145.00, '2024-10-12', 'Pending');
+(129, 145.00, '2024-10-12', 'Pending'),
 
 -- Payments for Registrations from Event 11
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (130, 100.00, '2024-11-01', 'Completed'),
 (131, 110.00, '2024-11-02', 'Pending'),
 (132, 120.00, '2024-11-03', 'Completed'),
@@ -631,11 +579,9 @@ VALUES
 (136, 105.00, '2024-11-07', 'Pending'),
 (137, 125.00, '2024-11-08', 'Completed'),
 (138, 140.00, '2024-11-09', 'Completed'),
-(139, 150.00, '2024-11-10', 'Refunded');
+(139, 150.00, '2024-11-10', 'Refunded'),
 
 -- Payments for Registrations from Event 12
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (140, 130.00, '2024-12-01', 'Completed'),
 (141, 120.00, '2024-12-02', 'Pending'),
 (142, 135.00, '2024-12-03', 'Completed'),
@@ -649,11 +595,9 @@ VALUES
 (150, 125.00, '2024-12-11', 'Completed'),
 (151, 135.00, '2024-12-12', 'Pending'),
 (152, 145.00, '2024-12-13', 'Completed'),
-(153, 100.00, '2024-12-14', 'Completed');
+(153, 100.00, '2024-12-14', 'Completed'),
 
 -- Payments for Registrations from Event 13
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (154, 150.00, '2025-01-02', 'Completed'),
 (155, 110.00, '2025-01-03', 'Pending'),
 (156, 120.00, '2025-01-04', 'Completed'),
@@ -669,11 +613,9 @@ VALUES
 (166, 140.00, '2025-01-14', 'Completed'),
 (167, 145.00, '2025-01-15', 'Pending'),
 (168, 125.00, '2025-01-16', 'Completed'),
-(169, 130.00, '2025-01-17', 'Completed');
+(169, 130.00, '2025-01-17', 'Completed'),
 
 -- Payments for Registrations from Event 14
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (170, 100.00, '2025-02-01', 'Completed'),
 (171, 110.00, '2025-02-02', 'Pending'),
 (172, 120.00, '2025-02-03', 'Completed'),
@@ -683,11 +625,9 @@ VALUES
 (176, 115.00, '2025-02-07', 'Pending'),
 (177, 130.00, '2025-02-08', 'Completed'),
 (178, 150.00, '2025-02-09', 'Completed'),
-(179, 120.00, '2025-02-10', 'Completed');
+(179, 120.00, '2025-02-10', 'Completed'),
 
 -- Payments for Registrations from Event 15
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (180, 140.00, '2025-03-01', 'Completed'),
 (181, 120.00, '2025-03-02', 'Pending'),
 (182, 110.00, '2025-03-03', 'Completed'),
@@ -705,11 +645,9 @@ VALUES
 (194, 115.00, '2025-03-15', 'Completed'),
 (195, 130.00, '2025-03-16', 'Pending'),
 (196, 140.00, '2025-03-17', 'Completed'),
-(197, 135.00, '2025-03-18', 'Refunded');
+(197, 135.00, '2025-03-18', 'Refunded'),
 
 -- Payments for Registrations from Event 16
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (198, 130.00, '2025-04-01', 'Completed'),
 (199, 115.00, '2025-04-02', 'Pending'),
 (200, 120.00, '2025-04-03', 'Completed'),
@@ -719,11 +657,9 @@ VALUES
 (204, 120.00, '2025-04-07', 'Pending'),
 (205, 135.00, '2025-04-08', 'Completed'),
 (206, 125.00, '2025-04-09', 'Completed'),
-(207, 140.00, '2025-04-10', 'Refunded');
+(207, 140.00, '2025-04-10', 'Refunded'),
 
 -- Payments for Registrations from Event 17
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (208, 115.00, '2025-05-01', 'Completed'),
 (209, 110.00, '2025-05-02', 'Pending'),
 (210, 140.00, '2025-05-03', 'Completed'),
@@ -737,11 +673,9 @@ VALUES
 (218, 125.00, '2025-05-11', 'Pending'),
 (219, 130.00, '2025-05-12', 'Completed'),
 (220, 140.00, '2025-05-13', 'Completed'),
-(221, 110.00, '2025-05-14', 'Refunded');
+(221, 110.00, '2025-05-14', 'Refunded'),
 
 -- Payments for Registrations from Event 18
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (222, 150.00, '2025-06-01', 'Completed'),
 (223, 130.00, '2025-06-02', 'Pending'),
 (224, 120.00, '2025-06-03', 'Completed'),
@@ -754,11 +688,9 @@ VALUES
 (231, 145.00, '2025-06-10', 'Pending'),
 (232, 120.00, '2025-06-11', 'Completed'),
 (233, 125.00, '2025-06-12', 'Completed'),
-(234, 140.00, '2025-06-13', 'Refunded');
+(234, 140.00, '2025-06-13', 'Refunded'),
 
 -- Payments for Registrations from Event 19
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (213, 100.00, '2025-07-06', 'Completed'),
 (214, 120.00, '2025-07-07', 'Pending'),
 (215, 150.00, '2025-07-08', 'Completed'),
@@ -768,11 +700,9 @@ VALUES
 (219, 110.00, '2025-07-12', 'Completed'),
 (220, 125.00, '2025-07-13', 'Completed'),
 (221, 90.00, '2025-07-14', 'Pending'),
-(222, 105.00, '2025-07-15', 'Completed');
+(222, 105.00, '2025-07-15', 'Completed'),
 
 -- Payments for Registrations from Event 20
-INSERT INTO Payment (RegistrationID, Amount, PaymentDate, PaymentStatus)
-VALUES
 (223, 95.00, '2025-08-01', 'Completed'),
 (224, 85.00, '2025-08-02', 'Pending'),
 (225, 105.00, '2025-08-03', 'Completed'),
@@ -788,6 +718,7 @@ VALUES
 (235, 130.00, '2025-08-13', 'Refunded'),
 (236, 100.00, '2025-08-14', 'Pending'),
 (237, 110.00, '2025-08-15', 'Completed');
+
 
 -- Tickets for Registrations from Event 1
 INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
@@ -806,11 +737,9 @@ VALUES
 (1, 12, 'Standard', 150.00, '2024-01-22', 'Issued'),
 (1, 13, 'VIP', 200.00, '2024-01-23', 'Issued'),
 (1, 14, 'Standard', 150.00, '2024-01-24', 'Issued'),
-(1, 15, 'Standard', 150.00, '2024-01-25', 'Issued');
+(1, 15, 'Standard', 150.00, '2024-01-25', 'Issued'),
 
 -- Tickets for Registrations from Event 2
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (2, 16, 'Standard', 120.00, '2024-02-01', 'Issued'),
 (2, 17, 'VIP', 180.00, '2024-02-02', 'Cancelled'),
 (2, 18, 'Standard', 120.00, '2024-02-03', 'Issued'),
@@ -822,11 +751,9 @@ VALUES
 (2, 24, 'Standard', 120.00, '2024-02-09', 'Issued'),
 (2, 25, 'Standard', 120.00, '2024-02-10', 'Issued'),
 (2, 26, 'VIP', 180.00, '2024-02-11', 'Cancelled'),
-(2, 27, 'Standard', 120.00, '2024-02-12', 'Issued');
+(2, 27, 'Standard', 120.00, '2024-02-12', 'Issued'),
 
 -- Tickets for Registrations from Event 3
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (3, 28, 'Standard', 100.00, '2024-03-01', 'Issued'),
 (3, 29, 'Standard', 100.00, '2024-03-02', 'Cancelled'),
 (3, 30, 'VIP', 150.00, '2024-03-03', 'Issued'),
@@ -836,11 +763,9 @@ VALUES
 (3, 4, 'Standard', 100.00, '2024-03-07', 'Issued'),
 (3, 5, 'Standard', 100.00, '2024-03-08', 'Issued'),
 (3, 6, 'VIP', 150.00, '2024-03-09', 'Issued'),
-(3, 7, 'Standard', 100.00, '2024-03-10', 'Issued');
+(3, 7, 'Standard', 100.00, '2024-03-10', 'Issued'),
 
 -- Tickets for Registrations from Event 4
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (4, 8, 'Standard', 130.00, '2024-04-01', 'Issued'),
 (4, 9, 'VIP', 180.00, '2024-04-02', 'Cancelled'),
 (4, 10, 'Standard', 130.00, '2024-04-03', 'Issued'),
@@ -853,11 +778,9 @@ VALUES
 (4, 17, 'Standard', 130.00, '2024-04-10', 'Issued'),
 (4, 18, 'Standard', 130.00, '2024-04-11', 'Cancelled'),
 (4, 19, 'Standard', 130.00, '2024-04-12', 'Issued'),
-(4, 20, 'VIP', 180.00, '2024-04-13', 'Issued');
+(4, 20, 'VIP', 180.00, '2024-04-13', 'Issued'),
 
 -- Tickets for Registrations from Event 5
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (5, 21, 'Standard', 110.00, '2024-05-01', 'Issued'),
 (5, 22, 'Standard', 110.00, '2024-05-02', 'Cancelled'),
 (5, 23, 'VIP', 160.00, '2024-05-03', 'Issued'),
@@ -870,13 +793,9 @@ VALUES
 (5, 30, 'Standard', 110.00, '2024-05-10', 'Cancelled'),
 (5, 1, 'Standard', 110.00, '2024-05-11', 'Issued'),
 (5, 2, 'VIP', 160.00, '2024-05-12', 'Issued'),
-(5, 3, 'Standard', 110.00, '2024-05-13', 'Issued');
-
--- Continue similarly for other events (Event 6 and onwards)
+(5, 3, 'Standard', 110.00, '2024-05-13', 'Issued'),
 
 -- Tickets for Registrations from Event 6
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (6, 10, 'Standard', 125.00, '2024-06-01', 'Issued'),
 (6, 11, 'VIP', 180.00, '2024-06-02', 'Cancelled'),
 (6, 12, 'Standard', 125.00, '2024-06-03', 'Issued'),
@@ -886,11 +805,9 @@ VALUES
 (6, 16, 'VIP', 180.00, '2024-06-07', 'Issued'),
 (6, 17, 'Standard', 125.00, '2024-06-08', 'Cancelled'),
 (6, 18, 'Standard', 125.00, '2024-06-09', 'Issued'),
-(6, 19, 'VIP', 180.00, '2024-06-10', 'Issued');
+(6, 19, 'VIP', 180.00, '2024-06-10', 'Issued'),
 
 -- Tickets for Registrations from Event 7
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (7, 20, 'Standard', 130.00, '2024-07-01', 'Issued'),
 (7, 21, 'VIP', 185.00, '2024-07-02', 'Cancelled'),
 (7, 22, 'Standard', 130.00, '2024-07-03', 'Issued'),
@@ -902,11 +819,9 @@ VALUES
 (7, 28, 'VIP', 185.00, '2024-07-09', 'Issued'),
 (7, 29, 'Standard', 130.00, '2024-07-10', 'Cancelled'),
 (7, 30, 'Standard', 130.00, '2024-07-11', 'Issued'),
-(7, 1, 'VIP', 185.00, '2024-07-12', 'Issued');
+(7, 1, 'VIP', 185.00, '2024-07-12', 'Issued'),
 
 -- Tickets for Registrations from Event 8
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (8, 3, 'Standard', 140.00, '2024-08-01', 'Issued'),
 (8, 4, 'VIP', 190.00, '2024-08-02', 'Cancelled'),
 (8, 5, 'Standard', 140.00, '2024-08-03', 'Issued'),
@@ -918,11 +833,9 @@ VALUES
 (8, 11, 'Standard', 140.00, '2024-08-09', 'Issued'),
 (8, 12, 'Standard', 140.00, '2024-08-10', 'Cancelled'),
 (8, 13, 'VIP', 190.00, '2024-08-11', 'Issued'),
-(8, 14, 'Standard', 140.00, '2024-08-12', 'Issued');
+(8, 14, 'Standard', 140.00, '2024-08-12', 'Issued'),
 
 -- Tickets for Registrations from Event 9
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (9, 15, 'Standard', 145.00, '2024-09-01', 'Issued'),
 (9, 16, 'VIP', 200.00, '2024-09-02', 'Cancelled'),
 (9, 17, 'Standard', 145.00, '2024-09-03', 'Issued'),
@@ -937,11 +850,9 @@ VALUES
 (9, 26, 'Standard', 145.00, '2024-09-12', 'Issued'),
 (9, 27, 'Standard', 145.00, '2024-09-13', 'Cancelled'),
 (9, 28, 'VIP', 200.00, '2024-09-14', 'Issued'),
-(9, 29, 'Standard', 145.00, '2024-09-15', 'Issued');
+(9, 29, 'Standard', 145.00, '2024-09-15', 'Issued'),
 
 -- Tickets for Registrations from Event 10
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (10, 30, 'VIP', 210.00, '2024-10-01', 'Issued'),
 (10, 1, 'Standard', 150.00, '2024-10-02', 'Issued'),
 (10, 2, 'VIP', 210.00, '2024-10-03', 'Issued'),
@@ -952,11 +863,9 @@ VALUES
 (10, 7, 'Standard', 150.00, '2024-10-08', 'Issued'),
 (10, 8, 'VIP', 210.00, '2024-10-09', 'Issued'),
 (10, 9, 'Standard', 150.00, '2024-10-10', 'Cancelled'),
-(10, 10, 'Standard', 150.00, '2024-10-11', 'Issued');
+(10, 10, 'Standard', 150.00, '2024-10-11', 'Issued'),
 
 -- Tickets for Registrations from Event 11
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (11, 11, 'Standard', 90.00, '2024-11-01', 'Issued'),
 (11, 12, 'VIP', 130.00, '2024-11-02', 'Cancelled'),
 (11, 13, 'Standard', 90.00, '2024-11-03', 'Issued'),
@@ -966,11 +875,9 @@ VALUES
 (11, 17, 'VIP', 130.00, '2024-11-07', 'Cancelled'),
 (11, 18, 'Standard', 90.00, '2024-11-08', 'Issued'),
 (11, 19, 'VIP', 130.00, '2024-11-09', 'Issued'),
-(11, 20, 'Standard', 90.00, '2024-11-10', 'Cancelled');
+(11, 20, 'Standard', 90.00, '2024-11-10', 'Cancelled'),
 
 -- Tickets for Registrations from Event 12
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (12, 21, 'Standard', 100.00, '2024-12-01', 'Issued'),
 (12, 22, 'VIP', 140.00, '2024-12-02', 'Cancelled'),
 (12, 23, 'Standard', 100.00, '2024-12-03', 'Issued'),
@@ -981,11 +888,9 @@ VALUES
 (12, 28, 'Standard', 100.00, '2024-12-08', 'Issued'),
 (12, 29, 'VIP', 140.00, '2024-12-09', 'Cancelled'),
 (12, 30, 'Standard', 100.00, '2024-12-10', 'Issued'),
-(12, 1, 'VIP', 140.00, '2024-12-11', 'Cancelled');
+(12, 1, 'VIP', 140.00, '2024-12-11', 'Cancelled'),
 
 -- Tickets for Registrations from Event 13
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (13, 2, 'Standard', 115.00, '2025-01-02', 'Issued'),
 (13, 3, 'VIP', 160.00, '2025-01-03', 'Cancelled'),
 (13, 4, 'Standard', 115.00, '2025-01-04', 'Issued'),
@@ -995,11 +900,9 @@ VALUES
 (13, 8, 'VIP', 160.00, '2025-01-08', 'Issued'),
 (13, 9, 'Standard', 115.00, '2025-01-09', 'Cancelled'),
 (13, 10, 'VIP', 160.00, '2025-01-10', 'Issued'),
-(13, 11, 'Standard', 115.00, '2025-01-11', 'Issued');
+(13, 11, 'Standard', 115.00, '2025-01-11', 'Issued'),
 
 -- Tickets for Registrations from Event 14
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (14, 12, 'VIP', 125.00, '2025-02-01', 'Issued'),
 (14, 13, 'Standard', 85.00, '2025-02-02', 'Issued'),
 (14, 14, 'VIP', 125.00, '2025-02-03', 'Cancelled'),
@@ -1009,11 +912,9 @@ VALUES
 (14, 18, 'VIP', 125.00, '2025-02-07', 'Issued'),
 (14, 19, 'Standard', 85.00, '2025-02-08', 'Issued'),
 (14, 20, 'VIP', 125.00, '2025-02-09', 'Issued'),
-(14, 21, 'Standard', 85.00, '2025-02-10', 'Cancelled');
+(14, 21, 'Standard', 85.00, '2025-02-10', 'Cancelled'),
 
 -- Tickets for Registrations from Event 15
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (15, 22, 'Standard', 90.00, '2025-03-01', 'Issued'),
 (15, 23, 'VIP', 140.00, '2025-03-02', 'Cancelled'),
 (15, 24, 'Standard', 90.00, '2025-03-03', 'Issued'),
@@ -1023,11 +924,9 @@ VALUES
 (15, 28, 'VIP', 140.00, '2025-03-07', 'Issued'),
 (15, 29, 'Standard', 90.00, '2025-03-08', 'Issued'),
 (15, 30, 'VIP', 140.00, '2025-03-09', 'Issued'),
-(15, 1, 'Standard', 90.00, '2025-03-10', 'Issued');
+(15, 1, 'Standard', 90.00, '2025-03-10', 'Issued'),
 
 -- Tickets for Registrations from Event 16
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (16, 2, 'VIP', 110.00, '2025-04-01', 'Issued'),
 (16, 3, 'Standard', 70.00, '2025-04-02', 'Issued'),
 (16, 4, 'VIP', 110.00, '2025-04-03', 'Cancelled'),
@@ -1037,11 +936,9 @@ VALUES
 (16, 8, 'VIP', 110.00, '2025-04-07', 'Cancelled'),
 (16, 9, 'Standard', 70.00, '2025-04-08', 'Issued'),
 (16, 10, 'VIP', 110.00, '2025-04-09', 'Issued'),
-(16, 11, 'Standard', 70.00, '2025-04-10', 'Cancelled');
+(16, 11, 'Standard', 70.00, '2025-04-10', 'Cancelled'),
 
 -- Tickets for Registrations from Event 17
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (17, 12, 'Standard', 95.00, '2025-05-01', 'Issued'),
 (17, 13, 'VIP', 145.00, '2025-05-02', 'Cancelled'),
 (17, 14, 'Standard', 95.00, '2025-05-03', 'Issued'),
@@ -1051,11 +948,9 @@ VALUES
 (17, 18, 'VIP', 145.00, '2025-05-07', 'Issued'),
 (17, 19, 'Standard', 95.00, '2025-05-08', 'Issued'),
 (17, 20, 'VIP', 145.00, '2025-05-09', 'Issued'),
-(17, 21, 'Standard', 95.00, '2025-05-10', 'Issued');
+(17, 21, 'Standard', 95.00, '2025-05-10', 'Issued'),
 
 -- Tickets for Registrations from Event 18
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (18, 22, 'VIP', 120.00, '2025-06-01', 'Issued'),
 (18, 23, 'Standard', 80.00, '2025-06-02', 'Issued'),
 (18, 24, 'VIP', 120.00, '2025-06-03', 'Cancelled'),
@@ -1065,11 +960,9 @@ VALUES
 (18, 28, 'VIP', 120.00, '2025-06-07', 'Issued'),
 (18, 29, 'Standard', 80.00, '2025-06-08', 'Issued'),
 (18, 30, 'VIP', 120.00, '2025-06-09', 'Issued'),
-(18, 1, 'Standard', 80.00, '2025-06-10', 'Cancelled');
+(18, 1, 'Standard', 80.00, '2025-06-10', 'Cancelled'),
 
 -- Tickets for Registrations from Event 19
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (19, 2, 'Standard', 105.00, '2025-07-01', 'Issued'),
 (19, 3, 'VIP', 155.00, '2025-07-02', 'Cancelled'),
 (19, 4, 'Standard', 105.00, '2025-07-03', 'Issued'),
@@ -1079,11 +972,9 @@ VALUES
 (19, 8, 'VIP', 155.00, '2025-07-07', 'Issued'),
 (19, 9, 'Standard', 105.00, '2025-07-08', 'Cancelled'),
 (19, 10, 'VIP', 155.00, '2025-07-09', 'Issued'),
-(19, 11, 'Standard', 105.00, '2025-07-10', 'Issued');
+(19, 11, 'Standard', 105.00, '2025-07-10', 'Issued'),
 
 -- Tickets for Registrations from Event 20
-INSERT INTO Ticket (EventID, UserID, TicketType, TicketPrice, TicketIssueDate, TicketStatus)
-VALUES
 (20, 12, 'VIP', 135.00, '2025-08-01', 'Issued'),
 (20, 13, 'Standard', 95.00, '2025-08-02', 'Issued'),
 (20, 14, 'VIP', 135.00, '2025-08-03', 'Cancelled'),
@@ -1095,6 +986,7 @@ VALUES
 (20, 20, 'VIP', 135.00, '2025-08-09', 'Issued'),
 (20, 21, 'Standard', 95.00, '2025-08-10', 'Cancelled');
 
+
 -- Attendance records for Event 1
 INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
 VALUES
@@ -1102,179 +994,141 @@ VALUES
 (2, 1, '2024-01-15 09:30:00', '2024-01-15 11:30:00'),
 (3, 1, '2024-01-15 10:00:00', '2024-01-15 13:00:00'),
 (4, 1, '2024-01-15 10:30:00', '2024-01-15 14:00:00'),
-(5, 1, '2024-01-15 11:00:00', '2024-01-15 15:00:00');
+(5, 1, '2024-01-15 11:00:00', '2024-01-15 15:00:00'),
 
 -- Attendance records for Event 2
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (6, 2, '2024-02-10 09:15:00', '2024-02-10 12:15:00'),
 (7, 2, '2024-02-10 09:45:00', '2024-02-10 13:30:00'),
 (8, 2, '2024-02-10 10:00:00', '2024-02-10 14:00:00'),
 (9, 2, '2024-02-10 10:15:00', NULL),  -- Did not check out
-(10, 2, '2024-02-10 10:45:00', '2024-02-10 13:45:00');
+(10, 2, '2024-02-10 10:45:00', '2024-02-10 13:45:00'),
 
 -- Attendance records for Event 3
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (11, 3, '2024-03-05 09:30:00', '2024-03-05 12:30:00'),
 (12, 3, '2024-03-05 10:00:00', '2024-03-05 13:00:00'),
 (13, 3, '2024-03-05 10:30:00', '2024-03-05 13:30:00'),
 (14, 3, '2024-03-05 11:00:00', '2024-03-05 14:00:00'),
-(15, 3, '2024-03-05 11:30:00', NULL);  -- Did not check out
+(15, 3, '2024-03-05 11:30:00', NULL),  -- Did not check out
 
 -- Attendance records for Event 4
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (16, 4, '2024-04-20 08:45:00', '2024-04-20 12:15:00'),
 (17, 4, '2024-04-20 09:15:00', '2024-04-20 12:45:00'),
 (18, 4, '2024-04-20 09:45:00', '2024-04-20 13:00:00'),
 (19, 4, '2024-04-20 10:15:00', '2024-04-20 13:30:00'),
-(20, 4, '2024-04-20 10:45:00', NULL);  -- Did not check out
+(20, 4, '2024-04-20 10:45:00', NULL),  -- Did not check out
 
 -- Attendance records for Event 5
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (21, 5, '2024-05-15 08:30:00', '2024-05-15 11:30:00'),
 (22, 5, '2024-05-15 09:00:00', '2024-05-15 12:00:00'),
 (23, 5, '2024-05-15 09:30:00', '2024-05-15 12:30:00'),
 (24, 5, '2024-05-15 10:00:00', NULL),  -- Did not check out
-(25, 5, '2024-05-15 10:30:00', '2024-05-15 13:30:00');
+(25, 5, '2024-05-15 10:30:00', '2024-05-15 13:30:00'),
 
 -- Attendance records for Event 6
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (26, 6, '2024-06-01 08:45:00', '2024-06-01 11:45:00'),
 (27, 6, '2024-06-01 09:15:00', '2024-06-01 12:15:00'),
 (28, 6, '2024-06-01 09:45:00', '2024-06-01 13:00:00'),
 (29, 6, '2024-06-01 10:15:00', '2024-06-01 14:00:00'),
-(30, 6, '2024-06-01 10:45:00', NULL);  -- Did not check out
+(30, 6, '2024-06-01 10:45:00', NULL), -- Did not check out
 
 -- Attendance records for Event 7
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (1, 7, '2024-07-20 08:00:00', '2024-07-20 11:00:00'),
 (2, 7, '2024-07-20 08:30:00', '2024-07-20 12:00:00'),
 (3, 7, '2024-07-20 09:00:00', '2024-07-20 12:30:00'),
 (4, 7, '2024-07-20 09:30:00', NULL),  -- Did not check out
-(5, 7, '2024-07-20 10:00:00', '2024-07-20 13:00:00');
+(5, 7, '2024-07-20 10:00:00', '2024-07-20 13:00:00'),
 
 -- Attendance records for Event 8
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (6, 8, '2024-08-05 08:15:00', '2024-08-05 11:45:00'),
 (7, 8, '2024-08-05 08:45:00', '2024-08-05 12:15:00'),
 (8, 8, '2024-08-05 09:15:00', '2024-08-05 12:45:00'),
 (9, 8, '2024-08-05 09:45:00', NULL),  -- Did not check out
-(10, 8, '2024-08-05 10:15:00', '2024-08-05 13:15:00');
+(10, 8, '2024-08-05 10:15:00', '2024-08-05 13:15:00'),
 
 -- Attendance records for Event 9
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (11, 9, '2024-09-10 08:00:00', '2024-09-10 11:30:00'),
 (12, 9, '2024-09-10 08:30:00', '2024-09-10 12:00:00'),
 (13, 9, '2024-09-10 09:00:00', '2024-09-10 12:30:00'),
 (14, 9, '2024-09-10 09:30:00', NULL),  -- Did not check out
-(15, 9, '2024-09-10 10:00:00', '2024-09-10 13:30:00');
+(15, 9, '2024-09-10 10:00:00', '2024-09-10 13:30:00'),
 
 -- Attendance records for Event 10
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (16, 10, '2024-10-20 08:15:00', '2024-10-20 12:00:00'),
 (17, 10, '2024-10-20 08:45:00', '2024-10-20 12:30:00'),
 (18, 10, '2024-10-20 09:15:00', '2024-10-20 13:00:00'),
 (19, 10, '2024-10-20 09:45:00', NULL),  -- Did not check out
-(20, 10, '2024-10-20 10:15:00', '2024-10-20 13:45:00');
+(20, 10, '2024-10-20 10:15:00', '2024-10-20 13:45:00'),
 
--- Continue similarly for Events 11-20, maintaining varied check-in and check-out times for each user, with some missing check-out times.
 -- Attendance records for Event 11
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (11, 11, '2024-11-05 08:30:00', '2024-11-05 11:30:00'),
 (12, 11, '2024-11-05 09:00:00', '2024-11-05 12:00:00'),
 (13, 11, '2024-11-05 09:30:00', '2024-11-05 12:30:00'),
 (14, 11, '2024-11-05 10:00:00', NULL),  -- Did not check out
-(15, 11, '2024-11-05 10:30:00', '2024-11-05 13:30:00');
+(15, 11, '2024-11-05 10:30:00', '2024-11-05 13:30:00'),
 
 -- Attendance records for Event 12
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (16, 12, '2024-12-15 08:00:00', '2024-12-15 11:00:00'),
 (17, 12, '2024-12-15 08:30:00', '2024-12-15 12:00:00'),
 (18, 12, '2024-12-15 09:00:00', '2024-12-15 12:30:00'),
 (19, 12, '2024-12-15 09:30:00', NULL),  -- Did not check out
-(20, 12, '2024-12-15 10:00:00', '2024-12-15 13:00:00');
+(20, 12, '2024-12-15 10:00:00', '2024-12-15 13:00:00'),
 
 -- Attendance records for Event 13
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (21, 13, '2025-01-10 08:15:00', '2025-01-10 11:45:00'),
 (22, 13, '2025-01-10 08:45:00', '2025-01-10 12:15:00'),
 (23, 13, '2025-01-10 09:15:00', '2025-01-10 12:45:00'),
 (24, 13, '2025-01-10 09:45:00', NULL),  -- Did not check out
-(25, 13, '2025-01-10 10:15:00', '2025-01-10 13:15:00');
+(25, 13, '2025-01-10 10:15:00', '2025-01-10 13:15:00'),
 
 -- Attendance records for Event 14
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (26, 14, '2025-02-12 08:00:00', '2025-02-12 11:30:00'),
 (27, 14, '2025-02-12 08:30:00', '2025-02-12 12:00:00'),
 (28, 14, '2025-02-12 09:00:00', '2025-02-12 12:30:00'),
 (29, 14, '2025-02-12 09:30:00', NULL),  -- Did not check out
-(30, 14, '2025-02-12 10:00:00', '2025-02-12 13:30:00');
+(30, 14, '2025-02-12 10:00:00', '2025-02-12 13:30:00'),
 
 -- Attendance records for Event 15
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (1, 15, '2025-03-18 08:15:00', '2025-03-18 12:00:00'),
 (2, 15, '2025-03-18 08:45:00', '2025-03-18 12:30:00'),
 (3, 15, '2025-03-18 09:15:00', '2025-03-18 13:00:00'),
 (4, 15, '2025-03-18 09:45:00', NULL),  -- Did not check out
-(5, 15, '2025-03-18 10:15:00', '2025-03-18 13:45:00');
+(5, 15, '2025-03-18 10:15:00', '2025-03-18 13:45:00'),
 
 -- Attendance records for Event 16
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (6, 16, '2025-04-22 08:30:00', '2025-04-22 11:30:00'),
 (7, 16, '2025-04-22 09:00:00', '2025-04-22 12:00:00'),
 (8, 16, '2025-04-22 09:30:00', '2025-04-22 12:30:00'),
 (9, 16, '2025-04-22 10:00:00', NULL),  -- Did not check out
-(10, 16, '2025-04-22 10:30:00', '2025-04-22 13:30:00');
+(10, 16, '2025-04-22 10:30:00', '2025-04-22 13:30:00'),
 
 -- Attendance records for Event 17
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (11, 17, '2025-05-25 08:15:00', '2025-05-25 11:45:00'),
 (12, 17, '2025-05-25 08:45:00', '2025-05-25 12:15:00'),
 (13, 17, '2025-05-25 09:15:00', '2025-05-25 12:45:00'),
 (14, 17, '2025-05-25 09:45:00', NULL),  -- Did not check out
-(15, 17, '2025-05-25 10:15:00', '2025-05-25 13:15:00');
+(15, 17, '2025-05-25 10:15:00', '2025-05-25 13:15:00'),
 
 -- Attendance records for Event 18
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (16, 18, '2025-06-07 08:00:00', '2025-06-07 11:30:00'),
 (17, 18, '2025-06-07 08:30:00', '2025-06-07 12:00:00'),
 (18, 18, '2025-06-07 09:00:00', '2025-06-07 12:30:00'),
 (19, 18, '2025-06-07 09:30:00', NULL),  -- Did not check out
-(20, 18, '2025-06-07 10:00:00', '2025-06-07 13:00:00');
+(20, 18, '2025-06-07 10:00:00', '2025-06-07 13:00:00'),
 
 -- Attendance records for Event 19
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (21, 19, '2025-07-14 08:15:00', '2025-07-14 11:45:00'),
 (22, 19, '2025-07-14 08:45:00', '2025-07-14 12:15:00'),
 (23, 19, '2025-07-14 09:15:00', '2025-07-14 12:45:00'),
 (24, 19, '2025-07-14 09:45:00', NULL),  -- Did not check out
-(25, 19, '2025-07-14 10:15:00', '2025-07-14 13:15:00');
+(25, 19, '2025-07-14 10:15:00', '2025-07-14 13:15:00'),
 
 -- Attendance records for Event 20
-INSERT INTO Attendance (UserID, EventID, CheckInTime, CheckOutTime)
-VALUES
 (26, 20, '2025-08-12 08:30:00', '2025-08-12 11:30:00'),
 (27, 20, '2025-08-12 09:00:00', '2025-08-12 12:00:00'),
 (28, 20, '2025-08-12 09:30:00', '2025-08-12 12:30:00'),
 (29, 20, '2025-08-12 10:00:00', NULL),  -- Did not check out
 (30, 20, '2025-08-12 10:30:00', '2025-08-12 13:30:00');
+
 
 -- Resources available for event management
 INSERT INTO Resource (ResourceName, ResourceDescription, Quantity)
@@ -1290,155 +1144,118 @@ VALUES
 ('Wi-Fi Router', 'Wireless internet setup', 5),
 ('Refreshments', 'Refreshments including water, snacks, and beverages', 100);
 
+
 -- Resource allocations for Event 1
 INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
 VALUES
 (1, 1, 2, '2024-01-14', '08:00:00'),  -- 2 Projectors
 (1, 2, 1, '2024-01-14', '08:15:00'),  -- 1 Sound System
 (1, 3, 10, '2024-01-14', '08:30:00'), -- 10 Tables
-(1, 4, 100, '2024-01-14', '08:45:00');-- 100 Chairs
+(1, 4, 100, '2024-01-14', '08:45:00'),-- 100 Chairs
 
 -- Resource allocations for Event 2
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (2, 2, 2, '2024-02-09', '09:00:00'),  -- 2 Sound Systems
 (2, 4, 50, '2024-02-09', '09:15:00'), -- 50 Chairs
 (2, 6, 3, '2024-02-09', '09:30:00'),  -- 3 Lighting units
-(2, 7, 1, '2024-02-09', '09:45:00');  -- 1 Stage
+(2, 7, 1, '2024-02-09', '09:45:00'),  -- 1 Stage
 
 -- Resource allocations for Event 3
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (3, 5, 5, '2024-03-04', '08:00:00'),  -- 5 Laptops
 (3, 1, 1, '2024-03-04', '08:30:00'),  -- 1 Projector
-(3, 4, 80, '2024-03-04', '09:00:00'); -- 80 Chairs
+(3, 4, 80, '2024-03-04', '09:00:00'), -- 80 Chairs
 
 -- Resource allocations for Event 4
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (4, 1, 1, '2024-04-19', '10:00:00'),  -- 1 Projector
 (4, 2, 2, '2024-04-19', '10:15:00'),  -- 2 Sound Systems
 (4, 3, 12, '2024-04-19', '10:30:00'), -- 12 Tables
-(4, 4, 120, '2024-04-19', '10:45:00');-- 120 Chairs
+(4, 4, 120, '2024-04-19', '10:45:00'),-- 120 Chairs
 
 -- Resource allocations for Event 5
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (5, 8, 2, '2024-05-14', '07:45:00'),  -- 2 Whiteboards
 (5, 10, 75, '2024-05-14', '08:00:00'), -- 75 Refreshments
-(5, 6, 2, '2024-05-14', '08:15:00');   -- 2 Lighting units
+(5, 6, 2, '2024-05-14', '08:15:00'),   -- 2 Lighting units
 
 -- Resource allocations for Event 6
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (6, 5, 4, '2024-05-31', '09:00:00'),  -- 4 Laptops
 (6, 4, 60, '2024-05-31', '09:15:00'), -- 60 Chairs
-(6, 3, 10, '2024-05-31', '09:30:00'); -- 10 Tables
+(6, 3, 10, '2024-05-31', '09:30:00'), -- 10 Tables
 
 -- Resource allocations for Event 7
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (7, 1, 1, '2024-07-19', '10:00:00'),  -- 1 Projector
 (7, 2, 1, '2024-07-19', '10:15:00'),  -- 1 Sound System
-(7, 10, 80, '2024-07-19', '10:30:00'); -- 80 Refreshments
+(7, 10, 80, '2024-07-19', '10:30:00'), -- 80 Refreshments
 
 -- Resource allocations for Event 8
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (8, 1, 2, '2024-08-04', '09:00:00'),  -- 2 Projectors
 (8, 5, 3, '2024-08-04', '09:30:00'),  -- 3 Laptops
-(8, 3, 15, '2024-08-04', '10:00:00'); -- 15 Tables
+(8, 3, 15, '2024-08-04', '10:00:00'), -- 15 Tables
 
 -- Resource allocations for Event 9
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (9, 2, 1, '2024-09-09', '08:30:00'),  -- 1 Sound System
 (9, 4, 100, '2024-09-09', '09:00:00'), -- 100 Chairs
-(9, 10, 50, '2024-09-09', '09:15:00'); -- 50 Refreshments
+(9, 10, 50, '2024-09-09', '09:15:00'), -- 50 Refreshments
 
 -- Resource allocations for Event 10
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (10, 6, 4, '2024-10-19', '08:00:00'), -- 4 Lighting units
 (10, 7, 1, '2024-10-19', '08:15:00'), -- 1 Stage
 (10, 3, 15, '2024-10-19', '08:30:00'), -- 15 Tables
-(10, 4, 150, '2024-10-19', '08:45:00'); -- 150 Chairs
+(10, 4, 150, '2024-10-19', '08:45:00'), -- 150 Chairs
 
--- Continue similarly for Events 11-20 as needed, allocating appropriate resources based on the type and scale of the event.
 -- Resource allocations for Event 11
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (11, 1, 1, '2024-11-04', '08:00:00'),  -- 1 Projector
 (11, 2, 1, '2024-11-04', '08:15:00'),  -- 1 Sound System
 (11, 3, 10, '2024-11-04', '08:30:00'), -- 10 Tables
-(11, 4, 100, '2024-11-04', '08:45:00');-- 100 Chairs
+(11, 4, 100, '2024-11-04', '08:45:00'),-- 100 Chairs
 
 -- Resource allocations for Event 12
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (12, 5, 4, '2024-12-14', '09:00:00'),  -- 4 Laptops
 (12, 2, 2, '2024-12-14', '09:15:00'),  -- 2 Sound Systems
 (12, 6, 3, '2024-12-14', '09:30:00'),  -- 3 Lighting units
-(12, 4, 80, '2024-12-14', '09:45:00'); -- 80 Chairs
+(12, 4, 80, '2024-12-14', '09:45:00'), -- 80 Chairs
 
 -- Resource allocations for Event 13
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (13, 1, 1, '2025-01-09', '08:00:00'),  -- 1 Projector
 (13, 3, 12, '2025-01-09', '08:30:00'), -- 12 Tables
-(13, 10, 70, '2025-01-09', '08:45:00');-- 70 Refreshments
+(13, 10, 70, '2025-01-09', '08:45:00'),-- 70 Refreshments
 
 -- Resource allocations for Event 14
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (14, 8, 2, '2025-02-11', '07:45:00'),  -- 2 Whiteboards
 (14, 6, 2, '2025-02-11', '08:00:00'),  -- 2 Lighting units
-(14, 5, 3, '2025-02-11', '08:15:00');  -- 3 Laptops
+(14, 5, 3, '2025-02-11', '08:15:00'), -- 3 Laptops
 
 -- Resource allocations for Event 15
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (15, 9, 1, '2025-03-17', '08:00:00'),  -- 1 Wi-Fi Router
 (15, 4, 50, '2025-03-17', '08:15:00'), -- 50 Chairs
-(15, 2, 1, '2025-03-17', '08:30:00');  -- 1 Sound System
+(15, 2, 1, '2025-03-17', '08:30:00'),  -- 1 Sound System
 
 -- Resource allocations for Event 16
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (16, 10, 80, '2025-04-21', '09:00:00'), -- 80 Refreshments
 (16, 3, 12, '2025-04-21', '09:15:00'),  -- 12 Tables
-(16, 6, 4, '2025-04-21', '09:30:00');   -- 4 Lighting units
+(16, 6, 4, '2025-04-21', '09:30:00'),   -- 4 Lighting units
 
 -- Resource allocations for Event 17
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (17, 1, 1, '2025-05-24', '08:00:00'),  -- 1 Projector
 (17, 2, 1, '2025-05-24', '08:15:00'),  -- 1 Sound System
 (17, 7, 1, '2025-05-24', '08:30:00'),  -- 1 Stage
-(17, 5, 5, '2025-05-24', '08:45:00');  -- 5 Laptops
+(17, 5, 5, '2025-05-24', '08:45:00'),  -- 5 Laptops
 
 -- Resource allocations for Event 18
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (18, 6, 2, '2025-06-06', '09:00:00'),  -- 2 Lighting units
 (18, 4, 75, '2025-06-06', '09:15:00'), -- 75 Chairs
-(18, 10, 60, '2025-06-06', '09:30:00');-- 60 Refreshments
+(18, 10, 60, '2025-06-06', '09:30:00'),-- 60 Refreshments
 
 -- Resource allocations for Event 19
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (19, 8, 1, '2025-07-13', '08:00:00'),  -- 1 Whiteboard
 (19, 2, 1, '2025-07-13', '08:15:00'),  -- 1 Sound System
 (19, 9, 1, '2025-07-13', '08:30:00'),  -- 1 Wi-Fi Router
-(19, 4, 60, '2025-07-13', '08:45:00'); -- 60 Chairs
+(19, 4, 60, '2025-07-13', '08:45:00'), -- 60 Chairs
 
 -- Resource allocations for Event 20
-INSERT INTO EventResourceAllocation (EventID, ResourceID, AllocatedQuantity, AllocationDate, AllocationTime)
-VALUES
 (20, 1, 2, '2025-08-11', '08:00:00'),  -- 2 Projectors
 (20, 5, 4, '2025-08-11', '08:15:00'),  -- 4 Laptops
 (20, 3, 15, '2025-08-11', '08:30:00'), -- 15 Tables
 (20, 4, 120, '2025-08-11', '08:45:00');-- 120 Chairs
+
 
 -- Sponsors for various events
 INSERT INTO Sponsor (SponsorFName, SponsorLName, SponsorPhone, SponsorEmail)
@@ -1463,6 +1280,7 @@ VALUES
 ('Community', 'Hearts', '1617181920', 'contact@communityhearts.com'),
 ('Public', 'Speaking', '1718192021', 'info@publicspeaking.org'),
 ('Tech', 'Innovators', '1819202122', 'sponsor@techinnovators.com');
+
 
 -- Multiple sponsorships for various events
 INSERT INTO EventSponsor (EventID, SponsorID, SponsorshipAmount, SponsoredDate, SponsorshipType)
@@ -1507,6 +1325,7 @@ VALUES
 (19, 1, 1000.00, '2025-07-02', 'Product'),
 (20, 20, 1800.00, '2025-08-01', 'In-kind'),
 (20, 2, 1300.00, '2025-08-02', 'Financial');
+
 
 -- Expanded bookings for venues by organizers with varied dates and statuses
 INSERT INTO Booking (VenueID, OrganizerID, BookingDate, BookingStatus)
