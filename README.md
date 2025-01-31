@@ -24,27 +24,27 @@ A comprehensive full-stack web application built with Next.js for managing unive
 <summary>Click to view screenshots</summary>
 
 ### Login Screen
-![Login Screen](public/images/login.png)
+![Login Screen](public/1.png)
 *Secure login interface with email and password authentication*
 
 ### User Management
-![User Management](public/images/user-management.png)
+![User Management](public/2.png)
 *Admin interface for managing users with different roles (Admin, Organizer, Attendee)*
 
 ### Venue Management
-![Venue Management](public/images/venues.png)
+![Venue Management](public/3.png)
 *Interface for managing various venues and their capacities*
 
 ### Event Creation
-![Event Creation](public/images/create-event.png)
+![Event Creation](public/4.png)
 *Form for creating new events with detailed information*
 
 ### Event List (Organizer View)
-![Event List Organizer](public/images/events-organizer.png)
+![Event List Organizer](public/5.png)
 *Events dashboard for organizers with edit and cancel options*
 
 ### Event List (Attendee View)
-![Event List Attendee](public/images/events-attendee.png)
+![Event List Attendee](public/6.png)
 *Events view for attendees with registration options*
 
 Each interface is designed with user experience in mind, featuring:
