@@ -24,69 +24,68 @@ A comprehensive full-stack web application built with Next.js for managing unive
 <summary>Click to view screenshots</summary>
 
 ### Login Screen
-![Login Screen](public/1.png)
-*Secure login interface with email and password authentication*
+![Login Screen](1.png)
+*Secure login interface with email and password authentication.*
+
+### Event Dashboard (Admin View)
+![Admin Event Dashboard](2.png)
+*Admin dashboard displaying all events with options to view details, edit, or cancel events.*
 
 ### User Management
-![User Management](public/2.png)
-*Admin interface for managing users with different roles (Admin, Organizer, Attendee)*
+![User Management](3.png)
+*Admin interface for managing users with different roles (Admin, Organizer, Attendee).*
 
-### Venue Management
-![Venue Management](public/3.png)
-*Interface for managing various venues and their capacities*
+### Event Dashboard (Organizer View)
+![Organizer Event Dashboard](4.png)
+*Organizer's dashboard showcasing the events they manage.*
 
-### Event Creation
-![Event Creation](public/4.png)
-*Form for creating new events with detailed information*
+### Event Dashboard (Attendee View)
+![Attendee Event Dashboard](5.png)
+*Attendee's event dashboard with options to register or view event details.*
 
-### Event List (Organizer View)
-![Event List Organizer](public/5.png)
-*Events dashboard for organizers with edit and cancel options*
+### My Tickets
+![My Tickets](6.png)
+*Attendee's ticket overview showing registered events, statuses, and types.*
 
-### Event List (Attendee View)
-![Event List Attendee](public/6.png)
-*Events view for attendees with registration options*
+### Event Performance Dashboard (Power BI)
+![Event Performance Dashboard](7.jpeg)
+*Comprehensive Power BI dashboard for visualizing event performance, sponsorship trends, and venue utilization.*
 
-Each interface is designed with user experience in mind, featuring:
-- Clean and intuitive layouts
-- Responsive design for all screen sizes
-- Clear action buttons and status indicators
-- Comprehensive information display
-- Role-specific functionality
 </details>
 
 ## ✨ Features
 
 ### User Management
-- Role-based authentication (Admin, Organizer, Attendee)
-- Secure login system
-- User profile management
-- Password protection
+- Role-based authentication (Admin, Organizer, Attendee).
+- Secure login system.
+- User profile management.
+- Password protection.
 
 ### Event Management
-- Create, edit, and delete events
-- Event categorization
-- Capacity management
-- Date and venue scheduling
-- Event registration tracking
+- Create, edit, and delete events.
+- Event categorization.
+- Capacity management.
+- Date and venue scheduling.
+- Event registration tracking.
 
 ### Venue Management
-- Venue creation and editing
-- Capacity tracking
-- Venue type categorization
-- Location management
+- Venue creation and editing.
+- Capacity tracking.
+- Venue type categorization.
+- Location management.
 
 ### Dashboard & Analytics
-- Admin dashboard with key metrics
-- Event statistics
-- Registration tracking
-- Revenue monitoring
+- Admin dashboard with key metrics.
+- Event statistics.
+- Registration tracking.
+- Revenue monitoring.
+- **Power BI integration** for advanced data visualization.
 
 ### Search & Filtering
-- Event search functionality
-- Category-based filtering
-- Venue search
-- User search for admins
+- Event search functionality.
+- Category-based filtering.
+- Venue search.
+- User search for admins.
 
 ## 🛠️ Technology Stack
 
@@ -147,19 +146,19 @@ Each interface is designed with user experience in mind, featuring:
 ```
 
 ### Features
-- Server-side rendering
-- API route protection
-- Form validation
-- Error handling
-- Responsive design
-- CSV parsing with Papaparse
-- Excel file handling with SheetJS
-- Mathematical operations with MathJS
-- Data manipulation with Lodash
-- Chart visualization with Recharts
-- UI components from shadcn/ui library
-- Modern typography with Geist font
-- Icon system using Lucide React
+- Server-side rendering.
+- API route protection.
+- Form validation.
+- Error handling.
+- Responsive design.
+- CSV parsing with Papaparse.
+- Excel file handling with SheetJS.
+- Mathematical operations with MathJS.
+- Data manipulation with Lodash.
+- Chart visualization with Recharts.
+- UI components from shadcn/ui library.
+- Modern typography with Geist font.
+- Icon system using Lucide React.
 
 ## 🚀 Getting Started
 
@@ -230,19 +229,6 @@ DB_PASSWORD=your_password
    - Run the application in development mode
    - Check the console for successful database connection message
 
-#### Troubleshooting Database Connection
-
-1. Connection Issues
-   - Verify SQL Server is running
-   - Check if TCP/IP is enabled
-   - Confirm port 1433 is open and not blocked by firewall
-   - Validate credentials in `.env.local`
-
-2. Common Error Solutions
-   - "Login failed for user": Check user credentials and permissions
-   - "Cannot connect to server": Verify server name and network connectivity
-   - "TCP/IP connection failed": Ensure TCP/IP protocol is enabled
-
 5. Start the development server
 ```bash
 npm run dev
@@ -265,8 +251,6 @@ yarn dev
 ```
 
 ## 🔌 API Endpoints
-
-[![API Status](https://img.shields.io/badge/API-Documented-green.svg?style=flat-square)]()
 
 ### Authentication
 - `POST /api/auth` - User login
@@ -315,6 +299,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [![Lucide Icons](https://img.shields.io/badge/Lucide_Icons-5E5CE6?style=for-the-badge)](https://lucide.dev)
 
 Special thanks to:
-- Tailwind CSS for the styling system
-- shadcn/ui for the component library
-- Lucide for the icon set
+- Tailwind CSS for the styling system.
+- shadcn/ui for the component library.
+- Lucide for the icon set.
+- Power BI for advanced event performance analytics.
