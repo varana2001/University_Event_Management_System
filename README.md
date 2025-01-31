@@ -24,31 +24,31 @@ A comprehensive full-stack web application built with Next.js for managing unive
 <summary>Click to view screenshots</summary>
 
 ### Login Screen
-![Login Screen](1.png)
+![Login Screen](public/1.png)
 *Secure login interface with email and password authentication.*
 
 ### Event Dashboard (Admin View)
-![Admin Event Dashboard](2.png)
+![Admin Event Dashboard](public/2.png)
 *Admin dashboard displaying all events with options to view details, edit, or cancel events.*
 
 ### User Management
-![User Management](3.png)
+![User Management](public/3.png)
 *Admin interface for managing users with different roles (Admin, Organizer, Attendee).*
 
 ### Event Dashboard (Organizer View)
-![Organizer Event Dashboard](4.png)
+![Organizer Event Dashboard](public/4.png)
 *Organizer's dashboard showcasing the events they manage.*
 
 ### Event Dashboard (Attendee View)
-![Attendee Event Dashboard](5.png)
+![Attendee Event Dashboard](public/5.png)
 *Attendee's event dashboard with options to register or view event details.*
 
 ### My Tickets
-![My Tickets](6.png)
+![My Tickets](public/6.png)
 *Attendee's ticket overview showing registered events, statuses, and types.*
 
 ### Event Performance Dashboard (Power BI)
-![Event Performance Dashboard](7.jpeg)
+![Event Performance Dashboard](public/7.jpeg)
 *Comprehensive Power BI dashboard for visualizing event performance, sponsorship trends, and venue utilization.*
 
 </details>
